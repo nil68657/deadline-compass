@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#102a43">
+    <title>Opportunity deadlines</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to opportunities</a>
+    <header class="site-header">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span data-brand></span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#opportunities">Opportunities</a>
+        <a href="#source-directory">Source directory</a>
+        <a href="./data/events.csv" download>Download CSV</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="kicker">Curated calls · clear provenance · no false precision</p>
+          <h1 id="hero-title">
+            Navigate your next
+            <span>opportunity.</span>
+          </h1>
+          <p class="hero-intro" data-tagline></p>
+          <p class="hero-detail">
+            Search academic calls for papers, abstract deadlines, summits,
+            industry conferences, hackathons, and open-source gatherings.
+          </p>
+          <a class="button" href="#opportunities">Explore deadlines <span aria-hidden="true">↓</span></a>
+        </div>
+        <aside class="principles" aria-label="How to use this index">
+          <p class="eyebrow">A compass, not a guarantee</p>
+          <h2>Verify before you submit.</h2>
+          <ul>
+            <li><span>01</span> Dates marked projected are planning signals, not confirmed calls.</li>
+            <li><span>02</span> Date-only records may omit a venue’s exact cutoff time.</li>
+            <li><span>03</span> The official source is the final authority for every entry.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="stats" aria-label="Index summary">
+        <div><strong id="stat-total">—</strong><span>curated opportunities</span></div>
+        <div><strong id="stat-urgent">—</strong><span>due in 14 days</span></div>
+        <div><strong id="stat-open">—</strong><span>future deadlines</span></div>
+        <div><strong id="stat-unannounced">—</strong><span>dates to watch</span></div>
+      </section>
+
+      <section class="tracker" id="opportunities" aria-labelledby="tracker-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Opportunity index</p>
+            <h2 id="tracker-title">Choose a direction.</h2>
+          </div>
+          <p id="freshness" class="freshness" aria-live="polite">Loading source freshness…</p>
+        </div>
+
+        <form id="filters" class="filters" role="search">
+          <div class="search-field">
+            <label for="query">Search opportunities</label>
+            <span aria-hidden="true">⌕</span>
+            <input id="query" name="query" type="search" placeholder="Venue, topic, organization, or location…" autocomplete="off">
+          </div>
+          <div class="filter-grid">
+            <div>
+              <label for="organization">Organization / source</label>
+              <select id="organization" name="organization"><option value="">All organizations</option></select>
+            </div>
+            <div>
+              <label for="eventType">Event type</label>
+              <select id="eventType" name="eventType"><option value="">All event types</option></select>
+            </div>
+            <div>
+              <label for="topic">Topic / category</label>
+              <select id="topic" name="topic"><option value="">All categories</option></select>
+            </div>
+            <div>
+              <label for="mode">Location / online</label>
+              <select id="mode" name="mode"><option value="">All locations</option></select>
+            </div>
+            <div>
+              <label for="status">Deadline status</label>
+              <select id="status" name="status">
+                <option value="">All statuses</option>
+                <option value="urgent">Due within 14 days</option>
+                <option value="open">Due within 45 days</option>
+                <option value="upcoming">Upcoming</option>
+                <option value="unannounced">Date not announced</option>
+                <option value="closed">Closed</option>
+              </select>
+            </div>
+            <div>
+              <label for="sort">Sort by</label>
+              <select id="sort" name="sort">
+                <option value="deadline">Next deadline</option>
+                <option value="event">Event date</option>
+                <option value="name">Name</option>
+                <option value="recently-closed">Most recent gate</option>
+              </select>
+            </div>
+          </div>
+          <button id="clear-filters" class="clear-button" type="button">Reset filters</button>
+        </form>
+
+        <div class="results-bar">
+          <p id="result-summary" aria-live="polite">Loading opportunities…</p>
+          <div class="legend" aria-label="Confidence legend">
+            <span><i class="legend-dot verified"></i>Verified</span>
+            <span><i class="legend-dot announced"></i>Announced</span>
+            <span><i class="legend-dot projected"></i>Projected</span>
+          </div>
+        </div>
+        <div id="results" class="results" aria-busy="true">
+          <div class="loading-state" role="status">
+            <span class="loader" aria-hidden="true"></span>
+            <p>Plotting the latest opportunities…</p>
+          </div>
+        </div>
+        <button id="load-more" class="button secondary load-more" type="button" hidden>Show more</button>
+      </section>
+
+      <section class="source-directory" id="source-directory" aria-labelledby="sources-title">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Go to the source</p>
+            <h2 id="sources-title">Explore beyond this index.</h2>
+          </div>
+          <p>
+            Broad IEEE, ACM, hackathon, and community coverage cannot be
+            automated reliably from one canonical feed. These public search
+            pages help you check what the curated index may not include.
+          </p>
+        </div>
+        <div class="source-links">
+          <a href="https://conferences.ieee.org/conferences_events/conferences/search" target="_blank" rel="noopener noreferrer"><strong>IEEE</strong><span>Conference search ↗</span></a>
+          <a href="https://www.acm.org/conferences/upcoming-submission-deadlines" target="_blank" rel="noopener noreferrer"><strong>ACM</strong><span>Submission calendar ↗</span></a>
+          <a href="https://www.usenix.org/conferences" target="_blank" rel="noopener noreferrer"><strong>USENIX</strong><span>Conference directory ↗</span></a>
+          <a href="https://events.linuxfoundation.org/" target="_blank" rel="noopener noreferrer"><strong>Linux Foundation</strong><span>Events and calls ↗</span></a>
+          <a href="https://sessionize.com/" target="_blank" rel="noopener noreferrer"><strong>Sessionize</strong><span>Open calls ↗</span></a>
+          <a href="https://mlh.io/events" target="_blank" rel="noopener noreferrer"><strong>MLH</strong><span>Hackathon calendar ↗</span></a>
+          <a href="https://www.meetup.com/topics/open-source/" target="_blank" rel="noopener noreferrer"><strong>Meetup</strong><span>Open-source groups ↗</span></a>
+          <a href="https://devpost.com/hackathons" target="_blank" rel="noopener noreferrer"><strong>Devpost</strong><span>Hackathon directory ↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <span class="brand footer-brand"><span class="brand-mark mini" aria-hidden="true"><span></span><span></span><span></span></span><span data-brand></span></span>
+        <p>A curated planning tool. Always verify on the official source.</p>
+      </div>
+      <a href="./data/events.json">JSON data</a>
+    </footer>
+    <noscript>This site requires JavaScript to search and filter the opportunity index.</noscript>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "deadline-compass",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 scripts/build_data.py",
+    "check:data": "python3 scripts/build_data.py --check",
+    "check:brand": "python3 scripts/check_brand.py",
+    "lint": "node --check site/app.js && node --check site/brand.js && node --check site/logic.js && python3 -m compileall -q scripts tests",
+    "test": "node --test tests/*.test.js && python3 -m unittest discover -s tests -p 'test_*.py'",
+    "verify": "npm run check:data && npm run check:brand && npm run lint && npm test",
+    "check": "npm run build && npm run verify"
+  }
+}
