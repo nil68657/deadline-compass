@@ -1,5 +1,7 @@
 # Deadline Compass
 
+**[Live Site →](https://nil68657.github.io/deadline-compass/)**
+
 Deadline Compass is a static, searchable opportunity tracker. It covers
 curated academic calls for papers and abstracts, summits, industry
 conferences, open-source gatherings, and any hackathons added to the source.
@@ -142,3 +144,5 @@ exists; update it instead:
 ```bash
 gh api --method PUT repos/OWNER/REPO/pages -f build_type=workflow
 ```
+
+Made with ❤️ and 🤖 from Nilanjan.
