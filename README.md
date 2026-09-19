@@ -145,4 +145,4 @@ exists; update it instead:
 gh api --method PUT repos/OWNER/REPO/pages -f build_type=workflow
 ```
 
-Made with ❤️ and 🤖 from Nilanjan.
+Made with ❤️ and 🤖 by Nilanjan.
