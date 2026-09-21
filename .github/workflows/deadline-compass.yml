@@ -23,6 +23,7 @@ jobs:
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     permissions:
       contents: write
+      issues: write
     runs-on: ubuntu-latest
     steps:
       - name: Check out source
@@ -51,6 +52,39 @@ jobs:
           git commit -m "data: refresh Deadline Compass index"
           git push origin "HEAD:${GITHUB_REF_NAME}"
 
+      - name: Warn when the index is unverified
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # A green build says the pipeline works, not that the dates are
+          # true. Nothing here scrapes, so the index only becomes correct
+          # when a person re-reads the venue pages; this is the reminder.
+          CHECKED=$(python3 -c "import json;print(json.load(open('data/events-source.json'))['source_checked_at'])")
+          AGE=$(( ( $(date -u +%s) - $(date -u -d "$CHECKED" +%s) ) / 86400 ))
+          echo "index last reviewed $CHECKED ($AGE days ago)"
+          if [ "$AGE" -le 30 ]; then
+            exit 0
+          fi
+          gh label create compass-staleness \
+            --color EDC537 --description "The index needs re-reading against its sources" \
+            >/dev/null 2>&1 || true
+          OPEN=$(gh issue list --label compass-staleness --state open --limit 1 --json number --jq 'length')
+          if [ "$OPEN" != "0" ]; then
+            echo "an open compass-staleness issue already reports this"
+            exit 0
+          fi
+          gh issue create --label compass-staleness \
+            --title "Index unverified for $AGE days" \
+            --body "\`data/events-source.json\` was last reviewed on **$CHECKED**, $AGE days ago.
+
+          Deadlines move, and nothing in this repository scrapes: the index is
+          only as true as its last human reading. Re-read every venue with a
+          gate inside 60 days against its own CFP page, update the record,
+          bump \`source_checked_at\`, run \`npm run check\`, and close this issue.
+
+          Priority order: rows marked \`projected\`, then \`announced\`, then
+          \`verified\` rows whose gate falls inside 30 days."
+
   build:
     needs: refresh
     if: always() && (needs.refresh.result == 'success' || needs.refresh.result == 'skipped')
@@ -77,6 +111,15 @@ jobs:
 
       - name: Verify tracked build
         run: npm run verify
+
+      - name: Stamp the build
+        run: |
+          # Deployed with the site but never committed: it is the only thing
+          # on the page that changes when nothing else does, which is what
+          # makes a stalled pipeline visible to a reader.
+          printf '{"built_at":"%s","commit":"%s"}\n' \
+            "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$GITHUB_SHA" \
+            > site/data/build-info.json
 
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
