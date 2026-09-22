@@ -71,6 +71,20 @@ to prevent day shifts, and keeps a deadline open through the end of its stated
 timezone. Unknown zones conservatively use Anywhere on Earth. The source page
 remains authoritative for exact cutoff times.
 
+## Archived calls
+
+A call whose every gate has passed is **archived**. It stays in the index —
+a closed venue is how next year's date gets anticipated rather than
+rediscovered — but it is not an opportunity, so it is left out of the
+default view and appears only under the *Archived — deadline passed*
+filter. The result summary says how many are hidden and turns that count
+into the control that shows them.
+
+Archiving is computed in the browser from the record's gates, never stored:
+a venue is archived when no gate remains in the future, which means a call
+whose abstract deadline has passed but whose paper deadline has not is
+still open, and shows the paper gate.
+
 ## Adding or updating an event
 
 1. Add or update the normalized record in `data/events-source.json`.

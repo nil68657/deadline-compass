@@ -14,6 +14,11 @@ import {
 
 const NOW = new Date(2026, 8, 18, 23, 30);
 
+// No filter chosen in any field: what a first visit sees.
+const NO_FILTERS = {
+  query: "", organization: "", eventType: "", topic: "", mode: "", status: "",
+};
+
 function event(overrides = {}) {
   return {
     acronym: "TEST",
@@ -52,7 +57,7 @@ test("deadline statuses cover every window", () => {
   assert.equal(deadlineStatus(event(), NOW), "urgent");
   assert.equal(deadlineStatus(event({ deadlines: { gates: [{ date: "2026-10-20", kind: "Paper" }] } }), NOW), "open");
   assert.equal(deadlineStatus(event({ deadlines: { gates: [{ date: "2027-01-01", kind: "Paper" }] } }), NOW), "upcoming");
-  assert.equal(deadlineStatus(event({ deadlines: { gates: [{ date: "2026-09-17", kind: "Paper" }] } }), NOW), "closed");
+  assert.equal(deadlineStatus(event({ deadlines: { gates: [{ date: "2026-09-17", kind: "Paper" }] } }), NOW), "archived");
   assert.equal(deadlineStatus(event({ deadlines: { gates: [] } }), NOW), "unannounced");
 });
 
@@ -93,7 +98,7 @@ test("status closes immediately after a stated timezone cutoff", () => {
     },
   });
   const afterCutoff = new Date("2026-10-11T22:30:00Z");
-  assert.equal(deadlineStatus(zoned, afterCutoff), "closed");
+  assert.equal(deadlineStatus(zoned, afterCutoff), "archived");
   assert.equal(deadlineLabel(zoned, afterCutoff), "Closed today");
 });
 
@@ -110,6 +115,40 @@ test("search and structured filters combine", () => {
   assert.equal(matchesFilters(event(), { ...filters, organization: "IEEE" }, NOW), false);
   assert.equal(matchesFilters(event(), { ...filters, query: "graphics" }, NOW), false);
   assert.equal(matchesFilters(event(), { ...filters, status: "open" }, NOW), true);
+});
+
+test("an archived call is out of the default view and in its own filter", () => {
+  const live = event();
+  const archived = event({ name: "Gone", deadlines: { gates: [{ date: "2026-09-17", kind: "Paper" }] } });
+  // No status chosen means "show me what I can still submit to".
+  assert.equal(matchesFilters(archived, NO_FILTERS, NOW), false);
+  assert.equal(matchesFilters(live, NO_FILTERS, NOW), true);
+  // Asking for archived by name shows archived only.
+  const onlyArchived = { ...NO_FILTERS, status: "archived" };
+  assert.equal(matchesFilters(archived, onlyArchived, NOW), true);
+  assert.equal(matchesFilters(live, onlyArchived, NOW), false);
+});
+
+test("archived is excluded on its merits, not by the other filters", () => {
+  // A search that names the archived venue still must not resurrect it: the
+  // exclusion is about the deadline, not about how the row was reached.
+  const archived = event({ name: "Gone", deadlines: { gates: [{ date: "2026-09-17", kind: "Paper" }] } });
+  assert.equal(matchesFilters(archived, { ...NO_FILTERS, query: "Gone" }, NOW), false);
+  assert.equal(matchesFilters(archived, { ...NO_FILTERS, query: "Gone", status: "archived" }, NOW), true);
+});
+
+test("a passed abstract does not archive a call whose paper gate is open", () => {
+  const rolling = event({
+    name: "Rolling",
+    deadlines: {
+      gates: [
+        { date: "2026-09-17", kind: "Abstract" },
+        { date: "2026-09-24", kind: "Paper" },
+      ],
+    },
+  });
+  assert.notEqual(deadlineStatus(rolling, NOW), "archived");
+  assert.equal(matchesFilters(rolling, NO_FILTERS, NOW), true);
 });
 
 test("sorting is deterministic and does not mutate input", () => {

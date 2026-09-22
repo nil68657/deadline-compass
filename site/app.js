@@ -108,7 +108,7 @@ function statusTitle(status) {
     urgent: "Due within 14 days",
     open: "Due within 45 days",
     upcoming: "Upcoming",
-    closed: "Closed",
+    archived: "Archived",
     unannounced: "Date not announced",
   }[status];
 }
@@ -194,7 +194,13 @@ function render() {
         <p>Broaden a filter or clear them to return to the full index.</p>
         <button class="button secondary" type="button" data-clear>Clear filters</button>
       </div>`;
-  resultSummary.textContent = `Showing ${shown.length.toLocaleString()} of ${state.filtered.length.toLocaleString()} matching opportunities`;
+  const summary = `Showing ${shown.length.toLocaleString()} of ${state.filtered.length.toLocaleString()} matching opportunities`;
+  const archived = state.events.filter((event) => deadlineStatus(event) === "archived").length;
+  // Only worth saying while they are hidden: once the filter is on Archived,
+  // the count above is the archived count.
+  resultSummary.innerHTML = !filters.status && archived
+    ? `${summary} · <button type="button" class="link-button" data-show-archived>${archived.toLocaleString()} archived hidden</button>`
+    : summary;
   loadMore.hidden = shown.length >= state.filtered.length;
   syncUrl(filters);
 }
@@ -211,6 +217,7 @@ function renderStats() {
     (counts.urgent || 0) + (counts.open || 0) + (counts.upcoming || 0)
   ).toLocaleString();
   document.querySelector("#stat-unannounced").textContent = (counts.unannounced || 0).toLocaleString();
+  document.querySelector("#stat-archived").textContent = (counts.archived || 0).toLocaleString();
 }
 
 function initializeFilters() {
@@ -291,6 +298,13 @@ loadMore.addEventListener("click", () => {
 results.addEventListener("click", (event) => {
   if (event.target.closest("[data-clear]")) clearFilters.click();
   if (event.target.closest("[data-retry]")) loadData();
+});
+
+resultSummary.addEventListener("click", (fromClick) => {
+  if (!fromClick.target.closest("[data-show-archived]")) return;
+  form.elements.status.value = "archived";
+  state.visible = PAGE_SIZE;
+  render();
 });
 
 function scheduleMidnightRefresh() {

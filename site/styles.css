@@ -412,7 +412,7 @@ input[type="search"] { min-height: 54px; padding-left: 3rem; font-size: 1.02rem;
 }
 
 .event-card[data-status="urgent"] { border-top-color: var(--coral); }
-.event-card[data-status="closed"] { border-top-color: #9aa5b1; }
+.event-card[data-status="archived"] { border-top-color: #9aa5b1; }
 .event-card[data-status="unannounced"] { border-top-color: var(--gold); }
 
 .card-topline, .card-heading, .deadline-block {
@@ -438,7 +438,7 @@ input[type="search"] { min-height: 54px; padding-left: 3rem; font-size: 1.02rem;
 }
 
 .status-urgent { color: #8b321e; background: #fee3da; }
-.status-closed { color: #52616f; background: #e9ecef; }
+.status-archived { color: #52616f; background: #e9ecef; }
 .status-unannounced { color: #714b0b; background: #fbeacb; }
 
 .confidence {
@@ -652,3 +652,17 @@ noscript {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* The archived count in the result summary: a control, worded as prose. */
+.link-button {
+  border: 0;
+  padding: 0;
+  background: none;
+  font: inherit;
+  color: var(--ink);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.link-button:hover { color: var(--coral); }
+.link-button:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
