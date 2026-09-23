@@ -251,6 +251,19 @@ async function loadData() {
       <strong>Source review:</strong> ${formatDate(state.sourceCheckedAt)}
       <span aria-hidden="true">·</span> ${escapeHtml(state.coverageNotice)}
     `;
+    // Written by the deploy, not committed, so its absence is normal: a
+    // local checkout, a preview, or the first deploy before this shipped.
+    // Non-fatal by design - the source-review date above stands on its own.
+    fetch("./data/build-info.json")
+      .then((response) => (response.ok ? response.json() : null))
+      .then((info) => {
+        if (!info || typeof info.built_at !== "string") return;
+        freshness.insertAdjacentHTML(
+          "beforeend",
+          ` <span aria-hidden="true">\u00b7</span> <strong>Site rebuilt:</strong> ${formatDate(info.built_at.slice(0, 10))}`,
+        );
+      })
+      .catch(() => {});
     results.setAttribute("aria-busy", "false");
     if (!state.events.length) {
       state.phase = "empty";

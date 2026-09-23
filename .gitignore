@@ -9,3 +9,7 @@ __pycache__/
 .env
 .env.*
 !.env.example
+
+# Written by the Pages build; deployed, never committed, so that a rebuild
+# of unchanged data stays a byte-identical diff.
+site/data/build-info.json
