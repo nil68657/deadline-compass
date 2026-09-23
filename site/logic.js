@@ -51,7 +51,7 @@ export function deadlineStatus(event, now = new Date()) {
   const gate = activeGate(event, now);
   if (!gate) return "unannounced";
   const days = gate.days;
-  if (gate.expired) return "closed";
+  if (gate.expired) return "archived";
   if (days <= 14) return "urgent";
   if (days <= 45) return "open";
   return "upcoming";
@@ -94,9 +94,13 @@ export function matchesFilters(event, filters, now = new Date()) {
     && (!filters.topic || event.categories.includes(filters.topic))
     && (!filters.mode || event.mode === filters.mode)
     && (
-      !filters.status
-      || deadlineStatus(event, now) === filters.status
-      || (filters.status === "open" && deadlineStatus(event, now) === "urgent")
+      // An archived call is one whose every gate has passed. It stays in the
+      // index — a closed venue is how you find next year's date — but it is
+      // not an opportunity, so it appears only when asked for by name.
+      filters.status
+        ? deadlineStatus(event, now) === filters.status
+          || (filters.status === "open" && deadlineStatus(event, now) === "urgent")
+        : deadlineStatus(event, now) !== "archived"
     )
   );
 }

@@ -58,6 +58,7 @@
         <div><strong id="stat-urgent">—</strong><span>due in 14 days</span></div>
         <div><strong id="stat-open">—</strong><span>future deadlines</span></div>
         <div><strong id="stat-unannounced">—</strong><span>dates to watch</span></div>
+        <div><strong id="stat-archived">—</strong><span>archived</span></div>
       </section>
 
       <section class="tracker" id="opportunities" aria-labelledby="tracker-title">
@@ -95,12 +96,12 @@
             <div>
               <label for="status">Deadline status</label>
               <select id="status" name="status">
-                <option value="">All statuses</option>
+                <option value="">All open calls</option>
                 <option value="urgent">Due within 14 days</option>
                 <option value="open">Due within 45 days</option>
                 <option value="upcoming">Upcoming</option>
                 <option value="unannounced">Date not announced</option>
-                <option value="closed">Closed</option>
+                <option value="archived">Archived — deadline passed</option>
               </select>
             </div>
             <div>
