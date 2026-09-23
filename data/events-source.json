@@ -1,6 +1,6 @@
 {
   "coverage_notice": "Curated index, not exhaustive coverage. Always confirm dates, times, eligibility, and submission rules on the linked source.",
-  "event_count": 406,
+  "event_count": 408,
   "events": [
     {
       "acronym": "TiDB SCaiLE",
@@ -15615,6 +15615,70 @@
       "source_url": "https://llm4code.github.io/",
       "topics": [
         "AI for SE"
+      ]
+    },
+    {
+      "acronym": "COMPASS",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "",
+      "event_start": "",
+      "event_type": "Academic conference",
+      "id": "compass-2027",
+      "indexing": "ACM DL, DBLP, Scopus",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://compass.acm.org/call-for-papers/",
+      "topics": [
+        "Computing and society"
+      ]
+    },
+    {
+      "acronym": "EAAMO",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "",
+      "event_start": "",
+      "event_type": "Academic conference",
+      "id": "eaamo-2027",
+      "indexing": "ACM DL, DBLP, Scopus",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "ACM Conference on Equity and Access in Algorithms, Mechanisms, and Optimization",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://conference.eaamo.org/",
+      "topics": [
+        "Computing and society"
       ]
     }
   ],
