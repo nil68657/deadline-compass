@@ -350,43 +350,6 @@
       ]
     },
     {
-      "acronym": "Monster Scale",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-18",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-09-18",
-        "precision": "date",
-        "timezone": "PDT"
-      },
-      "edition": "2027",
-      "event_end": "2027-03-11",
-      "event_start": "2027-03-10",
-      "event_type": "Summit",
-      "id": "monster-scale-2027",
-      "indexing": "",
-      "location": "Virtual",
-      "mode": "Online",
-      "name": "Monster Scale Summit",
-      "organization": "ScyllaDB",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://sessionize.com/monster-scale-summit-2027",
-      "topics": [
-        "Distributed Systems"
-      ]
-    },
-    {
       "acronym": "CfgMgmtCamp",
       "categories": [
         "Open source & community"
@@ -4536,6 +4499,43 @@
       "source_url": "https://mlsys.org/Conferences/2027/CallForResearchPapers",
       "topics": [
         "ML systems"
+      ]
+    },
+    {
+      "acronym": "Monster Scale",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-10-30",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-10-30",
+        "precision": "date",
+        "timezone": "PDT"
+      },
+      "edition": "2027",
+      "event_end": "2027-03-11",
+      "event_start": "2027-03-10",
+      "event_type": "Summit",
+      "id": "monster-scale-2027",
+      "indexing": "",
+      "location": "Virtual",
+      "mode": "Online",
+      "name": "Monster Scale Summit",
+      "organization": "ScyllaDB",
+      "organization_group": "Other",
+      "source_basis": "Primary venue page",
+      "source_url": "https://sessionize.com/monster-scale-summit-2027",
+      "topics": [
+        "Distributed Systems"
       ]
     },
     {
