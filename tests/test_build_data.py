@@ -45,6 +45,23 @@ class BuildDataTests(unittest.TestCase):
             "source_basis": "Primary venue page",
         }
 
+    def test_forwarded_record_carries_its_archived_cycle(self) -> None:
+        event = copy.deepcopy(self.event)
+        event["previous_cycle"] = {"edition": "2026", "closed": "2026-09-01"}
+        build_data.validate([event])
+
+    def test_previous_cycle_must_be_well_formed(self) -> None:
+        event = copy.deepcopy(self.event)
+        event["previous_cycle"] = {"edition": "2026", "closed": "last week"}
+        with self.assertRaisesRegex(ValueError, "previous_cycle"):
+            build_data.validate([event])
+
+    def test_forwarded_gates_must_follow_the_archived_close(self) -> None:
+        event = copy.deepcopy(self.event)
+        event["previous_cycle"] = {"edition": "2026", "closed": "2026-09-25"}
+        with self.assertRaisesRegex(ValueError, "after the archived call closed"):
+            build_data.validate([event])
+
     def test_validation_rejects_duplicate_records(self) -> None:
         with self.assertRaisesRegex(ValueError, "duplicate"):
             build_data.validate([self.event, copy.deepcopy(self.event)])

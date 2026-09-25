@@ -126,6 +126,16 @@ function deadlineRows(event) {
   `).join("")}</dl>`;
 }
 
+function forwardedNote(event) {
+  const previous = event.previous_cycle;
+  if (!previous) return "";
+  return `<p class="forwarded-note">
+      <strong>${escapeHtml(previous.edition)} cycle archived</strong> — its call closed
+      ${formatDate(previous.closed)}. Forwarded to the ${escapeHtml(event.edition)} cycle;
+      these dates are projected until its call is published.
+    </p>`;
+}
+
 function card(event) {
   const status = deadlineStatus(event);
   const gate = activeGate(event);
@@ -158,6 +168,7 @@ function card(event) {
         </div>
         <span class="countdown">${deadlineLabel(event)}</span>
       </div>
+      ${forwardedNote(event)}
       <ul class="event-facts" aria-label="Event details">
         <li><span aria-hidden="true">◉</span>${escapeHtml(event.event_type)}</li>
         <li><span aria-hidden="true">⌖</span>${escapeHtml(event.location)}</li>
