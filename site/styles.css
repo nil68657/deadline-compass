@@ -666,3 +666,14 @@ noscript {
 }
 .link-button:hover { color: var(--coral); }
 .link-button:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+/* A record forwarded from an archived cycle to the next one. */
+.forwarded-note {
+  margin: 0.75rem 0 0;
+  padding: 0.6rem 0.75rem;
+  border-left: 3px solid #9aa5b1;
+  background: #f3f5f7;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+.forwarded-note strong { color: var(--ink); }
