@@ -360,12 +360,12 @@
         "camera_ready": "",
         "gates": [
           {
-            "date": "2026-09-18",
+            "date": "2026-10-30",
             "kind": "Paper"
           }
         ],
         "notification": "",
-        "paper": "2026-09-18",
+        "paper": "2026-10-30",
         "precision": "date",
         "timezone": "PDT"
       },
