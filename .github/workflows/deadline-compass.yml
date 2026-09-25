@@ -130,7 +130,11 @@ jobs:
           path: site
 
   deploy:
-    if: github.ref == 'refs/heads/main'
+    # always() is load-bearing. Without a status function GitHub prefixes an
+    # implicit success(), and success() is false when ANY job upstream was
+    # skipped - refresh is skipped on every push, so a merge built the site
+    # and then never deployed it. Gate on build's own result instead.
+    if: always() && needs.build.result == 'success' && github.ref == 'refs/heads/main'
     needs: build
     permissions:
       pages: write
