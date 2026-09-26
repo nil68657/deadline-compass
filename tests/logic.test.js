@@ -10,6 +10,7 @@ import {
   matchesFilters,
   sortEvents,
   uniqueValues,
+  withArchivedCycles,
 } from "../site/logic.js";
 
 const NOW = new Date(2026, 8, 18, 23, 30);
@@ -149,6 +150,40 @@ test("a passed abstract does not archive a call whose paper gate is open", () =>
   });
   assert.notEqual(deadlineStatus(rolling, NOW), "archived");
   assert.equal(matchesFilters(rolling, NO_FILTERS, NOW), true);
+});
+
+test("a forwarded venue keeps its archived cycle as its own archived entry", () => {
+  const forwarded = event({
+    id: "test-2028",
+    edition: "2028",
+    deadlines: { abstract: "", paper: "2027-09-17", notification: "", camera_ready: "",
+      gates: [{ date: "2027-09-17", kind: "Paper" }], timezone: "AoE", precision: "date" },
+    previous_cycle: {
+      edition: "2027", closed: "2026-09-17", location: "Ghent, Belgium",
+      event_start: "2027-03-01", event_end: "2027-03-03", abstract: "",
+      paper: "2026-09-17", notification: "", camera_ready: "",
+      confidence: "verified", source_url: "https://2027.example.org/cfp",
+    },
+  });
+  const all = withArchivedCycles([forwarded]);
+  assert.equal(all.length, 2);
+  const [next, past] = all;
+  assert.notEqual(deadlineStatus(next, NOW), "archived");
+  assert.equal(deadlineStatus(past, NOW), "archived");
+  assert.equal(past.edition, "2027");
+  assert.equal(past.archived_cycle.next_edition, "2028");
+  assert.equal(past.source_url, "https://2027.example.org/cfp");
+  assert.equal("previous_cycle" in past, false);
+  assert.notEqual(past.id, next.id);
+  // Default view shows the next cycle only; Archived shows the past one only.
+  assert.deepEqual(all.filter((e) => matchesFilters(e, NO_FILTERS, NOW)), [next]);
+  assert.deepEqual(all.filter((e) => matchesFilters(e, { ...NO_FILTERS, status: "archived" }, NOW)), [past]);
+});
+
+test("the default sort lists archived calls most recently closed first", () => {
+  const older = event({ name: "Older", deadlines: { gates: [{ date: "2026-09-10", kind: "Paper" }] } });
+  const newer = event({ name: "Newer", deadlines: { gates: [{ date: "2026-09-17", kind: "Paper" }] } });
+  assert.deepEqual(sortEvents([older, newer], "deadline", NOW).map((e) => e.name), ["Newer", "Older"]);
 });
 
 test("sorting is deterministic and does not mutate input", () => {

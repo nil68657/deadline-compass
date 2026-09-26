@@ -60,7 +60,14 @@ DEADLINE_FIELDS = {
 # and which now tracks the next cycle: what the archived cycle was, and when
 # its call closed, so the page can say so rather than silently changing year.
 OPTIONAL_EVENT_FIELDS = {"previous_cycle"}
-PREVIOUS_CYCLE_FIELDS = {"edition", "closed"}
+PREVIOUS_CYCLE_FIELDS = {
+    "edition", "closed", "location", "event_start", "event_end", "abstract",
+    "paper", "notification", "camera_ready", "confidence", "source_url",
+}
+PREVIOUS_CYCLE_DATES = (
+    "closed", "event_start", "event_end", "abstract", "paper",
+    "notification", "camera_ready",
+)
 EVENT_STRING_FIELDS = EVENT_FIELDS - {"topics", "categories", "deadlines"}
 DEADLINE_STRING_FIELDS = DEADLINE_FIELDS - {"gates"}
 
@@ -121,10 +128,16 @@ def validate(events: list[Event]) -> None:
             if (
                 not isinstance(previous, dict)
                 or set(previous) != PREVIOUS_CYCLE_FIELDS
-                or not all(isinstance(v, str) and v for v in previous.values())
-                or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", previous.get("closed", ""))
+                or not all(isinstance(v, str) for v in previous.values())
+                or not all(previous.get(k) for k in ("edition", "closed", "location", "source_url"))
+                or not all(
+                    not previous.get(k) or re.fullmatch(r"\d{4}-\d{2}-\d{2}", previous[k])
+                    for k in PREVIOUS_CYCLE_DATES
+                )
+                or previous.get("confidence") not in SOURCE_BASIS
+                or not previous.get("source_url", "").startswith("https://")
             ):
-                errors.append(f"{label}: previous_cycle must be {{edition, closed: YYYY-MM-DD}}")
+                errors.append(f"{label}: previous_cycle must describe the archived cycle in full")
             elif any(
                 gate["date"] <= previous["closed"]
                 for gate in event.get("deadlines", {}).get("gates", [])
