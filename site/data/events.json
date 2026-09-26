@@ -12560,8 +12560,17 @@
       "organization": "ACM",
       "organization_group": "ACM",
       "previous_cycle": {
+        "abstract": "2026-09-17",
+        "camera_ready": "",
         "closed": "2026-09-24",
-        "edition": "2027"
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-04-23",
+        "event_start": "2027-04-19",
+        "location": "Rabat, Morocco",
+        "notification": "2027-01-29",
+        "paper": "2026-09-24",
+        "source_url": "https://2027.eurosys.org/cfp.html"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://www.eurosys.org/",
@@ -14132,8 +14141,17 @@
       "organization": "PingCAP",
       "organization_group": "Other",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
         "closed": "2026-09-11",
-        "edition": "2026"
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-10-15",
+        "event_start": "2026-10-15",
+        "location": "Mountain View, CA, USA",
+        "notification": "",
+        "paper": "2026-09-11",
+        "source_url": "https://www.pingcap.com/tidb-scaile-summit/"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://www.pingcap.com/tidb-scaile-summit/",
@@ -14211,8 +14229,17 @@
       "organization": "ACM",
       "organization_group": "ACM",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
         "closed": "2026-09-17",
-        "edition": "2027"
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-04-02",
+        "event_start": "2027-03-30",
+        "location": "Ghent, Belgium",
+        "notification": "",
+        "paper": "2026-09-17",
+        "source_url": "https://2027.acmmmsys.org/"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://acmmmsys.org/",
@@ -14252,8 +14279,17 @@
       "organization": "ACM",
       "organization_group": "ACM",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-10-16",
         "closed": "2026-09-17",
-        "edition": "2026"
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-18",
+        "event_start": "2026-12-14",
+        "location": "Tarragona, Spain",
+        "notification": "2026-10-12",
+        "paper": "2026-09-17",
+        "source_url": "https://dicg-workshop.github.io/2026/"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://dicg-workshop.github.io/",
@@ -14293,8 +14329,17 @@
       "organization": "ACM",
       "organization_group": "ACM",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-10-16",
         "closed": "2026-09-17",
-        "edition": "2026"
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-18",
+        "event_start": "2026-12-14",
+        "location": "Tarragona, Spain",
+        "notification": "2026-10-12",
+        "paper": "2026-09-17",
+        "source_url": "https://bytecodealliance.org/wace2026"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://bytecodealliance.org/wace2026",
@@ -14335,8 +14380,17 @@
       "organization": "AAAI Press",
       "organization_group": "Other",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-11-20",
         "closed": "2026-09-18",
-        "edition": "2027"
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-02-23",
+        "event_start": "2027-02-16",
+        "location": "Montreal, Canada",
+        "notification": "2026-11-06",
+        "paper": "2026-09-18",
+        "source_url": "https://aaai.org/conference/aaai/aaai-27/demonstration-call/"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://aaai.org/conference/aaai/",
@@ -14377,8 +14431,17 @@
       "organization": "DevNetwork",
       "organization_group": "Other",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
         "closed": "2026-09-18",
-        "edition": "2027"
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-02-11",
+        "event_start": "2027-02-09",
+        "location": "Santa Clara, CA, USA",
+        "notification": "",
+        "paper": "2026-09-18",
+        "source_url": "https://sessionize.com/aidevworld-2027/"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://sessionize.com/aidevworld-2027/",
@@ -14419,8 +14482,17 @@
       "organization": "DevNetwork",
       "organization_group": "Other",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
         "closed": "2026-09-18",
-        "edition": "2027"
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-02-11",
+        "event_start": "2027-02-09",
+        "location": "Santa Clara, CA, USA",
+        "notification": "",
+        "paper": "2026-09-18",
+        "source_url": "https://sessionize.com/developerweek-2027"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://sessionize.com/developerweek-2027",
@@ -14462,8 +14534,17 @@
       "organization": "CfgMgmtCamp (community)",
       "organization_group": "Other",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
         "closed": "2026-09-20",
-        "edition": "2027"
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-02-03",
+        "event_start": "2027-02-01",
+        "location": "Ghent, Belgium",
+        "notification": "",
+        "paper": "2026-09-20",
+        "source_url": "https://cfgmgmtcamp.org/ghent2027/"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://cfgmgmtcamp.org/ghent2027/",
@@ -14505,8 +14586,17 @@
       "organization": "ConFoo",
       "organization_group": "Other",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
         "closed": "2026-09-20",
-        "edition": "2027"
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-02-26",
+        "event_start": "2027-02-24",
+        "location": "Montreal, Canada",
+        "notification": "2026-10-19",
+        "paper": "2026-09-20",
+        "source_url": "https://confoo.ca/en/2027/call-for-papers"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://confoo.ca/en/2027/call-for-papers",
@@ -14549,8 +14639,17 @@
       "organization": "Linux Australia",
       "organization_group": "Other",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
         "closed": "2026-09-20",
-        "edition": "2027"
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-01-22",
+        "event_start": "2027-01-20",
+        "location": "Brisbane, Australia (QUT Gardens Point)",
+        "notification": "",
+        "paper": "2026-09-20",
+        "source_url": "https://2027.everythingopen.au/programme/proposals/"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://2027.everythingopen.au/programme/proposals/",
@@ -14591,8 +14690,17 @@
       "organization": "ACM",
       "organization_group": "ACM",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-10-29",
         "closed": "2026-09-20",
-        "edition": "28th, 2027"
+        "confidence": "verified",
+        "edition": "28th, 2027",
+        "event_end": "2027-01-07",
+        "event_start": "2027-01-04",
+        "location": "NITK Surathkal, Karnataka, India",
+        "notification": "2026-10-15",
+        "paper": "2026-09-20",
+        "source_url": "https://cs3-lab.github.io/icdcn/index.html"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://cs3-lab.github.io/icdcn/index.html",
@@ -14632,8 +14740,17 @@
       "organization": "IEEE (UCC/BDCAT 2026 companion proceedings, IEEE Xplore)",
       "organization_group": "IEEE",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-10-15",
         "closed": "2026-09-20",
-        "edition": "2026"
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-04",
+        "event_start": "2026-12-01",
+        "location": "Florianopolis, Brazil",
+        "notification": "2026-10-08",
+        "paper": "2026-09-20",
+        "source_url": "https://cloudam-workshop.github.io/"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://cloudam-workshop.github.io/",
@@ -14674,8 +14791,17 @@
       "organization": "IEEE (UCC/BDCAT 2026 companion proceedings, IEEE Xplore)",
       "organization_group": "IEEE",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-10-15",
         "closed": "2026-09-20",
-        "edition": "2026"
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-04",
+        "event_start": "2026-12-01",
+        "location": "Florianopolis, Brazil",
+        "notification": "2026-10-05",
+        "paper": "2026-09-20",
+        "source_url": "https://www.lrc.ic.unicamp.br/dml-icc/"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://www.lrc.ic.unicamp.br/dml-icc/",
@@ -14716,8 +14842,17 @@
       "organization": "ACM (ICPS)",
       "organization_group": "ACM",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2027-01-08",
         "closed": "2026-09-20",
-        "edition": "2027"
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-02-19",
+        "event_start": "2027-02-17",
+        "location": "Seoul, Korea",
+        "notification": "2026-11-22",
+        "paper": "2026-09-20",
+        "source_url": "https://hpcasia2027.org/2027/pages_submission/schedule.vm"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://hpcasia2027.org/2027/pages_submission/schedule.vm",
@@ -14757,8 +14892,17 @@
       "organization": "IEEE",
       "organization_group": "IEEE",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
         "closed": "2026-09-21",
-        "edition": "2027 (27th)"
+        "confidence": "verified",
+        "edition": "2027 (27th)",
+        "event_end": "2027-05-27",
+        "event_start": "2027-05-24",
+        "location": "Denton (Dallas-Fort Worth), TX, USA",
+        "notification": "2026-10-07",
+        "paper": "2026-09-21",
+        "source_url": "https://hpcclab.org/?page_id=1906"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://hpcclab.org/?page_id=1906",
@@ -14801,8 +14945,17 @@
       "organization": "IEEE",
       "organization_group": "IEEE",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
         "closed": "2026-09-21",
-        "edition": "2027"
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-01-27",
+        "event_start": "2027-01-25",
+        "location": "Vancouver, Canada",
+        "notification": "",
+        "paper": "2026-09-21",
+        "source_url": "https://aivr.science.uu.nl/2027/aixvr2027_cfp.html"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://aivr.science.uu.nl/",
@@ -14845,8 +14998,17 @@
       "organization": "Atlanta Java Users Group",
       "organization_group": "Other",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
         "closed": "2026-09-22",
-        "edition": "2027"
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-03-31",
+        "event_start": "2027-03-29",
+        "location": "Atlanta, GA, USA",
+        "notification": "",
+        "paper": "2026-09-22",
+        "source_url": "https://sessionize.com/devnexus-2027/"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://sessionize.com/devnexus-2027/",
@@ -14888,8 +15050,17 @@
       "organization": "Springer LNCS",
       "organization_group": "Springer",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
         "closed": "2026-09-23",
-        "edition": "18th, 2026"
+        "confidence": "projected",
+        "edition": "18th, 2026",
+        "event_end": "2026-11-08",
+        "event_start": "2026-11-06",
+        "location": "Guilin, Guangxi, China",
+        "notification": "",
+        "paper": "2026-09-23",
+        "source_url": "https://www.benchcouncil.org/bench2026/cfp.html"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://www.benchcouncil.org/",
@@ -14931,8 +15102,17 @@
       "organization": "Springer LNCS",
       "organization_group": "Springer",
       "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
         "closed": "2026-09-24",
-        "edition": "ACNS 2027 (25th)"
+        "confidence": "verified",
+        "edition": "ACNS 2027 (25th)",
+        "event_end": "2027-07-01",
+        "event_start": "2027-06-28",
+        "location": "Egham (Royal Holloway), UK",
+        "notification": "2026-11-26",
+        "paper": "2026-09-24",
+        "source_url": "https://acns2027.isg.rhul.ac.uk/"
       },
       "source_basis": "Historical cadence projection",
       "source_url": "https://acns2027.isg.rhul.ac.uk/",

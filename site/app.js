@@ -6,6 +6,7 @@ import {
   matchesFilters,
   sortEvents,
   uniqueValues,
+  withArchivedCycles,
 } from "./logic.js";
 
 const PAGE_SIZE = 48;
@@ -127,6 +128,13 @@ function deadlineRows(event) {
 }
 
 function forwardedNote(event) {
+  if (event.archived_cycle) {
+    return `<p class="forwarded-note">
+      <strong>Archived cycle</strong> — every deadline has passed. The venue has been
+      forwarded to its ${escapeHtml(event.archived_cycle.next_edition)} cycle, listed
+      with the open calls.
+    </p>`;
+  }
   const previous = event.previous_cycle;
   if (!previous) return "";
   return `<p class="forwarded-note">
@@ -222,7 +230,7 @@ function renderStats() {
     acc[status] = (acc[status] || 0) + 1;
     return acc;
   }, {});
-  document.querySelector("#stat-total").textContent = state.events.length.toLocaleString();
+  document.querySelector("#stat-total").textContent = state.venueCount.toLocaleString();
   document.querySelector("#stat-urgent").textContent = (counts.urgent || 0).toLocaleString();
   document.querySelector("#stat-open").textContent = (
     (counts.urgent || 0) + (counts.open || 0) + (counts.upcoming || 0)
@@ -253,7 +261,8 @@ async function loadData() {
     if (!response.ok) throw new Error(`Data request failed (${response.status})`);
     const payload = await response.json();
     if (!Array.isArray(payload.events)) throw new Error("Data response has no events array");
-    state.events = payload.events;
+    state.venueCount = payload.events.length;
+    state.events = withArchivedCycles(payload.events);
     state.sourceCheckedAt = payload.source_checked_at;
     state.coverageNotice = payload.coverage_notice;
     initializeFilters();
