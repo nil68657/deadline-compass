@@ -312,12 +312,14 @@ class MergeTests(unittest.TestCase):
             title="Different title",
             venue_url=self.manual["source_url"],
             event_start=self.manual["event_start"],
+            event_end=self.manual["event_end"],
         )
         same_identity = self.candidate(
             title=self.manual["name"],
             venue_url="https://example.org/alternate",
             event_start=self.manual["event_start"],
             deadline=self.manual["deadlines"]["paper"],
+            event_end=self.manual["event_end"],
         )
         original = copy.deepcopy(self.manual)
         merged, stats, _ = discovery.merge_candidates(

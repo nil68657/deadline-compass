@@ -14,6 +14,48 @@ function calendarUtc(date) {
   return Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
 }
 
+/**
+ * A forwarded venue tracks its next cycle, but the cycle it left is archived,
+ * not gone: it gets its own entry, which the Archived filter lists and the
+ * default view leaves out like any other archived call.
+ */
+export function withArchivedCycles(events) {
+  const out = [];
+  for (const event of events) {
+    out.push(event);
+    const past = event.previous_cycle;
+    if (!past) continue;
+    const gates = [
+      [past.abstract, "Abstract"],
+      [past.paper, "Paper"],
+    ].filter(([date]) => date).sort(([a], [b]) => a.localeCompare(b))
+      .map(([date, kind]) => ({ date, kind }));
+    const archived = {
+      ...event,
+      id: `${event.id}-archived-${String(past.edition).toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+      edition: past.edition,
+      location: past.location,
+      mode: /online|virtual/i.test(past.location) ? "Online" : event.mode === "TBA" ? "In person" : event.mode,
+      event_start: past.event_start,
+      event_end: past.event_end,
+      confidence: past.confidence,
+      source_url: past.source_url,
+      deadlines: {
+        ...event.deadlines,
+        abstract: past.abstract,
+        paper: past.paper,
+        notification: past.notification,
+        camera_ready: past.camera_ready,
+        gates,
+      },
+      archived_cycle: { next_edition: event.edition },
+    };
+    delete archived.previous_cycle;
+    out.push(archived);
+  }
+  return out;
+}
+
 export function daysUntil(isoDate, now = new Date()) {
   if (!isoDate) return null;
   const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(isoDate);
@@ -51,7 +93,7 @@ export function deadlineStatus(event, now = new Date()) {
   const gate = activeGate(event, now);
   if (!gate) return "unannounced";
   const days = gate.days;
-  if (gate.expired) return "closed";
+  if (gate.expired) return "archived";
   if (days <= 14) return "urgent";
   if (days <= 45) return "open";
   return "upcoming";
@@ -94,9 +136,13 @@ export function matchesFilters(event, filters, now = new Date()) {
     && (!filters.topic || event.categories.includes(filters.topic))
     && (!filters.mode || event.mode === filters.mode)
     && (
-      !filters.status
-      || deadlineStatus(event, now) === filters.status
-      || (filters.status === "open" && deadlineStatus(event, now) === "urgent")
+      // An archived call is one whose every gate has passed. It stays in the
+      // index — a closed venue is how you find next year's date — but it is
+      // not an opportunity, so it appears only when asked for by name.
+      filters.status
+        ? deadlineStatus(event, now) === filters.status
+          || (filters.status === "open" && deadlineStatus(event, now) === "urgent")
+        : deadlineStatus(event, now) !== "archived"
     )
   );
 }

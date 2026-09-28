@@ -6,6 +6,7 @@ import {
   matchesFilters,
   sortEvents,
   uniqueValues,
+  withArchivedCycles,
 } from "./logic.js";
 
 const PAGE_SIZE = 48;
@@ -122,7 +123,7 @@ function statusTitle(status) {
     urgent: "Due within 14 days",
     open: "Due within 45 days",
     upcoming: "Upcoming",
-    closed: "Closed",
+    archived: "Archived",
     unannounced: "Date not announced",
   }[status];
 }
@@ -138,6 +139,23 @@ function deadlineRows(event) {
   return `<dl class="date-grid">${entries.map(([label, date]) => `
     <div><dt>${label}</dt><dd>${formatDate(date)}</dd></div>
   `).join("")}</dl>`;
+}
+
+function forwardedNote(event) {
+  if (event.archived_cycle) {
+    return `<p class="forwarded-note">
+      <strong>Archived cycle</strong> — every deadline has passed. The venue has been
+      forwarded to its ${escapeHtml(event.archived_cycle.next_edition)} cycle, listed
+      with the open calls.
+    </p>`;
+  }
+  const previous = event.previous_cycle;
+  if (!previous) return "";
+  return `<p class="forwarded-note">
+      <strong>${escapeHtml(previous.edition)} cycle archived</strong> — its call closed
+      ${formatDate(previous.closed)}. Forwarded to the ${escapeHtml(event.edition)} cycle;
+      these dates are projected until its call is published.
+    </p>`;
 }
 
 function card(event) {
@@ -172,6 +190,7 @@ function card(event) {
         </div>
         <span class="countdown">${deadlineLabel(event)}</span>
       </div>
+      ${forwardedNote(event)}
       <ul class="event-facts" aria-label="Event details">
         <li><span aria-hidden="true">◉</span>${escapeHtml(event.event_type)}</li>
         <li><span aria-hidden="true">⌖</span>${escapeHtml(event.location)}</li>
@@ -208,7 +227,13 @@ function render() {
         <p>Broaden a filter or clear them to return to the full index.</p>
         <button class="button secondary" type="button" data-clear>Clear filters</button>
       </div>`;
-  resultSummary.textContent = `Showing ${shown.length.toLocaleString()} of ${state.filtered.length.toLocaleString()} matching opportunities`;
+  const summary = `Showing ${shown.length.toLocaleString()} of ${state.filtered.length.toLocaleString()} matching opportunities`;
+  const archived = state.events.filter((event) => deadlineStatus(event) === "archived").length;
+  // Only worth saying while they are hidden: once the filter is on Archived,
+  // the count above is the archived count.
+  resultSummary.innerHTML = !filters.status && archived
+    ? `${summary} · <button type="button" class="link-button" data-show-archived>${archived.toLocaleString()} archived hidden</button>`
+    : summary;
   loadMore.hidden = shown.length >= state.filtered.length;
   syncUrl(filters);
 }
@@ -219,12 +244,13 @@ function renderStats() {
     acc[status] = (acc[status] || 0) + 1;
     return acc;
   }, {});
-  document.querySelector("#stat-total").textContent = state.events.length.toLocaleString();
+  document.querySelector("#stat-total").textContent = state.venueCount.toLocaleString();
   document.querySelector("#stat-urgent").textContent = (counts.urgent || 0).toLocaleString();
   document.querySelector("#stat-open").textContent = (
     (counts.urgent || 0) + (counts.open || 0) + (counts.upcoming || 0)
   ).toLocaleString();
   document.querySelector("#stat-unannounced").textContent = (counts.unannounced || 0).toLocaleString();
+  document.querySelector("#stat-archived").textContent = (counts.archived || 0).toLocaleString();
 }
 
 function initializeFilters() {
@@ -258,7 +284,8 @@ async function loadData() {
       discoveryResponse.json(),
     ]);
     if (!Array.isArray(payload.events)) throw new Error("Data response has no events array");
-    state.events = payload.events;
+    state.venueCount = payload.events.length;
+    state.events = withArchivedCycles(payload.events);
     state.sourceCheckedAt = payload.source_checked_at;
     state.coverageNotice = payload.coverage_notice;
     state.discoveryState = discoveryState;
@@ -288,6 +315,19 @@ async function loadData() {
           This scan covers the configured public feeds only.</p>
          <ul>${sourceItems}</ul>`
       : "<p>The first automated discovery scan has not run yet.</p>";
+    // Written by the deploy, not committed, so its absence is normal: a
+    // local checkout, a preview, or the first deploy before this shipped.
+    // Non-fatal by design - the source-review date above stands on its own.
+    fetch("./data/build-info.json")
+      .then((response) => (response.ok ? response.json() : null))
+      .then((info) => {
+        if (!info || typeof info.built_at !== "string") return;
+        freshness.insertAdjacentHTML(
+          "beforeend",
+          ` <span aria-hidden="true">\u00b7</span> <strong>Site rebuilt:</strong> ${formatDate(info.built_at.slice(0, 10))}`,
+        );
+      })
+      .catch(() => {});
     results.setAttribute("aria-busy", "false");
     if (!state.events.length) {
       state.phase = "empty";
@@ -335,6 +375,13 @@ loadMore.addEventListener("click", () => {
 results.addEventListener("click", (event) => {
   if (event.target.closest("[data-clear]")) clearFilters.click();
   if (event.target.closest("[data-retry]")) loadData();
+});
+
+resultSummary.addEventListener("click", (fromClick) => {
+  if (!fromClick.target.closest("[data-show-archived]")) return;
+  form.elements.status.value = "archived";
+  state.visible = PAGE_SIZE;
+  render();
 });
 
 function scheduleMidnightRefresh() {

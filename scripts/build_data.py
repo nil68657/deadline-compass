@@ -73,6 +73,18 @@ DEADLINE_FIELDS = {
     "timezone", "precision",
 }
 EVENT_STRING_FIELDS = EVENT_REQUIRED_FIELDS - {"topics", "categories", "deadlines"}
+# Present only on a record whose last cycle was archived (every gate passed)
+# and which now tracks the next cycle: what the archived cycle was, and when
+# its call closed, so the page can say so rather than silently changing year.
+OPTIONAL_EVENT_FIELDS = {"previous_cycle"}
+PREVIOUS_CYCLE_FIELDS = {
+    "edition", "closed", "location", "event_start", "event_end", "abstract",
+    "paper", "notification", "camera_ready", "confidence", "source_url",
+}
+PREVIOUS_CYCLE_DATES = (
+    "closed", "event_start", "event_end", "abstract", "paper",
+    "notification", "camera_ready",
+)
 DEADLINE_STRING_FIELDS = DEADLINE_FIELDS - {"gates"}
 UTC_TIMESTAMP = re.compile(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z")
 
@@ -158,12 +170,34 @@ def validate(events: list[Event]) -> None:
         label_value = event.get("acronym", "<unknown>")
         label = label_value if isinstance(label_value, str) else "<invalid acronym>"
         event_keys = set(event)
-        if not EVENT_REQUIRED_FIELDS <= event_keys or not event_keys <= EVENT_FIELDS:
+        allowed = EVENT_FIELDS | OPTIONAL_EVENT_FIELDS
+        if not EVENT_REQUIRED_FIELDS <= event_keys or not event_keys <= allowed:
             errors.append(
                 f"{label}: event fields must exactly match the public schema "
-                f"(unexpected={sorted(set(event) - EVENT_FIELDS)}, "
-                f"missing={sorted(EVENT_REQUIRED_FIELDS - set(event))})"
+                f"(unexpected={sorted(event_keys - allowed)}, "
+                f"missing={sorted(EVENT_REQUIRED_FIELDS - event_keys)})"
             )
+        if "previous_cycle" in event:
+            previous = event["previous_cycle"]
+            if (
+                not isinstance(previous, dict)
+                or set(previous) != PREVIOUS_CYCLE_FIELDS
+                or not all(isinstance(v, str) for v in previous.values())
+                or not all(previous.get(k) for k in ("edition", "closed", "location", "source_url"))
+                or not all(
+                    not previous.get(k) or re.fullmatch(r"\d{4}-\d{2}-\d{2}", previous[k])
+                    for k in PREVIOUS_CYCLE_DATES
+                )
+                or previous.get("confidence") not in SOURCE_BASIS
+                or not previous.get("source_url", "").startswith("https://")
+            ):
+                errors.append(f"{label}: previous_cycle must describe the archived cycle in full")
+            elif any(
+                gate["date"] <= previous["closed"]
+                for gate in event.get("deadlines", {}).get("gates", [])
+                if isinstance(gate, dict) and isinstance(gate.get("date"), str)
+            ):
+                errors.append(f"{label}: a forwarded cycle's gates must fall after the archived call closed")
             continue
         if any(not isinstance(event[field], str) for field in EVENT_STRING_FIELDS):
             errors.append(f"{label}: all scalar event fields must be strings")
@@ -368,6 +402,7 @@ def render_csv(events: list[Event]) -> str:
         "notification", "camera_ready", "first_deadline", "first_gate",
         "deadline_timezone", "confidence", "source_basis", "source_url",
         "discovery_source", "discovered_at", "last_seen_at",
+        "previous_cycle_edition", "previous_cycle_closed",
     ]
     stream = io.StringIO(newline="")
     writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n")
@@ -393,6 +428,8 @@ def render_csv(events: list[Event]) -> str:
             "discovery_source": discovery.get("source_name", ""),
             "discovered_at": discovery.get("discovered_at", ""),
             "last_seen_at": discovery.get("last_seen_at", ""),
+            "previous_cycle_edition": event.get("previous_cycle", {}).get("edition", ""),
+            "previous_cycle_closed": event.get("previous_cycle", {}).get("closed", ""),
         })
     return stream.getvalue()
 
