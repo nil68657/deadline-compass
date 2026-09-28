@@ -35,20 +35,98 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Refresh public data
+      - name: Set up Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22"
+
+      - name: Discover opportunities
+        id: discovery
+        shell: bash
+        run: |
+          set +e
+          timeout --signal=TERM --kill-after=5s 75s \
+            python3 scripts/discovery.py \
+              --source-timeout 18 \
+              --overall-timeout 60
+          status=$?
+          set -e
+          echo "exit_code=$status" >> "$GITHUB_OUTPUT"
+          if [[ "$status" -ne 0 ]]; then
+            echo "Discovery exited with status $status."
+          fi
+
+      - name: Build public data
         run: python3 scripts/build_data.py
+
+      - name: Verify refreshed data and application
+        run: npm run verify
+
+      - name: Publish discovery summary
+        if: always()
+        run: |
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+
+          state = json.loads(Path("data/discovery-state.json").read_text())
+          summary = state["summary"]
+          print("## Discovery scan")
+          print(f"- Sources: {summary['sources_succeeded']}/{summary['sources_attempted']} succeeded")
+          print(f"- Candidates: {summary['candidates_seen']}")
+          print(f"- Added: {summary['added']}; refreshed: {summary['updated']}")
+          print(f"- Duplicates: {summary['duplicates']}; quarantined: {summary['quarantined']}")
+          for source in state["sources"]:
+              print(
+                  f"- `{source['id']}`: {source['status']} "
+                  f"({source['candidates']} candidates, {source['requests']} requests; "
+                  f"last success: {source['last_success_at'] or 'never'})"
+              )
+          PY
+
+      - name: Enforce discovery result
+        if: always() && steps.discovery.outputs.exit_code != '0'
+        run: |
+          echo "Discovery failed or exceeded its 75-second process limit."
+          exit 1
 
       - name: Commit genuine data changes
         run: |
-          if git diff --quiet -- site/data/events.json site/data/events.csv; then
+          if git diff --quiet -- \
+            data/events-source.json data/discovery-state.json \
+            site/data/events.json site/data/events.csv site/data/discovery-state.json; then
             echo "No source-data changes."
             exit 0
           fi
           git config user.name "deadline-compass[bot]"
           git config user.email "deadline-compass[bot]@users.noreply.github.com"
-          git add -- site/data/events.json site/data/events.csv
+          git add -- \
+            data/events-source.json data/discovery-state.json \
+            site/data/events.json site/data/events.csv site/data/discovery-state.json
+          python3 - <<'PY'
+          import subprocess
+
+          allowed = {
+              "data/events-source.json",
+              "data/discovery-state.json",
+              "site/data/events.json",
+              "site/data/events.csv",
+              "site/data/discovery-state.json",
+          }
+          staged = set(subprocess.check_output(
+              ["git", "diff", "--cached", "--name-only"],
+              text=True,
+          ).splitlines())
+          unexpected = staged - allowed
+          if unexpected:
+              raise SystemExit(f"Unexpected staged paths: {sorted(unexpected)}")
+          PY
+          if git diff --cached --quiet; then
+            echo "No staged source-data changes."
+            exit 0
+          fi
           git diff --cached --check
-          git commit -m "data: refresh Deadline Compass index"
+          git commit -m "data: discover Deadline Compass opportunities [skip ci]"
           git push origin "HEAD:${GITHUB_REF_NAME}"
 
   build:

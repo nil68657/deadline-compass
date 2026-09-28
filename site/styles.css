@@ -309,6 +309,26 @@ select:focus-visible, a:focus-visible, summary:focus-visible {
   font-size: 0.82rem;
 }
 
+.scan-health {
+  margin: 0 0 1rem;
+  padding: 0.9rem 1rem;
+  background: #eef5f3;
+  border: 1px solid #b9d7d2;
+  border-radius: 10px;
+}
+
+.scan-health p,
+.scan-health ul {
+  margin: 0.6rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.scan-health ul {
+  columns: 2;
+  padding-left: 1.2rem;
+}
+
 .filters {
   padding: clamp(1rem, 2.5vw, 2rem);
   background: var(--surface);
@@ -638,6 +658,7 @@ noscript {
   h1 { font-size: clamp(3.25rem, 18vw, 5rem); }
   .hero { padding-top: 4rem; }
   .filter-grid, .results, .source-links { grid-template-columns: 1fr; }
+  .scan-health ul { columns: 1; }
   .results-bar { align-items: flex-start; flex-direction: column; padding: 0.7rem 0; }
   .stats div { padding: 1.2rem; }
   .event-card { padding: 1.1rem; }

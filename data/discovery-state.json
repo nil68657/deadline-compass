@@ -1,0 +1,15 @@
+{
+  "last_scan_at": "",
+  "quarantine": [],
+  "schema_version": 1,
+  "sources": [],
+  "summary": {
+    "added": 0,
+    "candidates_seen": 0,
+    "duplicates": 0,
+    "quarantined": 0,
+    "sources_attempted": 0,
+    "sources_succeeded": 0,
+    "updated": 0
+  }
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "cfpEndDate": "2026-11-01",
+    "cfpUrl": "https://example.org/cloud/cfp",
+    "city": "Berlin",
+    "country": "Germany",
+    "endDate": "2027-01-10",
+    "name": "Open Cloud Community Day",
+    "online": false,
+    "startDate": "2027-01-09",
+    "url": "https://example.org/cloud"
+  }
+]

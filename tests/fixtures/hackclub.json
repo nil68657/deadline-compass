@@ -1,0 +1,14 @@
+[
+  {
+    "city": "Toronto",
+    "country": "Canada",
+    "end": "2027-02-02T20:00:00.000Z",
+    "hybrid": false,
+    "id": "synthetic-hack-2027",
+    "name": "Community Data Hackathon",
+    "start": "2027-02-01T08:00:00.000Z",
+    "state": "Ontario",
+    "virtual": false,
+    "website": "https://example.org/hackathon"
+  }
+]

@@ -12,6 +12,10 @@ The product name and slug are centralized in `site/brand.js`.
 ## Architecture
 
 - `data/events-source.json` is the sanitized, tracked source of truth.
+- `data/discovery-sources.json` registers bounded public discovery sources.
+- `data/discovery-state.json` records scan health without storing rejected payloads.
+- `scripts/discovery.py` fetches, normalizes, deduplicates, quarantines, and
+  incrementally merges discoveries.
 - `scripts/build_data.py` validates that source and produces public outputs.
 - `site/data/events.json` and `site/data/events.csv` are deterministic,
   generated public outputs.
@@ -45,6 +49,14 @@ That command rebuilds the data, verifies the generated files are current,
 checks the centralized brand, runs JavaScript unit tests, and runs Python unit
 tests.
 
+Run a network smoke test without changing tracked data:
+
+```bash
+npm run discover:smoke
+```
+
+The command gives each source 18 seconds and the whole scan 60 seconds.
+
 ## Source and public data schema
 
 Each source event contains:
@@ -54,6 +66,8 @@ Each source event contains:
 - optional indexing, event start, and event end
 - abstract, paper, notification, and camera-ready deadlines
 - confidence, source basis, and the public source URL
+- for discovered records: source name/URL, external ID, discovered-at, and
+  last-seen timestamps
 
 Dates use ISO `YYYY-MM-DD`; an empty string means unpublished. Deadline
 timezones are explicit when known. The generator validates the normalized
@@ -95,21 +109,72 @@ distinguish genuine source changes from build noise.
 The GitHub Actions workflow runs daily at 07:17 UTC, on relevant `main`
 changes, and on manual dispatch. It:
 
-1. rebuilds and validates the public data;
-2. runs all tests and branding checks;
-3. commits only changed generated JSON/CSV on scheduled/manual runs; and
-4. uploads only `site/` to GitHub Pages.
+1. queries every enabled discovery adapter with retries, timeouts, size limits,
+   bounded result counts, an identifying User-Agent, and HTTPS host allowlists;
+2. normalizes and incrementally merges credible future records;
+3. validates/builds the catalog and runs all tests and branding checks;
+4. publishes source health and quarantine counts to the Actions summary;
+5. commits only validated catalog, scan-state, and generated-data changes; and
+6. uploads only `site/` to GitHub Pages.
 
-No secret or third-party API is required. The workflow does not scrape venue
-websites. Many conference pages are dynamic, inconsistent, or disallow broad
-automation; pretending those pages form a reliable canonical feed would make
-the tracker less trustworthy. If validation or the tracked source fails,
-the workflow stops before committing or deploying, so the previous data and
-live site remain intact.
+No secret or third-party API key is required for the default scan. The
+workflow does not scrape individual venue websites.
 
-Future network adapters must be opt-in, document source terms, retain a
-per-source last-known-good snapshot, and merge successful sources without
-deleting records from a failed source.
+Network work is capped at a 3-second connect timeout, a 5-second read timeout,
+an 8-second request timeout, 18 seconds per source, and 60 seconds for the
+scan. The workflow adds a 75-second process limit. Each registry entry also
+sets request and candidate caps. Redirects are checked against the HTTPS
+allowlist before the next request.
+
+### Default discovery sources
+
+- **OpenReview active venues:** official public API. Supplies academic venue
+  names, venue URLs, locations, and event dates when venue chairs publish them.
+  OpenReview's API and site terms apply.
+- **confs.tech conference-data:** MIT-licensed community JSON. Supplies
+  developer conferences, CFP URLs/deadlines, dates, and locations.
+- **developers.events:** MIT-licensed public JSON CFP feed. Supplies industry,
+  community, and open-source event calls.
+- **Hack Club Hackathons:** documented public API. Supplies curated upcoming
+  student hackathons; public use requires attribution to
+  [Hack Club Hackathons](https://hackathons.hackclub.com/).
+
+`data/discovery-sources.json` records the API/documentation URL, license or
+terms basis, attribution, and result cap for each adapter. IEEE and ACM do not
+offer a suitable comprehensive public discovery API, so their official search
+pages remain linked in the site rather than implying automated coverage.
+
+The scanner does not crawl event pages. OpenReview and Hack Club use their
+documented public APIs. The two conference feeds come from MIT-licensed GitHub
+datasets. Hack Club records retain the required attribution in the registry
+and documentation.
+
+### Merge and failure behavior
+
+Canonical HTTPS URL and normalized identity plus event/deadline date drive
+deduplication; title alone never does. Existing manually curated records win
+over feed data. A source outage cannot delete or replace known records.
+Malformed, past-only, low-confidence, duplicate, over-limit, local/private URL,
+and schema-invalid records are rejected or counted in quarantine without
+persisting their raw content.
+
+Partial source failure still merges successful adapters. If every enabled
+source fails, discovery records the failures and exits non-zero without
+changing the catalog. Each failed source retains its prior `last_success_at`.
+The workflow stops before committing or deploying. Explicit scan metadata is
+expected to change daily, while event ordering and generated output remain
+deterministic.
+
+### Adding sources and corrections
+
+1. Add a registry entry with legal/API rationale and a strict result cap.
+2. Add a registered adapter in `scripts/discovery.py`.
+3. Add fixture-based parsing, malicious-input, failure, and idempotency tests.
+4. Run `npm run discover:smoke` before enabling the source.
+
+Manual corrections go directly into `data/events-source.json`. Feed records
+carry `discovery` provenance; manually curated rows do not, so future scans
+will deduplicate against them without overwriting them.
 
 The website links directly to official IEEE, ACM, USENIX, and Linux Foundation
 directories plus public Sessionize, MLH, Devpost, and Meetup discovery pages.
@@ -119,6 +184,7 @@ ingested.
 ## Limitations
 
 - Coverage is curated, not exhaustive.
+- Discovery covers four public sources, not “all of the internet.”
 - Projected dates are planning aids and must be verified.
 - A source review date describes the database review, not continuous
   monitoring.

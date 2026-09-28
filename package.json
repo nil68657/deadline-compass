@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "python3 scripts/build_data.py",
+    "discover": "python3 scripts/discovery.py --source-timeout 18 --overall-timeout 60",
+    "discover:smoke": "python3 scripts/discovery.py --dry-run --max-additions 10 --source-timeout 18 --overall-timeout 60",
     "check:data": "python3 scripts/build_data.py --check",
     "check:brand": "python3 scripts/check_brand.py",
     "lint": "node --check site/app.js && node --check site/brand.js && node --check site/logic.js && python3 -m compileall -q scripts tests",

@@ -1,0 +1,35 @@
+{
+  "active": {
+    "count": 1,
+    "groups": [
+      {
+        "id": "active_venues",
+        "members": [
+          "Example.org/2027/Conference"
+        ]
+      }
+    ]
+  },
+  "group": {
+    "count": 1,
+    "groups": [
+      {
+        "content": {
+          "location": {
+            "value": "Vienna, Austria"
+          },
+          "start_date": {
+            "value": 1808769600000
+          },
+          "title": {
+            "value": "Example Research Conference"
+          },
+          "website": {
+            "value": "https://example.org/research"
+          }
+        },
+        "id": "Example.org/2027/Conference"
+      }
+    ]
+  }
+}

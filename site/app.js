@@ -23,6 +23,7 @@ const state = {
   visible: PAGE_SIZE,
   sourceCheckedAt: "",
   coverageNotice: "",
+  discoveryState: null,
 };
 
 const form = document.querySelector("#filters");
@@ -31,6 +32,7 @@ const resultSummary = document.querySelector("#result-summary");
 const loadMore = document.querySelector("#load-more");
 const clearFilters = document.querySelector("#clear-filters");
 const freshness = document.querySelector("#freshness");
+const scanSummary = document.querySelector("#scan-summary");
 
 document.querySelectorAll("[data-brand]").forEach((node) => {
   node.textContent = BRAND.name;
@@ -66,6 +68,18 @@ function formatDate(iso, options = {}) {
     timeZone: "UTC",
     ...options,
   }).format(new Date(`${iso}T12:00:00Z`));
+}
+
+function formatTimestamp(value) {
+  if (!value) return "Never";
+  const timestamp = new Date(value);
+  if (Number.isNaN(timestamp.getTime())) return "Unavailable";
+  const formatted = new Intl.DateTimeFormat(undefined, {
+    dateStyle: "medium",
+    timeStyle: "short",
+    timeZone: "UTC",
+  }).format(timestamp);
+  return `${formatted} UTC`;
 }
 
 function fillSelect(id, values, label) {
@@ -231,19 +245,49 @@ async function loadData() {
     <p>Plotting the latest opportunities…</p>
   </div>`;
   try {
-    const response = await fetch("./data/events.json");
+    const [response, discoveryResponse] = await Promise.all([
+      fetch("./data/events.json"),
+      fetch("./data/discovery-state.json"),
+    ]);
     if (!response.ok) throw new Error(`Data request failed (${response.status})`);
-    const payload = await response.json();
+    if (!discoveryResponse.ok) {
+      throw new Error(`Discovery state request failed (${discoveryResponse.status})`);
+    }
+    const [payload, discoveryState] = await Promise.all([
+      response.json(),
+      discoveryResponse.json(),
+    ]);
     if (!Array.isArray(payload.events)) throw new Error("Data response has no events array");
     state.events = payload.events;
     state.sourceCheckedAt = payload.source_checked_at;
     state.coverageNotice = payload.coverage_notice;
+    state.discoveryState = discoveryState;
     initializeFilters();
     renderStats();
+    const scanDate = discoveryState.last_scan_at
+      ? formatTimestamp(discoveryState.last_scan_at)
+      : "Not scanned yet";
     freshness.innerHTML = `
       <strong>Source review:</strong> ${formatDate(state.sourceCheckedAt)}
+      <span aria-hidden="true">·</span> <strong>Discovery scan:</strong> ${scanDate}
       <span aria-hidden="true">·</span> ${escapeHtml(state.coverageNotice)}
     `;
+    const sourceItems = (discoveryState.sources || []).map((source) => `
+      <li><strong>${escapeHtml(source.name)}</strong>: ${escapeHtml(source.status)}
+      (${Number(source.candidates || 0).toLocaleString()} candidates,
+      ${Number(source.requests || 0).toLocaleString()} requests;
+      last success ${escapeHtml(formatTimestamp(source.last_success_at))})</li>
+    `).join("");
+    const summary = discoveryState.summary || {};
+    scanSummary.innerHTML = discoveryState.last_scan_at
+      ? `<p>${Number(summary.sources_succeeded || 0)} of
+          ${Number(summary.sources_attempted || 0)} sources succeeded;
+          ${Number(summary.added || 0)} added,
+          ${Number(summary.updated || 0)} refreshed,
+          ${Number(summary.quarantined || 0)} quarantined.
+          This scan covers the configured public feeds only.</p>
+         <ul>${sourceItems}</ul>`
+      : "<p>The first automated discovery scan has not run yet.</p>";
     results.setAttribute("aria-busy", "false");
     if (!state.events.length) {
       state.phase = "empty";

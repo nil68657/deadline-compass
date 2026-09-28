@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "adapter": "openreview",
+      "attribution": "OpenReview public API",
+      "documentation_url": "https://docs.openreview.net/getting-started/objects-in-openreview/groups",
+      "enabled": true,
+      "endpoint": "https://api2.openreview.net/groups?id=active_venues",
+      "id": "openreview-active-venues",
+      "license": "Official public API; OpenReview API and site terms apply",
+      "max_items": 30,
+      "max_requests": 12,
+      "name": "OpenReview active venues"
+    },
+    {
+      "adapter": "developers_events",
+      "attribution": "developers.events community dataset",
+      "documentation_url": "https://github.com/scraly/developers-conferences-agenda",
+      "enabled": true,
+      "endpoint": "https://developers.events/all-cfps.json",
+      "id": "developers-events-cfps",
+      "license": "MIT-licensed upstream conference-data repository",
+      "max_items": 120,
+      "max_requests": 1,
+      "name": "developers.events CFP feed"
+    },
+    {
+      "adapter": "confs_tech",
+      "attribution": "confs.tech community dataset",
+      "documentation_url": "https://github.com/tech-conferences/conference-data",
+      "enabled": true,
+      "endpoint": "https://api.github.com/repos/tech-conferences/conference-data/contents/conferences/{year}",
+      "id": "confs-tech",
+      "license": "MIT-licensed conference-data repository",
+      "max_items": 120,
+      "max_requests": 12,
+      "name": "confs.tech conference data"
+    },
+    {
+      "adapter": "hackclub",
+      "attribution": "Hack Club Hackathons (https://hackathons.hackclub.com)",
+      "documentation_url": "https://hackathons.hackclub.com/data/",
+      "enabled": true,
+      "endpoint": "https://hackathons.hackclub.com/api/events/upcoming",
+      "id": "hackclub-hackathons",
+      "license": "Documented public API; attribution required",
+      "max_items": 60,
+      "max_requests": 1,
+      "name": "Hack Club Hackathons"
+    }
+  ]
+}

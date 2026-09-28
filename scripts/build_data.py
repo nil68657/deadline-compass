@@ -17,6 +17,7 @@ from urllib.parse import parse_qsl, urlparse
 APP_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = APP_ROOT / "site" / "data"
 SOURCE = APP_ROOT / "data" / "events-source.json"
+DISCOVERY_STATE = APP_ROOT / "data" / "discovery-state.json"
 ALLOWED_CONFIDENCE = {"verified", "announced", "projected"}
 EVENT_TYPES = {
     "Academic conference",
@@ -46,18 +47,34 @@ COVERAGE_NOTICE = (
     "eligibility, and submission rules on the linked source."
 )
 Event = dict[str, Any]
-EVENT_FIELDS = {
+EVENT_REQUIRED_FIELDS = {
     "id", "acronym", "name", "organization", "organization_group",
     "event_type", "topics", "categories", "location", "mode", "edition",
     "indexing", "event_start", "event_end", "deadlines",
     "confidence", "source_url", "source_basis",
 }
+EVENT_OPTIONAL_FIELDS = {"discovery"}
+EVENT_FIELDS = EVENT_REQUIRED_FIELDS | EVENT_OPTIONAL_FIELDS
+DISCOVERY_FIELDS = {
+    "source_id", "source_name", "source_url", "external_id",
+    "discovered_at", "last_seen_at",
+}
+STATE_FIELDS = {"schema_version", "last_scan_at", "summary", "sources", "quarantine"}
+STATE_SUMMARY_FIELDS = {
+    "sources_attempted", "sources_succeeded", "candidates_seen",
+    "added", "updated", "duplicates", "quarantined",
+}
+SOURCE_HEALTH_FIELDS = {
+    "id", "name", "status", "last_attempt_at", "last_success_at",
+    "candidates", "requests", "error",
+}
 DEADLINE_FIELDS = {
     "abstract", "paper", "notification", "camera_ready", "gates",
     "timezone", "precision",
 }
-EVENT_STRING_FIELDS = EVENT_FIELDS - {"topics", "categories", "deadlines"}
+EVENT_STRING_FIELDS = EVENT_REQUIRED_FIELDS - {"topics", "categories", "deadlines"}
 DEADLINE_STRING_FIELDS = DEADLINE_FIELDS - {"gates"}
+UTC_TIMESTAMP = re.compile(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z")
 
 
 def deadline_gates(abstract_due: str, paper_due: str) -> list[dict[str, str]]:
@@ -94,6 +111,42 @@ def contains_local_path(value: str) -> bool:
     return False
 
 
+def is_public_https_url(value: str) -> bool:
+    try:
+        parsed = urlparse(value)
+        port = parsed.port
+    except ValueError:
+        return False
+    host = (parsed.hostname or "").rstrip(".").casefold()
+    if (
+        parsed.scheme != "https"
+        or not host
+        or parsed.username is not None
+        or parsed.password is not None
+        or port not in {None, 443}
+        or re.search(r"\s", value)
+        or host == "localhost"
+        or host.endswith((".localhost", ".local"))
+        or "." not in host
+    ):
+        return False
+    try:
+        address = ipaddress.ip_address(host)
+    except ValueError:
+        address = None
+    if address is not None and not address.is_global:
+        return False
+    if address is None and re.fullmatch(r"(?:0x[0-9a-f]+|[0-9.]+)", host, flags=re.I):
+        return False
+    sensitive = {"token", "key", "secret", "password", "auth", "credential"}
+    if any(
+        any(marker in key.casefold() for marker in sensitive)
+        for key, _value in parse_qsl(parsed.query, keep_blank_values=True)
+    ):
+        return False
+    return not any(marker in parsed.fragment.casefold() for marker in sensitive)
+
+
 def validate(events: list[Event]) -> None:
     errors: list[str] = []
     ids: set[str] = set()
@@ -104,11 +157,12 @@ def validate(events: list[Event]) -> None:
             continue
         label_value = event.get("acronym", "<unknown>")
         label = label_value if isinstance(label_value, str) else "<invalid acronym>"
-        if set(event) != EVENT_FIELDS:
+        event_keys = set(event)
+        if not EVENT_REQUIRED_FIELDS <= event_keys or not event_keys <= EVENT_FIELDS:
             errors.append(
                 f"{label}: event fields must exactly match the public schema "
                 f"(unexpected={sorted(set(event) - EVENT_FIELDS)}, "
-                f"missing={sorted(EVENT_FIELDS - set(event))})"
+                f"missing={sorted(EVENT_REQUIRED_FIELDS - set(event))})"
             )
             continue
         if any(not isinstance(event[field], str) for field in EVENT_STRING_FIELDS):
@@ -141,6 +195,32 @@ def validate(events: list[Event]) -> None:
             for gate in deadlines["gates"]
         ):
             errors.append(f"{label}: each deadline gate must contain only date and kind")
+        discovery = event.get("discovery")
+        if discovery is not None:
+            if (
+                not isinstance(discovery, dict)
+                or set(discovery) != DISCOVERY_FIELDS
+                or not all(isinstance(value, str) and value for value in discovery.values())
+            ):
+                errors.append(f"{label}: discovery provenance must match the public schema")
+            else:
+                if not UTC_TIMESTAMP.fullmatch(discovery["discovered_at"]) or not UTC_TIMESTAMP.fullmatch(
+                    discovery["last_seen_at"]
+                ):
+                    errors.append(f"{label}: discovery timestamps must be UTC RFC3339 seconds")
+                if not re.fullmatch(
+                    r"[a-z0-9]+(?:-[a-z0-9]+)*",
+                    discovery["source_id"],
+                ):
+                    errors.append(f"{label}: discovery source ID is invalid")
+                if not is_public_https_url(discovery["source_url"]):
+                    errors.append(f"{label}: discovery source URL must be public HTTPS")
+                if any(
+                    contains_local_path(discovery[field])
+                    or re.search(r"[<>]", discovery[field])
+                    for field in ("source_name", "external_id")
+                ):
+                    errors.append(f"{label}: discovery provenance contains unsafe text")
         if event["id"] in ids:
             errors.append(f"{label}: duplicate id {event['id']}")
         ids.add(event["id"])
@@ -287,6 +367,7 @@ def render_csv(events: list[Event]) -> str:
         "indexing", "event_start", "event_end", "abstract_due", "paper_due",
         "notification", "camera_ready", "first_deadline", "first_gate",
         "deadline_timezone", "confidence", "source_basis", "source_url",
+        "discovery_source", "discovered_at", "last_seen_at",
     ]
     stream = io.StringIO(newline="")
     writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n")
@@ -297,6 +378,7 @@ def render_csv(events: list[Event]) -> str:
             "date": "",
             "kind": "Unannounced",
         }
+        discovery = event.get("discovery", {})
         writer.writerow({
             **{field: event.get(field, "") for field in fields},
             "topics": "|".join(event["topics"]),
@@ -308,6 +390,9 @@ def render_csv(events: list[Event]) -> str:
             "first_deadline": first_gate["date"],
             "first_gate": first_gate["kind"],
             "deadline_timezone": deadlines["timezone"],
+            "discovery_source": discovery.get("source_name", ""),
+            "discovered_at": discovery.get("discovered_at", ""),
+            "last_seen_at": discovery.get("last_seen_at", ""),
         })
     return stream.getvalue()
 
@@ -361,11 +446,119 @@ def load_source() -> tuple[str, list[Event]]:
     return checked, events
 
 
+def load_discovery_state() -> dict[str, Any]:
+    state = json.loads(
+        DISCOVERY_STATE.read_text(encoding="utf-8"),
+        object_pairs_hook=reject_duplicate_keys,
+    )
+    if not isinstance(state, dict) or set(state) != STATE_FIELDS or state.get("schema_version") != 1:
+        raise ValueError("Discovery state must match schema version 1")
+    if not isinstance(state["last_scan_at"], str):
+        raise ValueError("Discovery state last_scan_at must be a string")
+    if state["last_scan_at"] and not UTC_TIMESTAMP.fullmatch(state["last_scan_at"]):
+        raise ValueError("Discovery state last_scan_at must be UTC RFC3339 seconds")
+    if not isinstance(state["summary"], dict) or set(state["summary"]) != STATE_SUMMARY_FIELDS:
+        raise ValueError("Discovery state summary is malformed")
+    if any(
+        not isinstance(value, int) or isinstance(value, bool) or value < 0
+        for value in state["summary"].values()
+    ):
+        raise ValueError("Discovery state summary values must be non-negative integers")
+    if not isinstance(state["sources"], list) or not isinstance(state["quarantine"], list):
+        raise ValueError("Discovery state sources/quarantine must be arrays")
+    source_ids: set[str] = set()
+    for source in state["sources"]:
+        if (
+            not isinstance(source, dict)
+            or set(source) != SOURCE_HEALTH_FIELDS
+            or source["status"] not in {"ok", "failed", "not-run"}
+        ):
+            raise ValueError("Discovery source health entry is malformed")
+        if (
+            not isinstance(source["id"], str)
+            or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", source["id"])
+            or source["id"] in source_ids
+            or not isinstance(source["name"], str)
+            or not source["name"]
+            or not isinstance(source["error"], str)
+            or re.search(r"[<>\x00-\x1f\x7f]", source["name"] + source["error"])
+            or any(
+                not isinstance(source[field], int)
+                or isinstance(source[field], bool)
+                or source[field] < 0
+                for field in ("candidates", "requests")
+            )
+            or source["requests"] > 32
+        ):
+            raise ValueError("Discovery source health values are invalid")
+        source_ids.add(source["id"])
+        for field in ("last_attempt_at", "last_success_at"):
+            value = source[field]
+            if not isinstance(value, str) or (value and not UTC_TIMESTAMP.fullmatch(value)):
+                raise ValueError("Discovery source timestamps are invalid")
+        if source["status"] == "ok" and (
+            source["last_attempt_at"] != state["last_scan_at"]
+            or source["last_success_at"] != state["last_scan_at"]
+            or source["error"]
+        ):
+            raise ValueError("Successful discovery source health is inconsistent")
+        if source["status"] == "failed" and (
+            source["last_attempt_at"] != state["last_scan_at"]
+            or not source["error"]
+        ):
+            raise ValueError("Failed discovery source health is inconsistent")
+        if source["status"] == "not-run" and (
+            source["last_attempt_at"]
+            or source["requests"]
+            or not source["error"]
+        ):
+            raise ValueError("Skipped discovery source health is inconsistent")
+    attempted = sum(source["status"] != "not-run" for source in state["sources"])
+    succeeded = sum(source["status"] == "ok" for source in state["sources"])
+    candidates_seen = sum(
+        source["candidates"]
+        for source in state["sources"]
+        if source["status"] == "ok"
+    )
+    if (
+        state["summary"]["sources_attempted"] != attempted
+        or state["summary"]["sources_succeeded"] != succeeded
+        or state["summary"]["candidates_seen"] != candidates_seen
+    ):
+        raise ValueError("Discovery state summary does not match source health")
+    quarantine_total = 0
+    for item in state["quarantine"]:
+        if (
+            not isinstance(item, dict)
+            or set(item) != {"reason", "count"}
+            or not isinstance(item["reason"], str)
+            or not re.fullmatch(r"[a-z]+(?:-[a-z]+)*", item["reason"])
+            or not isinstance(item["count"], int)
+            or isinstance(item["count"], bool)
+            or item["count"] <= 0
+        ):
+            raise ValueError("Discovery quarantine entry is malformed")
+        quarantine_total += item["count"]
+    if quarantine_total != state["summary"]["quarantined"]:
+        raise ValueError("Discovery quarantine total does not match summary")
+    if not state["last_scan_at"] and (
+        state["sources"]
+        or state["quarantine"]
+        or any(state["summary"].values())
+    ):
+        raise ValueError("Unscanned discovery state must be empty")
+    return state
+
+
 def outputs() -> dict[str, str]:
     checked, events = load_source()
+    discovery_state = load_discovery_state()
     return {
         "events.json": render_json(events, checked),
         "events.csv": render_csv(events),
+        "discovery-state.json": (
+            json.dumps(discovery_state, indent=2, ensure_ascii=False, sort_keys=True) + "\n"
+        ),
     }
 
 

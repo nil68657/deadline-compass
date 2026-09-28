@@ -3,8 +3,10 @@ from __future__ import annotations
 import copy
 import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
@@ -130,6 +132,67 @@ class BuildDataTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Duplicate JSON key"):
             build_data.reject_duplicate_keys([("id", "one"), ("id", "two")])
 
+    def test_discovery_provenance_is_strict_and_public(self) -> None:
+        event = copy.deepcopy(self.event)
+        event["discovery"] = {
+            "source_id": "fixture-source",
+            "source_name": "Fixture source",
+            "source_url": "https://example.org/docs",
+            "external_id": "fixture-1",
+            "discovered_at": "2026-09-19T12:00:00Z",
+            "last_seen_at": "2026-09-19T12:00:00Z",
+        }
+        build_data.validate([event])
+        for field, value in (
+            ("source_url", "https://localhost/docs"),
+            ("external_id", "<script>unsafe</script>"),
+            ("source_id", "Not Valid"),
+        ):
+            with self.subTest(field=field):
+                invalid = copy.deepcopy(event)
+                invalid["discovery"][field] = value
+                with self.assertRaisesRegex(ValueError, "discovery"):
+                    build_data.validate([invalid])
+
+    def test_discovery_state_schema_and_counts_are_strict(self) -> None:
+        state = {
+            "schema_version": 1,
+            "last_scan_at": "2026-09-19T12:00:00Z",
+            "summary": {
+                "sources_attempted": 1,
+                "sources_succeeded": 1,
+                "candidates_seen": 2,
+                "added": 0,
+                "updated": 0,
+                "duplicates": 2,
+                "quarantined": 0,
+            },
+            "sources": [{
+                "id": "fixture-source",
+                "name": "Fixture source",
+                "status": "ok",
+                "last_attempt_at": "2026-09-19T12:00:00Z",
+                "last_success_at": "2026-09-19T12:00:00Z",
+                "candidates": 2,
+                "requests": 1,
+                "error": "",
+            }],
+            "quarantine": [],
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "state.json"
+            path.write_text(json.dumps(state), encoding="utf-8")
+            with patch.object(build_data, "DISCOVERY_STATE", path):
+                self.assertEqual(
+                    build_data.load_discovery_state()["summary"]["candidates_seen"],
+                    2,
+                )
+                invalid = copy.deepcopy(state)
+                invalid["summary"]["candidates_seen"] = 3
+                path.write_text(json.dumps(invalid), encoding="utf-8")
+                with self.assertRaisesRegex(ValueError, "does not match"):
+                    build_data.load_discovery_state()
+
     def test_generated_outputs_are_deterministic_and_valid(self) -> None:
         first = build_data.outputs()
         second = build_data.outputs()
@@ -139,6 +202,7 @@ class BuildDataTests(unittest.TestCase):
         self.assertEqual(payload["event_count"], len(payload["events"]))
         self.assertGreater(payload["event_count"], 100)
         self.assertTrue(first["events.csv"].startswith("id,acronym,name,"))
+        self.assertIn("discovery_source,discovered_at,last_seen_at", first["events.csv"])
 
 
 if __name__ == "__main__":

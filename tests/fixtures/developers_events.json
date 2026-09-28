@@ -1,0 +1,13 @@
+[
+  {
+    "conf": {
+      "date": [1798761600000, 1798848000000],
+      "hyperlink": "https://example.org/devconf",
+      "location": "Paris, France",
+      "name": "Open Data Summit",
+      "status": "open"
+    },
+    "link": "https://example.org/devconf/cfp",
+    "untilDate": 1796083200000
+  }
+]
