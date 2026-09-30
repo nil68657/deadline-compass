@@ -274,7 +274,11 @@ class MergeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         payload = json.loads((ROOT / "data" / "events-source.json").read_text(encoding="utf-8"))
-        cls.manual = copy.deepcopy(payload["events"][0])
+        # A hand-curated record: the daily scan can put a discovered one first,
+        # and merging refreshes a discovered record's last_seen_at.
+        cls.manual = copy.deepcopy(
+            next(event for event in payload["events"] if "discovery" not in event)
+        )
 
     def candidate(self, **changes) -> discovery.Candidate:
         values = {
