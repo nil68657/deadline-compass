@@ -8613,12 +8613,12 @@
         "camera_ready": "",
         "gates": [
           {
-            "date": "2026-09-29",
+            "date": "2026-10-22",
             "kind": "Paper"
           }
         ],
-        "notification": "2026-11-13",
-        "paper": "2026-09-29",
+        "notification": "2026-12-04",
+        "paper": "2026-10-22",
         "precision": "date",
         "timezone": "AoE"
       },
@@ -9559,12 +9559,12 @@
         "camera_ready": "",
         "gates": [
           {
-            "date": "2026-09-29",
+            "date": "2026-10-22",
             "kind": "Paper"
           }
         ],
-        "notification": "2026-11-13",
-        "paper": "2026-09-29",
+        "notification": "2026-12-04",
+        "paper": "2026-10-22",
         "precision": "date",
         "timezone": "AoE"
       },
@@ -10300,12 +10300,12 @@
         "camera_ready": "",
         "gates": [
           {
-            "date": "2026-09-29",
+            "date": "2026-10-22",
             "kind": "Paper"
           }
         ],
-        "notification": "2026-11-13",
-        "paper": "2026-09-29",
+        "notification": "2026-12-04",
+        "paper": "2026-10-22",
         "precision": "date",
         "timezone": "AoE"
       },
@@ -10458,15 +10458,15 @@
       "confidence": "verified",
       "deadlines": {
         "abstract": "",
-        "camera_ready": "2026-11-27",
+        "camera_ready": "",
         "gates": [
           {
-            "date": "2026-09-29",
+            "date": "2026-10-22",
             "kind": "Paper"
           }
         ],
-        "notification": "2026-11-13",
-        "paper": "2026-09-29",
+        "notification": "2026-12-04",
+        "paper": "2026-10-22",
         "precision": "date",
         "timezone": "AoE"
       },
@@ -10651,15 +10651,15 @@
       "confidence": "verified",
       "deadlines": {
         "abstract": "",
-        "camera_ready": "2026-11-27",
+        "camera_ready": "",
         "gates": [
           {
-            "date": "2026-09-29",
+            "date": "2026-10-22",
             "kind": "Paper"
           }
         ],
-        "notification": "2026-11-13",
-        "paper": "2026-09-29",
+        "notification": "2026-12-04",
+        "paper": "2026-10-22",
         "precision": "date",
         "timezone": "AoE"
       },
