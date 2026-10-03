@@ -270,30 +270,34 @@ class HttpSafetyTests(unittest.TestCase):
         self.assertLess(time.monotonic() - started, 0.15)
 
 
+def manual_fixture() -> dict:
+    payload = json.loads((ROOT / "data" / "events-source.json").read_text(encoding="utf-8"))
+    # A fixed hand-curated record. The live file changes daily (the scan adds
+    # records, venues move cycle), so it only lends the schema shape here.
+    template = next(event for event in payload["events"] if "discovery" not in event)
+    manual = copy.deepcopy(template)
+    manual.pop("previous_cycle", None)
+    manual.update({
+        "id": "manual-fixture-2027",
+        "acronym": "MFX",
+        "name": "Manual Fixture Conference",
+        "edition": "2027",
+        "source_url": "https://example.org/manual-fixture",
+        "event_start": "2027-03-01",
+        "event_end": "2027-03-03",
+    })
+    manual["deadlines"] = {
+        **manual["deadlines"],
+        "abstract": "", "paper": "2026-12-15", "notification": "", "camera_ready": "",
+        "gates": [{"date": "2026-12-15", "kind": "Paper"}],
+    }
+    return manual
+
+
 class MergeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        payload = json.loads((ROOT / "data" / "events-source.json").read_text(encoding="utf-8"))
-        # A fixed hand-curated record. The live file changes daily (the scan adds
-        # records, venues move cycle), so it only lends the schema shape here.
-        template = next(event for event in payload["events"] if "discovery" not in event)
-        manual = copy.deepcopy(template)
-        manual.pop("previous_cycle", None)
-        manual.update({
-            "id": "manual-fixture-2027",
-            "acronym": "MFX",
-            "name": "Manual Fixture Conference",
-            "edition": "2027",
-            "source_url": "https://example.org/manual-fixture",
-            "event_start": "2027-03-01",
-            "event_end": "2027-03-03",
-        })
-        manual["deadlines"] = {
-            **manual["deadlines"],
-            "abstract": "", "paper": "2026-12-15", "notification": "", "camera_ready": "",
-            "gates": [{"date": "2026-12-15", "kind": "Paper"}],
-        }
-        cls.manual = manual
+        cls.manual = manual_fixture()
 
     def candidate(self, **changes) -> discovery.Candidate:
         values = {
@@ -422,7 +426,7 @@ class PipelineTests(unittest.TestCase):
         source_payload = json.loads(
             (ROOT / "data" / "events-source.json").read_text(encoding="utf-8")
         )
-        source_payload["events"] = source_payload["events"][:1]
+        source_payload["events"] = [manual_fixture()]
         source_payload["event_count"] = 1
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
