@@ -1,6 +1,6 @@
 {
   "coverage_notice": "Curated index, not exhaustive coverage. Always confirm dates, times, eligibility, and submission rules on the linked source.",
-  "event_count": 489,
+  "event_count": 508,
   "events": [
     {
       "acronym": "7x24 Spring",
@@ -1338,6 +1338,52 @@
       ]
     },
     {
+      "acronym": "All",
+      "categories": [
+        "AI & machine learning",
+        "Security & privacy"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-10-10",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-10-10",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "6aad7efe68f20b33",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-22",
+      "event_start": "2026-10-22",
+      "event_type": "Industry conference",
+      "id": "discovered-all-2026-63cf7b39b0",
+      "indexing": "",
+      "location": "Online",
+      "mode": "Online",
+      "name": "All Day AI",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://www.alldayai.com/",
+      "topics": [
+        "Security"
+      ]
+    },
+    {
       "acronym": "All Things Open",
       "categories": [
         "Open source & community"
@@ -1404,6 +1450,51 @@
       "source_url": "https://www.amd.com/en/corporate/events/advancing-ai.html",
       "topics": [
         "AI Infrastructure"
+      ]
+    },
+    {
+      "acronym": "AMTSO",
+      "categories": [
+        "Security & privacy"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-03-31",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-03-31",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "16f926a8cde56ae1",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-21",
+      "event_start": "2026-10-20",
+      "event_type": "Industry conference",
+      "id": "discovered-amtso-2026-64e1e9c2b1",
+      "indexing": "",
+      "location": "Brussels, Belgium",
+      "mode": "In person",
+      "name": "AMTSO Cyber Research Conference",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://sessionize.com/amtso-cyber-research-conference-2026",
+      "topics": [
+        "Security"
       ]
     },
     {
@@ -1832,6 +1923,46 @@
       ]
     },
     {
+      "acronym": "Banana",
+      "categories": [
+        "Open source & community"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "pvLI2J",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "hackclub-hackathons",
+        "source_name": "Hack Club Hackathons",
+        "source_url": "https://hackathons.hackclub.com/data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-12",
+      "event_start": "2026-10-09",
+      "event_type": "Hackathon",
+      "id": "discovered-banana-2026-1988f66a78",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "Online",
+      "name": "Banana Hacks",
+      "organization": "Hack Club community",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://www.bananahacks.tech/",
+      "topics": [
+        "Student hackathons"
+      ]
+    },
+    {
       "acronym": "BDA",
       "categories": [
         "Data & databases"
@@ -2101,6 +2232,46 @@
       "topics": [
         "Big data",
         "data engineering"
+      ]
+    },
+    {
+      "acronym": "Blank",
+      "categories": [
+        "Open source & community"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "0wkIoE",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "hackclub-hackathons",
+        "source_name": "Hack Club Hackathons",
+        "source_url": "https://hackathons.hackclub.com/data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-17",
+      "event_start": "2026-10-17",
+      "event_type": "Hackathon",
+      "id": "discovered-blank-2026-265681723d",
+      "indexing": "",
+      "location": "Cambridge, Massachusetts, United States",
+      "mode": "In person",
+      "name": "Blank Page",
+      "organization": "Hack Club community",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://blankpagehacks.com/",
+      "topics": [
+        "Student hackathons"
       ]
     },
     {
@@ -2418,6 +2589,46 @@
       "source_url": "https://caise26.polimi.it/",
       "topics": [
         "Information Systems"
+      ]
+    },
+    {
+      "acronym": "Capitol",
+      "categories": [
+        "Open source & community"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "0xoIdo",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "hackclub-hackathons",
+        "source_name": "Hack Club Hackathons",
+        "source_url": "https://hackathons.hackclub.com/data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-09",
+      "event_start": "2026-09-01",
+      "event_type": "Hackathon",
+      "id": "discovered-capitol-2026-65bc17286d",
+      "indexing": "",
+      "location": "Washington, District of Columbia, United States",
+      "mode": "In person",
+      "name": "Capitol",
+      "organization": "Hack Club community",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://capitol.hackclub.com/",
+      "topics": [
+        "Student hackathons"
       ]
     },
     {
@@ -3039,6 +3250,51 @@
       "topics": [
         "Data Mining",
         "IR"
+      ]
+    },
+    {
+      "acronym": "CityJS",
+      "categories": [
+        "Programming languages"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-06-30",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-06-30",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "f39e5eb9d37cc943",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-23",
+      "event_start": "2026-10-21",
+      "event_type": "Industry conference",
+      "id": "discovered-cityjs-2026-ebb676c8f6",
+      "indexing": "",
+      "location": "Athens, Greece",
+      "mode": "In person",
+      "name": "CityJS Conference Athens",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSejZUdKqdZo0fZtcqDEWOqkhTGgsnXx5KJOo5flW2E-Ej2a2A/viewform",
+      "topics": [
+        "Javascript"
       ]
     },
     {
@@ -6309,6 +6565,46 @@
       ]
     },
     {
+      "acronym": "Dublin",
+      "categories": [
+        "Open source & community"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "0VqI9K",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "hackclub-hackathons",
+        "source_name": "Hack Club Hackathons",
+        "source_url": "https://hackathons.hackclub.com/data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-03",
+      "event_start": "2026-10-03",
+      "event_type": "Hackathon",
+      "id": "discovered-dublin-2026-5ff5258f2a",
+      "indexing": "",
+      "location": "San Ramon, California, United States",
+      "mode": "In person",
+      "name": "Dublin hacx",
+      "organization": "Hack Club community",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://www.dublinhacx.com/",
+      "topics": [
+        "Student hackathons"
+      ]
+    },
+    {
       "acronym": "DuckCon",
       "categories": [
         "Data & databases"
@@ -8382,6 +8678,46 @@
       ]
     },
     {
+      "acronym": "hackPHS",
+      "categories": [
+        "Open source & community"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "0qnIzD",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "hackclub-hackathons",
+        "source_name": "Hack Club Hackathons",
+        "source_url": "https://hackathons.hackclub.com/data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-11",
+      "event_start": "2026-10-10",
+      "event_type": "Hackathon",
+      "id": "discovered-hackphs-2026-15b02d4a9d",
+      "indexing": "",
+      "location": "Princeton, New Jersey, United States",
+      "mode": "In person",
+      "name": "hackPHS",
+      "organization": "Hack Club community",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://hackphs.tech/",
+      "topics": [
+        "Student hackathons"
+      ]
+    },
+    {
       "acronym": "HCII",
       "categories": [
         "Security & privacy",
@@ -9015,6 +9351,46 @@
       "topics": [
         "PostgreSQL",
         "India"
+      ]
+    },
+    {
+      "acronym": "HyphenHacks",
+      "categories": [
+        "Open source & community"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "rD1Idg",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "hackclub-hackathons",
+        "source_name": "Hack Club Hackathons",
+        "source_url": "https://hackathons.hackclub.com/data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-10",
+      "event_start": "2026-10-10",
+      "event_type": "Hackathon",
+      "id": "discovered-hyphenhacks-2026-9270845911",
+      "indexing": "",
+      "location": "San Francisco, California, United States",
+      "mode": "In person",
+      "name": "Hyphen-Hacks",
+      "organization": "Hack Club community",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://www.hyphen-hacks.com/",
+      "topics": [
+        "Student hackathons"
       ]
     },
     {
@@ -11896,6 +12272,86 @@
       ]
     },
     {
+      "acronym": "JavaScript",
+      "categories": [
+        "Programming languages"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "edd2493e060cc393",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-16",
+      "event_start": "2026-10-12",
+      "event_type": "Industry conference",
+      "id": "discovered-javascript-2026-05c8a8b452",
+      "indexing": "",
+      "location": "Berlin, Germany",
+      "mode": "Online",
+      "name": "JavaScript & Angular Days",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://javascript-days.de/berlin",
+      "topics": [
+        "Javascript"
+      ]
+    },
+    {
+      "acronym": "Jax",
+      "categories": [
+        "Programming languages"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "daee63acbc9d38d4",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-09",
+      "event_start": "2026-10-05",
+      "event_type": "Industry conference",
+      "id": "discovered-jax-2026-b4d0504fe7",
+      "indexing": "",
+      "location": "London, U.K.",
+      "mode": "Online",
+      "name": "Jax London",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://jaxlondon.com/",
+      "topics": [
+        "Javascript"
+      ]
+    },
+    {
       "acronym": "JCON Europe",
       "categories": [
         "Systems & cloud",
@@ -12578,6 +13034,46 @@
       ]
     },
     {
+      "acronym": "MathHacks",
+      "categories": [
+        "Open source & community"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "01xIeo",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "hackclub-hackathons",
+        "source_name": "Hack Club Hackathons",
+        "source_url": "https://hackathons.hackclub.com/data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-18",
+      "event_start": "2026-10-17",
+      "event_type": "Hackathon",
+      "id": "discovered-mathhacks-2026-a701d68906",
+      "indexing": "",
+      "location": "Toronto, Ontario, Canada",
+      "mode": "In person",
+      "name": "MathHacks 2.0",
+      "organization": "Hack Club community",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://mathhacks.ca/",
+      "topics": [
+        "Student hackathons"
+      ]
+    },
+    {
       "acronym": "MDM",
       "categories": [
         "Data & databases"
@@ -12849,6 +13345,46 @@
       "topics": [
         "ML systems",
         "MLOps"
+      ]
+    },
+    {
+      "acronym": "Minds",
+      "categories": [
+        "AI & machine learning"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "massrobotics.org/MiM/2026/Summit",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "openreview-active-venues",
+        "source_name": "OpenReview active venues",
+        "source_url": "https://docs.openreview.net/getting-started/objects-in-openreview/groups"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-30",
+      "event_start": "2026-10-30",
+      "event_type": "Academic conference",
+      "id": "discovered-minds-2026-1fd0bc682b",
+      "indexing": "",
+      "location": "Cambridge, MA",
+      "mode": "In person",
+      "name": "Minds in Motion: Deep dive into physical AI 2026",
+      "organization": "OpenReview venue chairs",
+      "organization_group": "OpenReview",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://imaginationinaction.co/2610mindsinmotion/main",
+      "topics": [
+        "Peer-reviewed research"
       ]
     },
     {
@@ -17942,6 +18478,51 @@
       ]
     },
     {
+      "acronym": "swampUP",
+      "categories": [
+        "Security & privacy"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-05-18",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-05-18",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "d76f9572902eefcd",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-22",
+      "event_start": "2026-10-20",
+      "event_type": "Industry conference",
+      "id": "discovered-swampup-2026-9835215de8",
+      "indexing": "",
+      "location": "Barcelona, Spain",
+      "mode": "In person",
+      "name": "swampUP Europe",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://sessionize.com/swampup-europe-2026",
+      "topics": [
+        "Security"
+      ]
+    },
+    {
       "acronym": "Swiss PGDay",
       "categories": [
         "Data & databases",
@@ -18128,6 +18709,127 @@
       "source_url": "https://conf.researchr.org/home/TechDebt-2027",
       "topics": [
         "Software engineering"
+      ]
+    },
+    {
+      "acronym": "TechEx",
+      "categories": [
+        "Security & privacy"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "57f8ffedf67c584a",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-20",
+      "event_start": "2026-10-19",
+      "event_type": "Industry conference",
+      "id": "discovered-techex-2026-65efe75bb8",
+      "indexing": "",
+      "location": "Amsterdam, Netherlands",
+      "mode": "In person",
+      "name": "TechEx Europe",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://techexevent.com/europe",
+      "topics": [
+        "Security"
+      ]
+    },
+    {
+      "acronym": "Tenth",
+      "categories": [
+        "AI & machine learning",
+        "Systems & cloud"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "MLSys.org/2027/Conference",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "openreview-active-venues",
+        "source_name": "OpenReview active venues",
+        "source_url": "https://docs.openreview.net/getting-started/objects-in-openreview/groups"
+      },
+      "edition": "2027",
+      "event_end": "2027-06-20",
+      "event_start": "2027-06-20",
+      "event_type": "Academic conference",
+      "id": "discovered-tenth-2027-9fbc5f4e13",
+      "indexing": "",
+      "location": "Bellevue, WA",
+      "mode": "In person",
+      "name": "Tenth Annual Conference on Machine Learning and Systems",
+      "organization": "OpenReview venue chairs",
+      "organization_group": "OpenReview",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://mlsys.org/",
+      "topics": [
+        "Peer-reviewed research"
+      ]
+    },
+    {
+      "acronym": "The",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "wsl.iiitb.ac.in/WebSciX/2026/Conference",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "openreview-active-venues",
+        "source_name": "OpenReview active venues",
+        "source_url": "https://docs.openreview.net/getting-started/objects-in-openreview/groups"
+      },
+      "edition": "2026",
+      "event_end": "2026-11-25",
+      "event_start": "2026-11-25",
+      "event_type": "Academic conference",
+      "id": "discovered-the-2026-e4573dc27d",
+      "indexing": "",
+      "location": "IIITB, Bangalore, India",
+      "mode": "In person",
+      "name": "The Asia-Pacific Satellite Event of ACM WebSci - WebSciX 2026",
+      "organization": "OpenReview venue chairs",
+      "organization_group": "OpenReview",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://wsl-iiitb.github.io/WebSciX-2026",
+      "topics": [
+        "Peer-reviewed research"
       ]
     },
     {
@@ -18644,6 +19346,46 @@
       ]
     },
     {
+      "acronym": "VNU",
+      "categories": [
+        "Open source & community"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "rWBI9d",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "hackclub-hackathons",
+        "source_name": "Hack Club Hackathons",
+        "source_url": "https://hackathons.hackclub.com/data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-05",
+      "event_start": "2026-10-04",
+      "event_type": "Hackathon",
+      "id": "discovered-vnu-2026-cef216592d",
+      "indexing": "",
+      "location": "București, București, Romania",
+      "mode": "In person",
+      "name": "VNU '26 - Connect The Dots",
+      "organization": "Hack Club community",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://vnuhack.com/",
+      "topics": [
+        "Student hackathons"
+      ]
+    },
+    {
       "acronym": "Voxxed CERN",
       "categories": [
         "Systems & cloud"
@@ -19113,8 +19855,53 @@
         "Power BI",
         "data platform"
       ]
+    },
+    {
+      "acronym": "XOps",
+      "categories": [
+        "Security & privacy"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-08-31",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-08-31",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-03T19:09:46Z",
+        "external_id": "b1c915914acd2471",
+        "last_seen_at": "2026-10-03T19:09:46Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2026",
+      "event_end": "2026-10-17",
+      "event_start": "2026-10-15",
+      "event_type": "Industry conference",
+      "id": "discovered-xops-2026-43b3a62075",
+      "indexing": "",
+      "location": "Dubai, United Arab Emirates",
+      "mode": "In person",
+      "name": "X-Ops Conference Dubai",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://sessionize.com/x-ops-conference-2026",
+      "topics": [
+        "Security"
+      ]
     }
   ],
   "schema_version": 2,
-  "source_checked_at": "2026-10-02"
+  "source_checked_at": "2026-09-29"
 }
