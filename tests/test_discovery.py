@@ -274,11 +274,26 @@ class MergeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         payload = json.loads((ROOT / "data" / "events-source.json").read_text(encoding="utf-8"))
-        # A hand-curated record: the daily scan can put a discovered one first,
-        # and merging refreshes a discovered record's last_seen_at.
-        cls.manual = copy.deepcopy(
-            next(event for event in payload["events"] if "discovery" not in event)
-        )
+        # A fixed hand-curated record. The live file changes daily (the scan adds
+        # records, venues move cycle), so it only lends the schema shape here.
+        template = next(event for event in payload["events"] if "discovery" not in event)
+        manual = copy.deepcopy(template)
+        manual.pop("previous_cycle", None)
+        manual.update({
+            "id": "manual-fixture-2027",
+            "acronym": "MFX",
+            "name": "Manual Fixture Conference",
+            "edition": "2027",
+            "source_url": "https://example.org/manual-fixture",
+            "event_start": "2027-03-01",
+            "event_end": "2027-03-03",
+        })
+        manual["deadlines"] = {
+            **manual["deadlines"],
+            "abstract": "", "paper": "2026-12-15", "notification": "", "camera_ready": "",
+            "gates": [{"date": "2026-12-15", "kind": "Paper"}],
+        }
+        cls.manual = manual
 
     def candidate(self, **changes) -> discovery.Candidate:
         values = {
