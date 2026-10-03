@@ -609,5 +609,74 @@ class PipelineTests(unittest.TestCase):
         self.assertIn("exceeded", state["sources"][0]["error"])
 
 
+class AcronymTests(unittest.TestCase):
+    def test_derived_acronyms(self) -> None:
+        cases = {
+            "The Asia-Pacific Satellite Event of ACM WebSci - WebSciX 2026": "WebSciX",
+            "Tenth Annual Conference on Machine Learning and Systems": "MLS",
+            "Workshop on Data Systems (DSW)": "DSW",
+            "CityJS Conference Athens": "CityJS",
+            "AMTSO Cyber Research Conference": "AMTSO",
+            "All Day AI": "DayAI",
+            "Blank Page": "BlankPage",
+            "Jax London": "JaxLondon",
+            "JavaScript & Angular Days": "JAD",
+            "Minds in Motion: Deep dive into physical AI 2026": "MindsMotion",
+            "Capitol": "Capitol",
+        }
+        for name, expected in cases.items():
+            with self.subTest(name=name):
+                self.assertEqual(discovery.derive_acronym(name), expected)
+
+    def test_acronym_skips_leading_stopwords(self) -> None:
+        for name in ("The Asia-Pacific Satellite Event of ACM WebSci - WebSciX 2026", "All Day AI", "Tenth Annual Conference on Machine Learning and Systems"):
+            self.assertNotIn(discovery.derive_acronym(name), {"The", "All", "Tenth", "Annual"})
+
+
+class CuratedDuplicateTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.curated = manual_fixture()
+        self.curated.update({
+            "id": "mlsys-2027", "acronym": "MLSys",
+            "name": "Conference on Machine Learning and Systems",
+            "edition": "2027", "event_start": "", "event_end": "",
+        })
+
+    def candidate(self, **changes) -> discovery.Candidate:
+        values = {
+            "external_id": "mlsys-hackclub", "title": "Tenth Annual Conference on Machine Learning and Systems",
+            "event_type": "Industry conference", "organizer": "See venue source",
+            "venue_url": "https://mlsys.org/", "source_url": source("confs_tech")["documentation_url"],
+            "event_start": "2027-06-20", "event_end": "2027-06-20",
+        }
+        values.update(changes)
+        return discovery.Candidate(**values)
+
+    def merge(self, candidate: discovery.Candidate, curated: dict):
+        return discovery.merge_candidates(
+            [curated], [(source("confs_tech"), [candidate])], scan_at=SCAN_AT, today=TODAY, max_additions=10
+        )
+
+    def test_name_containing_curated_name_is_duplicate(self) -> None:
+        merged, stats, _ = self.merge(self.candidate(), self.curated)
+        self.assertEqual((stats["added"], stats["duplicates"]), (0, 1))
+        self.assertEqual(len(merged), 1)
+
+    def test_name_containing_curated_acronym_is_duplicate(self) -> None:
+        _, stats, _ = self.merge(self.candidate(title="MLSys 2027 Main Track", venue_url="https://example.org/x"), self.curated)
+        self.assertEqual(stats["added"], 0)
+
+    def test_overlapping_event_ranges_required(self) -> None:
+        curated = {**self.curated, "event_start": "2027-05-17", "event_end": "2027-05-20"}
+        _, stats, _ = self.merge(self.candidate(), curated)
+        self.assertEqual(stats["added"], 1)
+        _, stats, _ = self.merge(self.candidate(event_start="2027-05-19", event_end="2027-05-22"), curated)
+        self.assertEqual(stats["added"], 0)
+
+    def test_other_edition_is_not_duplicate(self) -> None:
+        _, stats, _ = self.merge(self.candidate(event_start="2026-12-01", event_end="2026-12-02"), self.curated)
+        self.assertEqual(stats["added"], 1)
+
+
 if __name__ == "__main__":
     unittest.main()

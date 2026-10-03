@@ -675,6 +675,51 @@ def normalized_identity(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", name.casefold())
 
 
+ACRONYM_STOPWORDS = {
+    "a", "an", "the", "all", "and", "of", "on", "in", "into", "for", "to", "at", "by", "with", "&",
+    "annual", "international", "first", "second", "third", "fourth", "fifth", "sixth",
+    "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth",
+    "conference", "summit", "symposium", "workshop", "event", "meetup",
+}
+# Camel-case words that are product names, not event short names.
+CAMEL_WORDS = {"javascript", "typescript", "github", "gitlab", "postgresql", "devops", "webassembly", "youtube"}
+
+
+def derive_acronym(name: str) -> str:
+    """Pick a short, deterministic badge for a discovered event title."""
+    parenthesized = re.search(r"\(([A-Za-z][A-Za-z0-9+]{1,17})\)", name)
+    if parenthesized:
+        return parenthesized.group(1)
+    tokens = [re.sub(r"[^A-Za-z0-9+-]", "", token) for token in name.split()]
+    tokens = [token for token in tokens if re.search(r"[A-Za-z]", token)]
+    # A mixed-case or letter+digit token (WebSciX, MLSys, CityJS, swampUP) is
+    # almost always the venue's own short name.
+    mixed = [
+        token.replace("-", "")
+        for token in tokens
+        if token.casefold() not in CAMEL_WORDS
+        and any(re.search(r"[a-z].*[A-Z]|[A-Za-z]\d|\d[A-Za-z]", part) for part in token.split("-"))
+    ]
+    if mixed:
+        return max(mixed, key=len)[:18]
+    for token in tokens:
+        if re.fullmatch(r"[A-Z][A-Z0-9+]{2,}", token.replace("-", "")):
+            return token.replace("-", "")[:18]
+    main = re.split(r"\s*(?::|\s[-\u2013\u2014|]\s)\s*", name, maxsplit=1)[0] or name
+    words = [
+        re.sub(r"[^A-Za-z0-9+]", "", token)
+        for token in main.split()
+        if token.casefold().strip(".,'") not in ACRONYM_STOPWORDS
+    ]
+    words = [word for word in words if re.search(r"[A-Za-z]", word)]
+    if not words:
+        return "Event"
+    joined = "".join(word[:1].upper() + word[1:] for word in words)
+    if len(joined) <= 12:
+        return joined
+    return "".join(word[0].upper() for word in words)[:18]
+
+
 def candidate_to_event(candidate: Candidate, *, source: dict[str, Any], scan_at: str, today: dt.date) -> tuple[dict[str, Any] | None, str | None]:
     name, venue_url = clean_text(candidate.title), canonical_url(candidate.venue_url)
     deadline, start = iso_date(candidate.deadline), iso_date(candidate.event_start)
@@ -689,7 +734,7 @@ def candidate_to_event(candidate: Candidate, *, source: dict[str, Any], scan_at:
         return None, "low-confidence"
     edition = (start or deadline)[:4]
     identity = hashlib.sha256(f"{venue_url}|{edition}".encode()).hexdigest()[:10]
-    acronym = re.sub(r"[^A-Za-z0-9+]", "", name.split()[0])[:18] or "Event"
+    acronym = derive_acronym(name)
     external_id = clean_text(candidate.external_id, 200) or hashlib.sha256(
         f"{name}|{venue_url}|{start}|{deadline}".encode()
     ).hexdigest()[:16]
@@ -733,6 +778,34 @@ def event_dates(event: dict[str, Any]) -> set[str]:
     return {value for value in values if isinstance(value, str) and value}
 
 
+def event_range(event: dict[str, Any]) -> tuple[str, str] | None:
+    start = event.get("event_start", "") or ""
+    end = event.get("event_end", "") or start
+    return (start, end) if start else None
+
+
+def dates_overlap(candidate: dict[str, Any], curated: dict[str, Any]) -> bool:
+    """Event ranges intersect; when either side has no event dates, the same edition counts."""
+    left, right = event_range(candidate), event_range(curated)
+    if left and right:
+        return left[0] <= right[1] and right[0] <= left[1]
+    return bool(candidate.get("edition")) and candidate.get("edition") == curated.get("edition")
+
+
+def curated_match(event: dict[str, Any], curated: list[dict[str, Any]]) -> dict[str, Any] | None:
+    """Find a curated record whose full name or acronym appears in the candidate's name."""
+    identity = normalized_identity(event["name"])
+    words = set(re.findall(r"[A-Za-z0-9+]+", event["name"]))
+    for record in curated:
+        record_identity = normalized_identity(record.get("name", ""))
+        acronym = record.get("acronym", "")
+        named = len(record_identity) >= 12 and record_identity in identity
+        abbreviated = len(acronym) >= 3 and acronym in words
+        if (named or abbreviated) and dates_overlap(event, record):
+            return record
+    return None
+
+
 def merge_candidates(events: list[dict[str, Any]], batches: list[tuple[dict[str, Any], list[Candidate]]], *, scan_at: str, today: dt.date, max_additions: int, max_per_source: int = 8) -> tuple[list[dict[str, Any]], dict[str, int], dict[str, int]]:
     merged = copy.deepcopy(events)
     url_index: dict[tuple[str, str], dict[str, Any]] = {}
@@ -756,6 +829,7 @@ def merge_candidates(events: list[dict[str, Any]], batches: list[tuple[dict[str,
 
     for event in merged:
         add_to_indexes(event)
+    curated = [event for event in merged if "discovery" not in event]
     stats = {"added": 0, "updated": 0, "duplicates": 0, "quarantined": 0}
     reasons: dict[str, int] = {}
     per_source: dict[str, int] = {}
@@ -795,6 +869,8 @@ def merge_candidates(events: list[dict[str, Any]], batches: list[tuple[dict[str,
                     ),
                     None,
                 )
+            if existing is None:
+                existing = curated_match(event, curated)
             if existing is not None:
                 stats["duplicates"] += 1
                 existing_discovery = existing.get("discovery")

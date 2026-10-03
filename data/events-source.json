@@ -1,6 +1,6 @@
 {
   "coverage_notice": "Curated index, not exhaustive coverage. Always confirm dates, times, eligibility, and submission rules on the linked source.",
-  "event_count": 493,
+  "event_count": 492,
   "events": [
     {
       "acronym": "AMTSO",
@@ -138,7 +138,7 @@
       ]
     },
     {
-      "acronym": "XOps",
+      "acronym": "XOpsDubai",
       "categories": [
         "Security & privacy"
       ],
@@ -169,7 +169,7 @@
       "event_end": "2026-10-17",
       "event_start": "2026-10-15",
       "event_type": "Industry conference",
-      "id": "discovered-xops-2026-43b3a62075",
+      "id": "discovered-xopsdubai-2026-43b3a62075",
       "indexing": "",
       "location": "Dubai, United Arab Emirates",
       "mode": "In person",
@@ -2337,7 +2337,7 @@
       ]
     },
     {
-      "acronym": "All",
+      "acronym": "DayAI",
       "categories": [
         "AI & machine learning",
         "Security & privacy"
@@ -2369,7 +2369,7 @@
       "event_end": "2026-10-22",
       "event_start": "2026-10-22",
       "event_type": "Industry conference",
-      "id": "discovered-all-2026-63cf7b39b0",
+      "id": "discovered-dayai-2026-63cf7b39b0",
       "indexing": "",
       "location": "Online",
       "mode": "Online",
@@ -18056,7 +18056,7 @@
       ]
     },
     {
-      "acronym": "Banana",
+      "acronym": "BananaHacks",
       "categories": [
         "Open source & community"
       ],
@@ -18082,7 +18082,7 @@
       "event_end": "2026-10-12",
       "event_start": "2026-10-09",
       "event_type": "Hackathon",
-      "id": "discovered-banana-2026-1988f66a78",
+      "id": "discovered-bananahacks-2026-1988f66a78",
       "indexing": "",
       "location": "TBA",
       "mode": "Online",
@@ -18128,7 +18128,7 @@
       ]
     },
     {
-      "acronym": "Blank",
+      "acronym": "BlankPage",
       "categories": [
         "Open source & community"
       ],
@@ -18154,7 +18154,7 @@
       "event_end": "2026-10-17",
       "event_start": "2026-10-17",
       "event_type": "Hackathon",
-      "id": "discovered-blank-2026-265681723d",
+      "id": "discovered-blankpage-2026-265681723d",
       "indexing": "",
       "location": "Cambridge, Massachusetts, United States",
       "mode": "In person",
@@ -18274,7 +18274,7 @@
       ]
     },
     {
-      "acronym": "Dublin",
+      "acronym": "DublinHacx",
       "categories": [
         "Open source & community"
       ],
@@ -18300,7 +18300,7 @@
       "event_end": "2026-10-03",
       "event_start": "2026-10-03",
       "event_type": "Hackathon",
-      "id": "discovered-dublin-2026-5ff5258f2a",
+      "id": "discovered-dublinhacx-2026-5ff5258f2a",
       "indexing": "",
       "location": "San Ramon, California, United States",
       "mode": "In person",
@@ -18656,7 +18656,7 @@
       ]
     },
     {
-      "acronym": "JavaScript",
+      "acronym": "JAD",
       "categories": [
         "Programming languages"
       ],
@@ -18682,7 +18682,7 @@
       "event_end": "2026-10-16",
       "event_start": "2026-10-12",
       "event_type": "Industry conference",
-      "id": "discovered-javascript-2026-05c8a8b452",
+      "id": "discovered-jad-2026-05c8a8b452",
       "indexing": "",
       "location": "Berlin, Germany",
       "mode": "Online",
@@ -18696,7 +18696,7 @@
       ]
     },
     {
-      "acronym": "Jax",
+      "acronym": "JaxLondon",
       "categories": [
         "Programming languages"
       ],
@@ -18722,7 +18722,7 @@
       "event_end": "2026-10-09",
       "event_start": "2026-10-05",
       "event_type": "Industry conference",
-      "id": "discovered-jax-2026-b4d0504fe7",
+      "id": "discovered-jaxlondon-2026-b4d0504fe7",
       "indexing": "",
       "location": "London, U.K.",
       "mode": "Online",
@@ -18809,7 +18809,7 @@
       ]
     },
     {
-      "acronym": "Minds",
+      "acronym": "MindsMotion",
       "categories": [
         "AI & machine learning"
       ],
@@ -18835,7 +18835,7 @@
       "event_end": "2026-10-30",
       "event_start": "2026-10-30",
       "event_type": "Academic conference",
-      "id": "discovered-minds-2026-1fd0bc682b",
+      "id": "discovered-mindsmotion-2026-1fd0bc682b",
       "indexing": "",
       "location": "Cambridge, MA",
       "mode": "In person",
@@ -19119,48 +19119,7 @@
       ]
     },
     {
-      "acronym": "Tenth",
-      "categories": [
-        "AI & machine learning",
-        "Systems & cloud"
-      ],
-      "confidence": "announced",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [],
-        "notification": "",
-        "paper": "",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "discovery": {
-        "discovered_at": "2026-10-03T19:09:46Z",
-        "external_id": "MLSys.org/2027/Conference",
-        "last_seen_at": "2026-10-03T19:09:46Z",
-        "source_id": "openreview-active-venues",
-        "source_name": "OpenReview active venues",
-        "source_url": "https://docs.openreview.net/getting-started/objects-in-openreview/groups"
-      },
-      "edition": "2027",
-      "event_end": "2027-06-20",
-      "event_start": "2027-06-20",
-      "event_type": "Academic conference",
-      "id": "discovered-tenth-2027-9fbc5f4e13",
-      "indexing": "",
-      "location": "Bellevue, WA",
-      "mode": "In person",
-      "name": "Tenth Annual Conference on Machine Learning and Systems",
-      "organization": "OpenReview venue chairs",
-      "organization_group": "OpenReview",
-      "source_basis": "Published via a secondary index",
-      "source_url": "https://mlsys.org/",
-      "topics": [
-        "Peer-reviewed research"
-      ]
-    },
-    {
-      "acronym": "The",
+      "acronym": "WebSciX",
       "categories": [
         "Other"
       ],
@@ -19186,7 +19145,7 @@
       "event_end": "2026-11-25",
       "event_start": "2026-11-25",
       "event_type": "Academic conference",
-      "id": "discovered-the-2026-e4573dc27d",
+      "id": "discovered-webscix-2026-e4573dc27d",
       "indexing": "",
       "location": "IIITB, Bangalore, India",
       "mode": "In person",
