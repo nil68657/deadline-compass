@@ -815,88 +815,6 @@
       ]
     },
     {
-      "acronym": "ICLR",
-      "categories": [
-        "AI & machine learning"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-09-18",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-18",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-09-25",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-12-16",
-        "paper": "2026-09-25",
-        "precision": "date",
-        "timezone": "AoE"
-      },
-      "edition": "2027",
-      "event_end": "",
-      "event_start": "",
-      "event_type": "Academic conference",
-      "id": "iclr-2027",
-      "indexing": "Scopus, DBLP, Scholar",
-      "location": "TBA",
-      "mode": "TBA",
-      "name": "International Conference on Learning Representations",
-      "organization": "OpenReview",
-      "organization_group": "OpenReview",
-      "source_basis": "Primary venue page",
-      "source_url": "https://iclr.cc/Conferences/2027/CallForPapers",
-      "topics": [
-        "Machine Learning"
-      ]
-    },
-    {
-      "acronym": "ECIR",
-      "categories": [
-        "Other"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-09-21",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-21",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-10-05",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-12-07",
-        "paper": "2026-10-05",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-03-25",
-      "event_start": "2027-03-21",
-      "event_type": "Academic conference",
-      "id": "ecir-2027",
-      "indexing": "Scopus, DBLP, Scholar",
-      "location": "Southampton, UK",
-      "mode": "In person",
-      "name": "European Conference on Information Retrieval",
-      "organization": "Springer",
-      "organization_group": "Springer",
-      "source_basis": "Primary venue page",
-      "source_url": "https://ecir2027.co.uk/",
-      "topics": [
-        "Information Retrieval"
-      ]
-    },
-    {
       "acronym": "NeuBird",
       "categories": [
         "AI & machine learning"
@@ -939,1067 +857,6 @@
       "source_url": "https://www.goflock.ai/",
       "topics": [
         "Sre"
-      ]
-    },
-    {
-      "acronym": "SANER",
-      "categories": [
-        "Software engineering"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-09-21",
-        "camera_ready": "2027-01-08",
-        "gates": [
-          {
-            "date": "2026-09-21",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-09-25",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-12-01",
-        "paper": "2026-09-25",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-03-12",
-      "event_start": "2027-03-09",
-      "event_type": "Academic conference",
-      "id": "saner-2027",
-      "indexing": "Scopus, IEEE Xplore, Scholar",
-      "location": "Richmond, VA, USA",
-      "mode": "In person",
-      "name": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
-      "organization": "IEEE",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://conf.researchr.org/home/saner-2027",
-      "topics": [
-        "Software Engineering"
-      ]
-    },
-    {
-      "acronym": "SaTML",
-      "categories": [
-        "AI & machine learning",
-        "Security & privacy"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-09-22",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-22",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-09-29",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-12-16",
-        "paper": "2026-09-29",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "SaTML 2027 (5th)",
-      "event_end": "2027-05-10",
-      "event_start": "2027-05-08",
-      "event_type": "Academic conference",
-      "id": "satml-satml-2027-5th",
-      "indexing": "IEEE Xplore, DBLP",
-      "location": "Reykjavik, Iceland",
-      "mode": "In person",
-      "name": "IEEE Conference on Secure and Trustworthy Machine Learning",
-      "organization": "IEEE",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://satml.org/call-for-papers/",
-      "topics": [
-        "ML security",
-        "privacy"
-      ]
-    },
-    {
-      "acronym": "BTW",
-      "categories": [
-        "Data & databases",
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-09-24",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-24",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-10-01",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-10-01",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "22nd, 2027 (biennial)",
-      "event_end": "2027-03-19",
-      "event_start": "2027-03-15",
-      "event_type": "Academic conference",
-      "id": "btw-22nd-2027-biennial",
-      "indexing": "DBLP",
-      "location": "Munich, Germany (TUM/LMU)",
-      "mode": "In person",
-      "name": "Conference on Database Systems for Business, Technology and Web (GI-Fachtagung Datenbanksysteme)",
-      "organization": "GI Lecture Notes in Informatics (LNI)",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://btw2027.gi.de/calls/papers",
-      "topics": [
-        "Databases",
-        "data engineering"
-      ]
-    },
-    {
-      "acronym": "S2AI",
-      "categories": [
-        "Data & databases",
-        "Systems & cloud",
-        "AI & machine learning"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-09-24",
-        "camera_ready": "2026-11-25",
-        "gates": [
-          {
-            "date": "2026-09-24",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-10-01",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-04",
-        "paper": "2026-10-01",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026",
-      "event_end": "2026-12-17",
-      "event_start": "2026-12-14",
-      "event_type": "Academic conference",
-      "id": "s2ai-2026",
-      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
-      "location": "Phoenix, AZ, USA",
-      "mode": "In person",
-      "name": "Workshop on Secure and Safe AI Agents for Big Data Infrastructures (at IEEE BigData)",
-      "organization": "IEEE Computer Society (IEEE BigData 2026 proceedings)",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://s2ai-bigdata.github.io",
-      "topics": [
-        "Agentic AI systems"
-      ]
-    },
-    {
-      "acronym": "EG",
-      "categories": [
-        "Graphics, vision & XR"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-09-25",
-        "camera_ready": "2027-02-23",
-        "gates": [
-          {
-            "date": "2026-09-25",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-10-01",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-12-18",
-        "paper": "2026-10-01",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "Eurographics 2027 (48th)",
-      "event_end": "2027-05-14",
-      "event_start": "2027-05-10",
-      "event_type": "Academic conference",
-      "id": "eg-eurographics-2027-48th",
-      "indexing": "Scopus, DBLP, WoS (CGF journal)",
-      "location": "Lucca, Italy",
-      "mode": "In person",
-      "name": "Eurographics - Annual Conference of the European Association for Computer Graphics (full papers)",
-      "organization": "Eurographics / Wiley (Computer Graphics Forum)",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://eg2027.isti.cnr.it/call-for-papers/",
-      "topics": [
-        "Computer graphics",
-        "visualization",
-        "XR"
-      ]
-    },
-    {
-      "acronym": "ISEC",
-      "categories": [
-        "Software engineering"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-11-21",
-        "gates": [
-          {
-            "date": "2026-09-25",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-04",
-        "paper": "2026-09-25",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "",
-      "event_start": "",
-      "event_type": "Academic conference",
-      "id": "isec-2027",
-      "indexing": "ACM DL, DBLP, Scopus",
-      "location": "Mumbai, India",
-      "mode": "In person",
-      "name": "Innovations in Software Engineering Conference (ACM India SIGSOFT)",
-      "organization": "ACM",
-      "organization_group": "ACM",
-      "source_basis": "Primary venue page",
-      "source_url": "https://conf.researchr.org/home/isec-2027",
-      "topics": [
-        "Software engineering"
-      ]
-    },
-    {
-      "acronym": "VLDB",
-      "categories": [
-        "Data & databases"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-09-25",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-25",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-10-01",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-15",
-        "paper": "2026-10-01",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-08-27",
-      "event_start": "2027-08-23",
-      "event_type": "Academic conference",
-      "id": "vldb-2027",
-      "indexing": "Scopus, DBLP, Scholar",
-      "location": "Athens, Greece",
-      "mode": "In person",
-      "name": "International Conference on Very Large Data Bases (PVLDB Vol. 20)",
-      "organization": "ACM/VLDB",
-      "organization_group": "ACM",
-      "source_basis": "Primary venue page",
-      "source_url": "https://www.vldb.org/2027/",
-      "topics": [
-        "Databases"
-      ]
-    },
-    {
-      "acronym": "IAPP UK+AIGG",
-      "categories": [
-        "AI & machine learning",
-        "Security & privacy"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-27",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-09-27",
-        "precision": "date",
-        "timezone": "EDT"
-      },
-      "edition": "2027",
-      "event_end": "2027-04-08",
-      "event_start": "2027-04-05",
-      "event_type": "Industry conference",
-      "id": "iapp-uk-aigg-2027",
-      "indexing": "",
-      "location": "London, UK",
-      "mode": "In person",
-      "name": "IAPP UK Intensive + AI Governance Global 2027",
-      "organization": "IAPP",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://iapp.org/conferences/speak-at-an-iapp-conference",
-      "topics": [
-        "Privacy",
-        "AI governance"
-      ]
-    },
-    {
-      "acronym": "PyTorch Day Japan",
-      "categories": [
-        "Systems & cloud",
-        "AI & machine learning",
-        "Open source & community"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-27",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-10-13",
-        "paper": "2026-09-27",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026",
-      "event_end": "2026-12-10",
-      "event_start": "2026-12-10",
-      "event_type": "Open-source meetup",
-      "id": "pytorch-day-japan-2026",
-      "indexing": "",
-      "location": "Tokyo, Japan",
-      "mode": "In person",
-      "name": "PyTorch Day Japan 2026",
-      "organization": "PyTorch Foundation / Linux Foundation",
-      "organization_group": "Linux Foundation",
-      "source_basis": "Primary venue page",
-      "source_url": "https://events.linuxfoundation.org/pytorch-day-japan/program/cfp/",
-      "topics": [
-        "Open source AI",
-        "ML systems"
-      ]
-    },
-    {
-      "acronym": "Middleware Industry",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-10-16",
-        "gates": [
-          {
-            "date": "2026-09-28",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-10-04",
-        "paper": "2026-09-28",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026",
-      "event_end": "2026-12-18",
-      "event_start": "2026-12-14",
-      "event_type": "Academic conference",
-      "id": "middleware-industry-2026",
-      "indexing": "ACM DL, DBLP, Scopus",
-      "location": "Tarragona, Spain",
-      "mode": "In person",
-      "name": "ACM/IFIP Middleware 2026 Industry Track",
-      "organization": "ACM",
-      "organization_group": "ACM",
-      "source_basis": "Primary venue page",
-      "source_url": "https://middleware-conf.github.io/2026/calls/call-for-industry-papers/",
-      "topics": [
-        "Distributed systems"
-      ]
-    },
-    {
-      "acronym": "Apache Doris Summit",
-      "categories": [
-        "Data & databases"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-29",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-09-29",
-        "precision": "date",
-        "timezone": "PDT"
-      },
-      "edition": "2026",
-      "event_end": "2026-10-22",
-      "event_start": "2026-10-21",
-      "event_type": "Summit",
-      "id": "apache-doris-summit-2026",
-      "indexing": "",
-      "location": "Online",
-      "mode": "Online",
-      "name": "Apache Doris Summit 2026",
-      "organization": "Apache Doris community / VeloDB",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://sessionize.com/apache-doris-summit-2026/",
-      "topics": [
-        "Real-time analytics database"
-      ]
-    },
-    {
-      "acronym": "ICAART",
-      "categories": [
-        "AI & machine learning"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-29",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-13",
-        "paper": "2026-09-29",
-        "precision": "date",
-        "timezone": "AoE"
-      },
-      "edition": "2027",
-      "event_end": "2027-02-25",
-      "event_start": "2027-02-23",
-      "event_type": "Academic conference",
-      "id": "icaart-2027",
-      "indexing": "Scopus, DBLP",
-      "location": "Valletta, Malta",
-      "mode": "In person",
-      "name": "International Conference on Agents and Artificial Intelligence",
-      "organization": "SCITEPRESS",
-      "organization_group": "SCITEPRESS",
-      "source_basis": "Primary venue page",
-      "source_url": "https://icaart.scitevents.org/ImportantDates.aspx",
-      "topics": [
-        "Agents",
-        "AI"
-      ]
-    },
-    {
-      "acronym": "AISTATS",
-      "categories": [
-        "AI & machine learning"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-09-29",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-29",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-10-06",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2027-01-20",
-        "paper": "2026-10-06",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-05-06",
-      "event_start": "2027-05-03",
-      "event_type": "Academic conference",
-      "id": "aistats-2027",
-      "indexing": "Scopus, DBLP, Scholar",
-      "location": "Montreal, Canada",
-      "mode": "In person",
-      "name": "International Conference on Artificial Intelligence and Statistics",
-      "organization": "PMLR",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://virtual.aistats.org/Conferences/2027/CallForPapers",
-      "topics": [
-        "Machine Learning"
-      ]
-    },
-    {
-      "acronym": "GRIVAPP",
-      "categories": [
-        "Graphics, vision & XR"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-29",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-13",
-        "paper": "2026-09-29",
-        "precision": "date",
-        "timezone": "AoE"
-      },
-      "edition": "2027",
-      "event_end": "2027-02-28",
-      "event_start": "2027-02-26",
-      "event_type": "Academic conference",
-      "id": "grivapp-2027",
-      "indexing": "Scopus, DBLP",
-      "location": "Valletta, Malta",
-      "mode": "In person",
-      "name": "International Conference on Computer Graphics, Interaction, Visualization Theory and Applications",
-      "organization": "SCITEPRESS",
-      "organization_group": "SCITEPRESS",
-      "source_basis": "Primary venue page",
-      "source_url": "https://grivapp.scitevents.org/ImportantDates.aspx",
-      "topics": [
-        "Graphics",
-        "Visualization"
-      ]
-    },
-    {
-      "acronym": "ICISSP",
-      "categories": [
-        "Systems & cloud",
-        "Security & privacy"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-29",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-13",
-        "paper": "2026-09-29",
-        "precision": "date",
-        "timezone": "AoE"
-      },
-      "edition": "2027",
-      "event_end": "2027-02-24",
-      "event_start": "2027-02-22",
-      "event_type": "Academic conference",
-      "id": "icissp-2027",
-      "indexing": "Scopus, DBLP",
-      "location": "Valletta, Malta",
-      "mode": "In person",
-      "name": "International Conference on Information Systems Security and Privacy",
-      "organization": "SCITEPRESS",
-      "organization_group": "SCITEPRESS",
-      "source_basis": "Primary venue page",
-      "source_url": "https://icissp.scitevents.org/ImportantDates.aspx",
-      "topics": [
-        "Security",
-        "Privacy"
-      ]
-    },
-    {
-      "acronym": "ICORES",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-11-27",
-        "gates": [
-          {
-            "date": "2026-09-29",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-13",
-        "paper": "2026-09-29",
-        "precision": "date",
-        "timezone": "AoE"
-      },
-      "edition": "2027",
-      "event_end": "2027-02-22",
-      "event_start": "2027-02-20",
-      "event_type": "Academic conference",
-      "id": "icores-2027",
-      "indexing": "Scopus, DBLP",
-      "location": "Valletta, Malta",
-      "mode": "In person",
-      "name": "International Conference on Operations Research and Enterprise Systems (SCITEPRESS)",
-      "organization": "SCITEPRESS",
-      "organization_group": "SCITEPRESS",
-      "source_basis": "Primary venue page",
-      "source_url": "https://icores.scitevents.org/ImportantDates.aspx",
-      "topics": [
-        "Operations Research"
-      ]
-    },
-    {
-      "acronym": "ICPRAM",
-      "categories": [
-        "Other"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-11-27",
-        "gates": [
-          {
-            "date": "2026-09-29",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-13",
-        "paper": "2026-09-29",
-        "precision": "date",
-        "timezone": "AoE"
-      },
-      "edition": "2027",
-      "event_end": "2027-02-22",
-      "event_start": "2027-02-20",
-      "event_type": "Academic conference",
-      "id": "icpram-2027",
-      "indexing": "Scopus, DBLP",
-      "location": "Valletta, Malta",
-      "mode": "In person",
-      "name": "International Conference on Pattern Recognition Applications and Methods (SCITEPRESS)",
-      "organization": "SCITEPRESS",
-      "organization_group": "SCITEPRESS",
-      "source_basis": "Primary venue page",
-      "source_url": "https://icpram.scitevents.org/ImportantDates.aspx",
-      "topics": [
-        "Pattern Recognition"
-      ]
-    },
-    {
-      "acronym": "Middleware Demos/Posters",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-10-30",
-        "gates": [
-          {
-            "date": "2026-09-30",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-10-15",
-        "paper": "2026-09-30",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026",
-      "event_end": "2026-12-18",
-      "event_start": "2026-12-14",
-      "event_type": "Academic conference",
-      "id": "middleware-demos-posters-2026",
-      "indexing": "ACM DL, DBLP, Scopus",
-      "location": "Tarragona, Spain",
-      "mode": "In person",
-      "name": "ACM/IFIP Middleware 2026 Demos and Posters",
-      "organization": "ACM",
-      "organization_group": "ACM",
-      "source_basis": "Primary venue page",
-      "source_url": "https://middleware-conf.github.io/2026/calls/call-for-demos-and-posters/",
-      "topics": [
-        "Distributed systems"
-      ]
-    },
-    {
-      "acronym": "ACIIDS",
-      "categories": [
-        "AI & machine learning",
-        "Data & databases"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-30",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-09-30",
-        "precision": "date",
-        "timezone": "AoE"
-      },
-      "edition": "2027",
-      "event_end": "2027-04-07",
-      "event_start": "2027-04-05",
-      "event_type": "Academic conference",
-      "id": "aciids-aciids-2027-19th",
-      "indexing": "Springer LNCS/DBLP/Scopus",
-      "location": "Bali, Indonesia",
-      "mode": "In person",
-      "name": "Asian Conference on Intelligent Information and Database Systems",
-      "organization": "Springer",
-      "organization_group": "Springer",
-      "source_basis": "Primary venue page",
-      "source_url": "https://aciids.pwr.edu.pl/2027/",
-      "topics": [
-        "databases",
-        "intelligent systems"
-      ]
-    },
-    {
-      "acronym": "BTW Industry",
-      "categories": [
-        "Data & databases"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-30",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-09-30",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-03-19",
-      "event_start": "2027-03-15",
-      "event_type": "Academic conference",
-      "id": "btw-industry-2027",
-      "indexing": "DBLP",
-      "location": "Munich, Germany",
-      "mode": "In person",
-      "name": "BTW 2027 Industry Track",
-      "organization": "GI Lecture Notes in Informatics (LNI)",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://btw2027.gi.de/calls/industry",
-      "topics": [
-        "Databases"
-      ]
-    },
-    {
-      "acronym": "DCF Trends",
-      "categories": [
-        "Data & databases",
-        "AI & machine learning"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-30",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-09-30",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-05-07",
-      "event_start": "2027-05-05",
-      "event_type": "Summit",
-      "id": "dcf-trends-2027",
-      "indexing": "",
-      "location": "Glendale, AZ, USA",
-      "mode": "In person",
-      "name": "Data Center Frontier Trends Summit 2027",
-      "organization": "Endeavor Business Media (Data Center Frontier)",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://www.dcftrends.com/2027/cfs",
-      "topics": [
-        "Data centre",
-        "AI infrastructure"
-      ]
-    },
-    {
-      "acronym": "GIDS",
-      "categories": [
-        "Data & databases",
-        "Systems & cloud",
-        "Architecture & hardware"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-30",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-09-30",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-04-30",
-      "event_start": "2027-04-27",
-      "event_type": "Summit",
-      "id": "gids-2027",
-      "indexing": "",
-      "location": "Bengaluru, India",
-      "mode": "In person",
-      "name": "Great International Developer Summit 2027",
-      "organization": "Saltmarch Media",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://form.jotform.com/saltmarch/gids2027cfp",
-      "topics": [
-        "Architecture",
-        "distributed systems",
-        "data",
-        "platform"
-      ]
-    },
-    {
-      "acronym": "BDCloud",
-      "categories": [
-        "Data & databases",
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-11-30",
-        "gates": [
-          {
-            "date": "2026-09-30",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-10-30",
-        "paper": "2026-09-30",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026 (16th)",
-      "event_end": "2026-12-30",
-      "event_start": "2026-12-27",
-      "event_type": "Academic conference",
-      "id": "bdcloud-2026-16th",
-      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
-      "location": "Kuala Lumpur, Malaysia",
-      "mode": "In person",
-      "name": "IEEE International Conference on Big Data and Cloud Computing",
-      "organization": "IEEE",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://ieee-ai-for-science.org/2026/bdcloud/index.php",
-      "topics": [
-        "Big data",
-        "cloud"
-      ]
-    },
-    {
-      "acronym": "BigComp",
-      "categories": [
-        "Data & databases"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-09-30",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-30",
-        "paper": "2026-09-30",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027 (14th)",
-      "event_end": "2027-01-28",
-      "event_start": "2027-01-25",
-      "event_type": "Academic conference",
-      "id": "bigcomp-2027-14th",
-      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
-      "location": "Fukuoka, Japan",
-      "mode": "In person",
-      "name": "IEEE International Conference on Big Data and Smart Computing",
-      "organization": "IEEE (co-sponsored by KIISE)",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://bigcomp2027-website.pages.dev/",
-      "topics": [
-        "Big data",
-        "data engineering"
-      ]
-    },
-    {
-      "acronym": "ISPA",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-11-30",
-        "gates": [
-          {
-            "date": "2026-09-30",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-10-30",
-        "paper": "2026-09-30",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026 (24th)",
-      "event_end": "2026-12-30",
-      "event_start": "2026-12-27",
-      "event_type": "Academic conference",
-      "id": "ispa-2026-24th",
-      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
-      "location": "Kuala Lumpur, Malaysia",
-      "mode": "In person",
-      "name": "IEEE International Symposium on Parallel and Distributed Processing with Applications",
-      "organization": "IEEE",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://ieee-ai-for-science.org/2026/ispa/index.php",
-      "topics": [
-        "Parallel and distributed systems"
-      ]
-    },
-    {
-      "acronym": "Mid4CC",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-11-15",
-        "gates": [
-          {
-            "date": "2026-09-30",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-01",
-        "paper": "2026-09-30",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "4th (2026)",
-      "event_end": "2026-12-18",
-      "event_start": "2026-12-14",
-      "event_type": "Academic conference",
-      "id": "mid4cc-4th-2026",
-      "indexing": "ACM DL, DBLP, Scopus",
-      "location": "Tarragona, Spain",
-      "mode": "In person",
-      "name": "Intl Workshop on Middleware for the Computing Continuum (at Middleware 2026)",
-      "organization": "ACM",
-      "organization_group": "ACM",
-      "source_basis": "Primary venue page",
-      "source_url": "https://mid4cc.netsons.org/2026/index.html",
-      "topics": [
-        "Cloud",
-        "edge"
-      ]
-    },
-    {
-      "acronym": "SCA",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-09-30",
-        "camera_ready": "2026-12-15",
-        "gates": [
-          {
-            "date": "2026-09-30",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-10-07",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-20",
-        "paper": "2026-10-07",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-03-04",
-      "event_start": "2027-03-01",
-      "event_type": "Academic conference",
-      "id": "sca-2027",
-      "indexing": "",
-      "location": "Singapore",
-      "mode": "In person",
-      "name": "SupercomputingAsia 2027",
-      "organization": "ACM ICPS style (ACM Proceedings format)",
-      "organization_group": "ACM",
-      "source_basis": "Primary venue page",
-      "source_url": "https://www.sc-asia.org/sca2027-call-for-papers/",
-      "topics": [
-        "HPC"
       ]
     },
     {
@@ -2049,285 +906,6 @@
       ]
     },
     {
-      "acronym": "Fabric February",
-      "categories": [
-        "Data & databases",
-        "Open source & community"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-01",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-10-15",
-        "paper": "2026-10-01",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-02-04",
-      "event_start": "2027-02-02",
-      "event_type": "Open-source meetup",
-      "id": "fabric-february-2027",
-      "indexing": "",
-      "location": "Oslo, Norway",
-      "mode": "In person",
-      "name": "Fabric February 2027",
-      "organization": "Fabric February (Norwegian community)",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://sessionize.com/fabric-february-2027/",
-      "topics": [
-        "Microsoft Fabric",
-        "lakehouse",
-        "real-time intelligence"
-      ]
-    },
-    {
-      "acronym": "HiPC Posters",
-      "categories": [
-        "Data & databases",
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-11-13",
-        "gates": [
-          {
-            "date": "2026-10-01",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-06",
-        "paper": "2026-10-01",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026 (33rd)",
-      "event_end": "2026-12-19",
-      "event_start": "2026-12-16",
-      "event_type": "Academic conference",
-      "id": "hipc-posters-2026-33rd",
-      "indexing": "IEEE Xplore",
-      "location": "Bengaluru, India",
-      "mode": "In person",
-      "name": "IEEE HiPC 2026 Poster Track",
-      "organization": "IEEE",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://hipc.org/call-for-posters/",
-      "topics": [
-        "HPC",
-        "data analytics"
-      ]
-    },
-    {
-      "acronym": "IPDPS",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-10-01",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-01",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-10-08",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2027-02-02",
-        "paper": "2026-10-08",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-06-05",
-      "event_start": "2027-06-01",
-      "event_type": "Academic conference",
-      "id": "ipdps-2027",
-      "indexing": "Scopus, IEEE Xplore, Scholar",
-      "location": "Seattle, WA, USA",
-      "mode": "In person",
-      "name": "IEEE International Parallel and Distributed Processing Symposium",
-      "organization": "IEEE",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://www.ipdps.org/ipdps2027/2027-call-for-papers.html",
-      "topics": [
-        "Parallel Computing"
-      ]
-    },
-    {
-      "acronym": "BPOD",
-      "categories": [
-        "Data & databases",
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-11-25",
-        "gates": [
-          {
-            "date": "2026-10-01",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-04",
-        "paper": "2026-10-01",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026",
-      "event_end": "2026-12-17",
-      "event_start": "2026-12-14",
-      "event_type": "Academic conference",
-      "id": "bpod-2026",
-      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
-      "location": "Phoenix, AZ, USA",
-      "mode": "In person",
-      "name": "IEEE Workshop on Benchmarking, Performance Tuning and Optimization for Big Data Analytics and Big Models (at IEEE BigData)",
-      "organization": "IEEE Computer Society (IEEE BigData 2026 proceedings)",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://bdal.umbc.edu/bpod/bpod-2026/",
-      "topics": [
-        "Performance engineering",
-        "big data"
-      ]
-    },
-    {
-      "acronym": "AAMAS",
-      "categories": [
-        "Systems & cloud",
-        "AI & machine learning"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-10-01",
-        "camera_ready": "2027-01-25",
-        "gates": [
-          {
-            "date": "2026-10-01",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-10-08",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-12-21",
-        "paper": "2026-10-08",
-        "precision": "date",
-        "timezone": "AoE"
-      },
-      "edition": "2027",
-      "event_end": "2027-05-07",
-      "event_start": "2027-05-03",
-      "event_type": "Academic conference",
-      "id": "aamas-2027",
-      "indexing": "Scopus, DBLP, Scholar",
-      "location": "Hanoi, Vietnam",
-      "mode": "In person",
-      "name": "International Conference on Autonomous Agents and Multiagent Systems",
-      "organization": "IFAAMAS",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/",
-      "topics": [
-        "Agents"
-      ]
-    },
-    {
-      "acronym": "Jfokus",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-01",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-10-01",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-02-10",
-      "event_start": "2027-02-08",
-      "event_type": "Industry conference",
-      "id": "jfokus-2027",
-      "indexing": "",
-      "location": "Stockholm, Sweden",
-      "mode": "In person",
-      "name": "Jfokus 2027",
-      "organization": "Javaforum Stockholm",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://sessionize.com/jfokus-2027/",
-      "topics": [
-        "JVM",
-        "cloud",
-        "general developer"
-      ]
-    },
-    {
-      "acronym": "MIND",
-      "categories": [
-        "Systems & cloud",
-        "AI & machine learning"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-10-16",
-        "gates": [
-          {
-            "date": "2026-10-01",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-10-12",
-        "paper": "2026-10-01",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2nd (2026)",
-      "event_end": "2026-12-18",
-      "event_start": "2026-12-14",
-      "event_type": "Academic conference",
-      "id": "mind-2nd-2026",
-      "indexing": "ACM DL, DBLP, Scopus",
-      "location": "Tarragona, Spain",
-      "mode": "In person",
-      "name": "Next-Gen Middleware for MLOps in Distributed Systems (at Middleware 2026)",
-      "organization": "ACM",
-      "organization_group": "ACM",
-      "source_basis": "Primary venue page",
-      "source_url": "https://mindmlops.github.io/",
-      "topics": [
-        "ML systems",
-        "MLOps"
-      ]
-    },
-    {
       "acronym": "PUSH",
       "categories": [
         "Other"
@@ -2373,702 +951,6 @@
       ]
     },
     {
-      "acronym": "WoAIS",
-      "categories": [
-        "Systems & cloud",
-        "AI & machine learning"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-10-16",
-        "gates": [
-          {
-            "date": "2026-10-01",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-10-12",
-        "paper": "2026-10-01",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2nd (2026)",
-      "event_end": "2026-12-18",
-      "event_start": "2026-12-14",
-      "event_type": "Academic conference",
-      "id": "woais-2nd-2026",
-      "indexing": "ACM DL, DBLP, Scopus",
-      "location": "Tarragona, Spain",
-      "mode": "In person",
-      "name": "Workshop on AI and Serverless (at Middleware 2026)",
-      "organization": "ACM",
-      "organization_group": "ACM",
-      "source_basis": "Primary venue page",
-      "source_url": "https://www.serverlesscomputing.org/woais2/cfp/",
-      "topics": [
-        "Agentic AI",
-        "serverless"
-      ]
-    },
-    {
-      "acronym": "ExtremeDataCuration",
-      "categories": [
-        "Data & databases"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-11-25",
-        "gates": [
-          {
-            "date": "2026-10-01",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-04",
-        "paper": "2026-10-01",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026",
-      "event_end": "2026-12-17",
-      "event_start": "2026-12-14",
-      "event_type": "Academic conference",
-      "id": "extremedatacuration-2026",
-      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
-      "location": "Phoenix, AZ, USA",
-      "mode": "In person",
-      "name": "Workshop on Curation and Contextualization of Extreme Datasets (CCED, at IEEE BigData)",
-      "organization": "IEEE Computer Society (IEEE BigData 2026 proceedings)",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://extremedatacurationworkshop.github.io/",
-      "topics": [
-        "Data management at scale"
-      ]
-    },
-    {
-      "acronym": "FSE",
-      "categories": [
-        "Software engineering"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-02",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2027-01-22",
-        "paper": "2026-10-02",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-07-16",
-      "event_start": "2027-07-12",
-      "event_type": "Academic conference",
-      "id": "fse-2027",
-      "indexing": "Scopus, DBLP, Scholar",
-      "location": "Shenzhen, China",
-      "mode": "In person",
-      "name": "ACM International Conference on the Foundations of Software Engineering",
-      "organization": "ACM",
-      "organization_group": "ACM",
-      "source_basis": "Primary venue page",
-      "source_url": "https://conf.researchr.org/dates/fse-2027",
-      "topics": [
-        "Software Engineering"
-      ]
-    },
-    {
-      "acronym": "SIGMETRICS",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-10-02",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-02",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-10-09",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-12-09",
-        "paper": "2026-10-09",
-        "precision": "date",
-        "timezone": "AoE"
-      },
-      "edition": "2027",
-      "event_end": "2027-06-11",
-      "event_start": "2027-06-07",
-      "event_type": "Academic conference",
-      "id": "sigmetrics-2027",
-      "indexing": "Scopus, DBLP, Scholar",
-      "location": "Atlanta, GA, USA (FCRC)",
-      "mode": "In person",
-      "name": "ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems",
-      "organization": "ACM",
-      "organization_group": "ACM",
-      "source_basis": "Primary venue page",
-      "source_url": "https://www.sigmetrics.org/sigmetrics2027/",
-      "topics": [
-        "Performance"
-      ]
-    },
-    {
-      "acronym": "SAC",
-      "categories": [
-        "Data & databases",
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-11-28",
-        "gates": [
-          {
-            "date": "2026-10-02",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-13",
-        "paper": "2026-10-02",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "42nd (2027)",
-      "event_end": "2027-04-09",
-      "event_start": "2027-04-05",
-      "event_type": "Academic conference",
-      "id": "sac-42nd-2027",
-      "indexing": "ACM DL, DBLP, Scopus",
-      "location": "Gwangju, South Korea",
-      "mode": "In person",
-      "name": "ACM/SIGAPP Symposium on Applied Computing",
-      "organization": "ACM",
-      "organization_group": "ACM",
-      "source_basis": "Primary venue page",
-      "source_url": "https://www.sigapp.org/sac/sac2027/",
-      "topics": [
-        "Multi-track (DBDM, Data Streams, Cloud Continuum, DADS, OSSP, SEAI)"
-      ]
-    },
-    {
-      "acronym": "DCC",
-      "categories": [
-        "Data & databases"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-02",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-10-02",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-03-26",
-      "event_start": "2027-03-23",
-      "event_type": "Academic conference",
-      "id": "dcc-2027",
-      "indexing": "Scopus, IEEE Xplore, Scholar",
-      "location": "Snowbird, UT, USA",
-      "mode": "In person",
-      "name": "IEEE Data Compression Conference",
-      "organization": "IEEE",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://datacompressionconference.org/call-for-papers/",
-      "topics": [
-        "Data Compression"
-      ]
-    },
-    {
-      "acronym": "DCD Austria",
-      "categories": [
-        "Data & databases",
-        "Open source & community"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-04",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-10-04",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-01-18",
-      "event_start": "2027-01-18",
-      "event_type": "Open-source meetup",
-      "id": "dcd-austria-2027",
-      "indexing": "",
-      "location": "Vienna, Austria",
-      "mode": "In person",
-      "name": "Data Community Day Austria 2027",
-      "organization": "Data Community Austria",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://sessionize.com/data-community-day-austria-2027/",
-      "topics": [
-        "Microsoft data platform (community day)"
-      ]
-    },
-    {
-      "acronym": "DataSat Madrid",
-      "categories": [
-        "Data & databases"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-04",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-10-04",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026",
-      "event_end": "2026-11-07",
-      "event_start": "2026-11-05",
-      "event_type": "Open-source meetup",
-      "id": "datasat-madrid-2026",
-      "indexing": "",
-      "location": "Madrid, Spain",
-      "mode": "In person",
-      "name": "DataSaturday Madrid 2026 (SQLSatMadrid)",
-      "organization": "Data Saturdays",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://sessionize.com/datasaturday-madrid-2026-sqlsatmadrid",
-      "topics": [
-        "SQL Server",
-        "Fabric",
-        "data platform"
-      ]
-    },
-    {
-      "acronym": "Day of Data & AI Houston",
-      "categories": [
-        "AI & machine learning",
-        "Data & databases"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-04",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-10-04",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026",
-      "event_end": "2026-12-05",
-      "event_start": "2026-12-04",
-      "event_type": "Open-source meetup",
-      "id": "day-of-data-ai-houston-2026",
-      "indexing": "",
-      "location": "Houston, TX, USA",
-      "mode": "In person",
-      "name": "Day of Data and AI - Houston",
-      "organization": "Houston data community",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://sessionize.com/day-of-data-and-ai-houston",
-      "topics": [
-        "data engineering",
-        "AI",
-        "analytics"
-      ]
-    },
-    {
-      "acronym": "FOSDEM devrooms",
-      "categories": [
-        "Data & databases",
-        "Systems & cloud",
-        "AI & machine learning",
-        "Software engineering",
-        "Programming languages",
-        "Open source & community"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-12-07",
-        "gates": [
-          {
-            "date": "2026-10-04",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-10-04",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-01-31",
-      "event_start": "2027-01-30",
-      "event_type": "Open-source meetup",
-      "id": "fosdem-devrooms-2027",
-      "indexing": "",
-      "location": "ULB Brussels, Belgium",
-      "mode": "In person",
-      "name": "FOSDEM 2027 developer rooms (Databases, HPC/Big Data/Data Science, Monitoring & Observability, Software Performance, AI Plumbers, Distributed Systems, Rust, Containers, Kernel, SDS, Energy, Python, Data Analytics, PostgreSQL)",
-      "organization": "FOSDEM VZW",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://fosdem.org/2027/news/call-for-devrooms/",
-      "topics": [
-        "Open source developer rooms"
-      ]
-    },
-    {
-      "acronym": "Federated HPC",
-      "categories": [
-        "Systems & cloud",
-        "Security & privacy"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-11-09",
-        "gates": [
-          {
-            "date": "2026-10-04",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-01",
-        "paper": "2026-10-04",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026",
-      "event_end": "2026-12-16",
-      "event_start": "2026-12-16",
-      "event_type": "Academic conference",
-      "id": "federated-hpc-2026",
-      "indexing": "IEEE Xplore",
-      "location": "Bengaluru, India",
-      "mode": "In person",
-      "name": "International Workshop on Privacy-Preserving and Collaborative High-Performance Computing (at HiPC)",
-      "organization": "IEEE (HiPCW 2026 workshop proceedings)",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://hpc-tai.github.io/FederatedHPC/",
-      "topics": [
-        "HPC",
-        "privacy"
-      ]
-    },
-    {
-      "acronym": "PlatformCon Live SF",
-      "categories": [
-        "Other"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-04",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-10-20",
-        "paper": "2026-10-04",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-02-24",
-      "event_start": "2027-02-24",
-      "event_type": "Industry conference",
-      "id": "platformcon-live-sf-2027",
-      "indexing": "",
-      "location": "San Francisco, CA, USA",
-      "mode": "In person",
-      "name": "PlatformCon Live Day San Francisco 2027",
-      "organization": "Platform Engineering (Humanitec)",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://sessionize.com/platformcon-live-day-san-francisco",
-      "topics": [
-        "Platform engineering"
-      ]
-    },
-    {
-      "acronym": "SQL Konferenz",
-      "categories": [
-        "Data & databases"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-04",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-10-04",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-02-24",
-      "event_start": "2027-02-22",
-      "event_type": "Industry conference",
-      "id": "sql-konferenz-2027",
-      "indexing": "",
-      "location": "Hanau am Main, Germany",
-      "mode": "In person",
-      "name": "SQL Konferenz 2027",
-      "organization": "Datamonster / PASS Deutschland",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://sessionize.com/sql-konferenz-2027",
-      "topics": [
-        "Microsoft data platform"
-      ]
-    },
-    {
-      "acronym": "Conf42 PlatEng",
-      "categories": [
-        "Other"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-05",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-10-05",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026",
-      "event_end": "2026-11-05",
-      "event_start": "2026-11-05",
-      "event_type": "Industry conference",
-      "id": "conf42-plateng-2026",
-      "indexing": "",
-      "location": "Online",
-      "mode": "Online",
-      "name": "Conf42 Platform Engineering 2026",
-      "organization": "Conf42",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://www.papercall.io/conf42-platform-engineering-2026",
-      "topics": [
-        "Platform engineering (online)"
-      ]
-    },
-    {
-      "acronym": "EDBT",
-      "categories": [
-        "Data & databases"
-      ],
-      "confidence": "announced",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2027-01-27",
-        "gates": [
-          {
-            "date": "2026-10-07",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-12-05",
-        "paper": "2026-10-07",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-04-09",
-      "event_start": "2027-04-06",
-      "event_type": "Academic conference",
-      "id": "edbt-2027",
-      "indexing": "Scopus, DBLP, Scholar",
-      "location": "Lille, France",
-      "mode": "In person",
-      "name": "International Conference on Extending Database Technology",
-      "organization": "OpenProceedings",
-      "organization_group": "Other",
-      "source_basis": "Published via a secondary index",
-      "source_url": "https://edbticdt2027.github.io/",
-      "topics": [
-        "Databases"
-      ]
-    },
-    {
-      "acronym": "ISC Workshops",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-07",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-30",
-        "paper": "2026-10-07",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "",
-      "event_start": "",
-      "event_type": "Academic conference",
-      "id": "isc-workshops-2027",
-      "indexing": "",
-      "location": "Hamburg, Germany",
-      "mode": "In person",
-      "name": "ISC High Performance 2027 - workshop programme (proposals now, workshop papers in spring)",
-      "organization": "ISC Group; workshop papers in Future Generation Computer Systems (Elsevier) per ISC 2027 page",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://isc-hpc.com/submissions/workshop/",
-      "topics": [
-        "HPC"
-      ]
-    },
-    {
-      "acronym": "DCW",
-      "categories": [
-        "Data & databases",
-        "AI & machine learning"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-09",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-10-09",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-05-27",
-      "event_start": "2027-05-24",
-      "event_type": "Industry conference",
-      "id": "dcw-2027",
-      "indexing": "",
-      "location": "Nashville, TN, USA (Music City Center)",
-      "mode": "In person",
-      "name": "Data Center World 2027",
-      "organization": "Informa (AFCOM)",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://www.datacenterworld.com/",
-      "topics": [
-        "Data centre",
-        "AI infrastructure"
-      ]
-    },
-    {
-      "acronym": "HCII",
-      "categories": [
-        "Security & privacy",
-        "Graphics, vision & XR",
-        "HCI"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "2026-10-09",
-        "camera_ready": "2027-01-29",
-        "gates": [
-          {
-            "date": "2026-10-09",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-10-09",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-20",
-        "paper": "2026-10-09",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "HCII 2027 (29th)",
-      "event_end": "2027-07-30",
-      "event_start": "2027-07-25",
-      "event_type": "Academic conference",
-      "id": "hcii-hcii-2027-29th",
-      "indexing": "Scopus, DBLP, EI",
-      "location": "Berlin, Germany (hybrid)",
-      "mode": "Hybrid",
-      "name": "HCI International (incl. VAMR and HCI-CPT affiliated conferences)",
-      "organization": "Springer LNCS/LNAI",
-      "organization_group": "Springer",
-      "source_basis": "Primary venue page",
-      "source_url": "https://2027.hci.international/papers.html",
-      "topics": [
-        "HCI",
-        "XR",
-        "usable privacy"
-      ]
-    },
-    {
       "acronym": "ICLR Workshops",
       "categories": [
         "AI & machine learning"
@@ -3107,81 +989,6 @@
       "source_url": "https://iclr.cc/Conferences/2027/CallForWorkshops",
       "topics": [
         "ML"
-      ]
-    },
-    {
-      "acronym": "GTC",
-      "categories": [
-        "AI & machine learning"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-09",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-10-09",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-03-18",
-      "event_start": "2027-03-15",
-      "event_type": "Industry conference",
-      "id": "gtc-2027",
-      "indexing": "",
-      "location": "San Jose, CA, USA",
-      "mode": "In person",
-      "name": "NVIDIA GTC",
-      "organization": "NVIDIA",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://www.nvidia.com/gtc/call-for-submissions/",
-      "topics": [
-        "AI Infrastructure"
-      ]
-    },
-    {
-      "acronym": "AI-SPC",
-      "categories": [
-        "Systems & cloud",
-        "AI & machine learning"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-09",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-11-01",
-        "paper": "2026-10-09",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026",
-      "event_end": "2026-12-16",
-      "event_start": "2026-12-16",
-      "event_type": "Academic conference",
-      "id": "ai-spc-2026",
-      "indexing": "IEEE Xplore",
-      "location": "Bengaluru, India",
-      "mode": "In person",
-      "name": "Workshop on AI for Scientific and General-Purpose Computing (at HiPC)",
-      "organization": "IEEE (HiPCW 2026 workshop proceedings)",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://aispc.github.io/",
-      "topics": [
-        "HPC + AI"
       ]
     },
     {
@@ -3269,125 +1076,6 @@
       "source_url": "https://www.alldayai.com/",
       "topics": [
         "Security"
-      ]
-    },
-    {
-      "acronym": "SE4AgenticAI",
-      "categories": [
-        "Data & databases",
-        "Systems & cloud",
-        "AI & machine learning",
-        "Software engineering"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-11-14",
-        "gates": [
-          {
-            "date": "2026-10-10",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-10-31",
-        "paper": "2026-10-10",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026",
-      "event_end": "2026-12-17",
-      "event_start": "2026-12-14",
-      "event_type": "Academic conference",
-      "id": "se4agenticai-2026",
-      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
-      "location": "Phoenix, AZ, USA",
-      "mode": "In person",
-      "name": "IEEE Big Data International Workshop on Software Engineering for Agentic AI",
-      "organization": "IEEE Computer Society (IEEE BigData 2026 proceedings)",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://cs.uwaterloo.ca/~palencar/se4agenticai/",
-      "topics": [
-        "SE for AI",
-        "agentic systems"
-      ]
-    },
-    {
-      "acronym": "AIxDKE",
-      "categories": [
-        "Data & databases",
-        "AI & machine learning"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "2026-12-31",
-        "gates": [
-          {
-            "date": "2026-10-10",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "2026-12-01",
-        "paper": "2026-10-10",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-02-03",
-      "event_start": "2027-02-01",
-      "event_type": "Academic conference",
-      "id": "aixdke-2027",
-      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
-      "location": "Laguna Hills, CA, USA (hybrid)",
-      "mode": "Hybrid",
-      "name": "IEEE International Conference on AI x Data and Knowledge Engineering (formerly AIKE)",
-      "organization": "IEEE",
-      "organization_group": "IEEE",
-      "source_basis": "Primary venue page",
-      "source_url": "https://www.aixdke.org/dates",
-      "topics": [
-        "Data and knowledge engineering"
-      ]
-    },
-    {
-      "acronym": "SREday NYC",
-      "categories": [
-        "Systems & cloud",
-        "Software engineering"
-      ],
-      "confidence": "verified",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-10-10",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-10-10",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2026 Q4",
-      "event_end": "2026-11-07",
-      "event_start": "2026-11-07",
-      "event_type": "Industry conference",
-      "id": "sreday-nyc-2026-q4",
-      "indexing": "",
-      "location": "New York, NY, USA (Datadog office)",
-      "mode": "In person",
-      "name": "SREday NYC 2026 Q4",
-      "organization": "SREday",
-      "organization_group": "Other",
-      "source_basis": "Primary venue page",
-      "source_url": "https://cfp.ninja/e/sreday-2026-nyc-q4",
-      "topics": [
-        "SRE",
-        "observability",
-        "cloud"
       ]
     },
     {
@@ -3739,6 +1427,44 @@
       "source_url": "https://aaai.org/conference/aaai/aaai-27/bridge-program-call-for-proposals/",
       "topics": [
         "AI"
+      ]
+    },
+    {
+      "acronym": "BigComp",
+      "categories": [
+        "Data & databases"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-10-16",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-10-16",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027 (14th)",
+      "event_end": "2027-01-28",
+      "event_start": "2027-01-25",
+      "event_type": "Academic conference",
+      "id": "bigcomp-2027-14th",
+      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
+      "location": "Fukuoka, Japan",
+      "mode": "In person",
+      "name": "IEEE International Conference on Big Data and Smart Computing",
+      "organization": "IEEE (co-sponsored by KIISE)",
+      "organization_group": "IEEE",
+      "source_basis": "Primary venue page",
+      "source_url": "https://bigcomp2027-website.pages.dev/",
+      "topics": [
+        "Big data",
+        "data engineering"
       ]
     },
     {
@@ -4139,6 +1865,43 @@
       ]
     },
     {
+      "acronym": "SANER",
+      "categories": [
+        "Software engineering"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "2026-10-19",
+        "camera_ready": "2027-01-08",
+        "gates": [
+          {
+            "date": "2026-10-19",
+            "kind": "Abstract"
+          }
+        ],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-03-12",
+      "event_start": "2027-03-09",
+      "event_type": "Academic conference",
+      "id": "saner-2027",
+      "indexing": "Scopus, IEEE Xplore, Scholar",
+      "location": "Richmond, VA, USA",
+      "mode": "In person",
+      "name": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
+      "organization": "IEEE",
+      "organization_group": "IEEE",
+      "source_basis": "Primary venue page",
+      "source_url": "https://conf.researchr.org/home/saner-2027",
+      "topics": [
+        "Software Engineering"
+      ]
+    },
+    {
       "acronym": "SANER Industrial",
       "categories": [
         "Software engineering"
@@ -4338,6 +2101,195 @@
         "distributed data systems",
         "storage",
         "foundation model systems"
+      ]
+    },
+    {
+      "acronym": "ICAART",
+      "categories": [
+        "AI & machine learning"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-10-22",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2026-12-04",
+        "paper": "2026-10-22",
+        "precision": "date",
+        "timezone": "AoE"
+      },
+      "edition": "2027",
+      "event_end": "2027-02-25",
+      "event_start": "2027-02-23",
+      "event_type": "Academic conference",
+      "id": "icaart-2027",
+      "indexing": "Scopus, DBLP",
+      "location": "Valletta, Malta",
+      "mode": "In person",
+      "name": "International Conference on Agents and Artificial Intelligence",
+      "organization": "SCITEPRESS",
+      "organization_group": "SCITEPRESS",
+      "source_basis": "Primary venue page",
+      "source_url": "https://icaart.scitevents.org/ImportantDates.aspx",
+      "topics": [
+        "Agents",
+        "AI"
+      ]
+    },
+    {
+      "acronym": "GRIVAPP",
+      "categories": [
+        "Graphics, vision & XR"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-10-22",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2026-12-04",
+        "paper": "2026-10-22",
+        "precision": "date",
+        "timezone": "AoE"
+      },
+      "edition": "2027",
+      "event_end": "2027-02-28",
+      "event_start": "2027-02-26",
+      "event_type": "Academic conference",
+      "id": "grivapp-2027",
+      "indexing": "Scopus, DBLP",
+      "location": "Valletta, Malta",
+      "mode": "In person",
+      "name": "International Conference on Computer Graphics, Interaction, Visualization Theory and Applications",
+      "organization": "SCITEPRESS",
+      "organization_group": "SCITEPRESS",
+      "source_basis": "Primary venue page",
+      "source_url": "https://grivapp.scitevents.org/ImportantDates.aspx",
+      "topics": [
+        "Graphics",
+        "Visualization"
+      ]
+    },
+    {
+      "acronym": "ICISSP",
+      "categories": [
+        "Systems & cloud",
+        "Security & privacy"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-10-22",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2026-12-04",
+        "paper": "2026-10-22",
+        "precision": "date",
+        "timezone": "AoE"
+      },
+      "edition": "2027",
+      "event_end": "2027-02-24",
+      "event_start": "2027-02-22",
+      "event_type": "Academic conference",
+      "id": "icissp-2027",
+      "indexing": "Scopus, DBLP",
+      "location": "Valletta, Malta",
+      "mode": "In person",
+      "name": "International Conference on Information Systems Security and Privacy",
+      "organization": "SCITEPRESS",
+      "organization_group": "SCITEPRESS",
+      "source_basis": "Primary venue page",
+      "source_url": "https://icissp.scitevents.org/ImportantDates.aspx",
+      "topics": [
+        "Security",
+        "Privacy"
+      ]
+    },
+    {
+      "acronym": "ICORES",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-10-22",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2026-12-04",
+        "paper": "2026-10-22",
+        "precision": "date",
+        "timezone": "AoE"
+      },
+      "edition": "2027",
+      "event_end": "2027-02-22",
+      "event_start": "2027-02-20",
+      "event_type": "Academic conference",
+      "id": "icores-2027",
+      "indexing": "Scopus, DBLP",
+      "location": "Valletta, Malta",
+      "mode": "In person",
+      "name": "International Conference on Operations Research and Enterprise Systems (SCITEPRESS)",
+      "organization": "SCITEPRESS",
+      "organization_group": "SCITEPRESS",
+      "source_basis": "Primary venue page",
+      "source_url": "https://icores.scitevents.org/ImportantDates.aspx",
+      "topics": [
+        "Operations Research"
+      ]
+    },
+    {
+      "acronym": "ICPRAM",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-10-22",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2026-12-04",
+        "paper": "2026-10-22",
+        "precision": "date",
+        "timezone": "AoE"
+      },
+      "edition": "2027",
+      "event_end": "2027-02-22",
+      "event_start": "2027-02-20",
+      "event_type": "Academic conference",
+      "id": "icpram-2027",
+      "indexing": "Scopus, DBLP",
+      "location": "Valletta, Malta",
+      "mode": "In person",
+      "name": "International Conference on Pattern Recognition Applications and Methods (SCITEPRESS)",
+      "organization": "SCITEPRESS",
+      "organization_group": "SCITEPRESS",
+      "source_basis": "Primary venue page",
+      "source_url": "https://icpram.scitevents.org/ImportantDates.aspx",
+      "topics": [
+        "Pattern Recognition"
       ]
     },
     {
@@ -4574,6 +2526,47 @@
       "source_url": "https://conf.researchr.org/home/forge-2027",
       "topics": [
         "AI Engineering"
+      ]
+    },
+    {
+      "acronym": "VLDB",
+      "categories": [
+        "Data & databases"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "2026-10-25",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-10-25",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2026-11-01",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2026-12-15",
+        "paper": "2026-11-01",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-08-27",
+      "event_start": "2027-08-23",
+      "event_type": "Academic conference",
+      "id": "vldb-2027",
+      "indexing": "Scopus, DBLP, Scholar",
+      "location": "Athens, Greece",
+      "mode": "In person",
+      "name": "International Conference on Very Large Data Bases (PVLDB Vol. 20)",
+      "organization": "ACM/VLDB",
+      "organization_group": "ACM",
+      "source_basis": "Primary venue page",
+      "source_url": "https://www.vldb.org/2027/",
+      "topics": [
+        "Databases"
       ]
     },
     {
@@ -5358,7 +3351,7 @@
       "event_type": "Industry conference",
       "id": "google-cloud-next-2027",
       "indexing": "",
-      "location": "Las Vegas, NV, USA",
+      "location": "Mandalay Bay Convention Center, Las Vegas, NV, USA",
       "mode": "In person",
       "name": "Google Cloud Next",
       "organization": "Google",
@@ -5570,48 +3563,6 @@
       "source_url": "https://www.socallinuxexpo.org/scale/24x/cfp",
       "topics": [
         "Open source, systems, databases, AI"
-      ]
-    },
-    {
-      "acronym": "ICDE DEFT",
-      "categories": [
-        "Data & databases"
-      ],
-      "confidence": "projected",
-      "deadlines": {
-        "abstract": "2026-11-02",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-11-02",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-11-09",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-11-09",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027 (43rd)",
-      "event_end": "2027-05-21",
-      "event_start": "2027-05-17",
-      "event_type": "Academic conference",
-      "id": "icde-deft-2027-43rd",
-      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
-      "location": "Copenhagen, Denmark",
-      "mode": "In person",
-      "name": "IEEE ICDE Data Engineering Future Technologies Track",
-      "organization": "IEEE",
-      "organization_group": "IEEE",
-      "source_basis": "Historical cadence projection",
-      "source_url": "https://icde2027.github.io/important-dates.html",
-      "topics": [
-        "Databases",
-        "data engineering"
       ]
     },
     {
@@ -5885,6 +3836,43 @@
       ]
     },
     {
+      "acronym": "ISEC",
+      "categories": [
+        "Software engineering"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2026-11-21",
+        "gates": [
+          {
+            "date": "2026-11-08",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-11-08",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "",
+      "event_start": "",
+      "event_type": "Academic conference",
+      "id": "isec-2027",
+      "indexing": "ACM DL, DBLP, Scopus",
+      "location": "Mumbai, India",
+      "mode": "In person",
+      "name": "Innovations in Software Engineering Conference (ACM India SIGSOFT)",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "source_basis": "Primary venue page",
+      "source_url": "https://conf.researchr.org/home/isec-2027",
+      "topics": [
+        "Software engineering"
+      ]
+    },
+    {
       "acronym": "ICPE",
       "categories": [
         "Systems & cloud"
@@ -5965,6 +3953,45 @@
       "topics": [
         "Web",
         "data"
+      ]
+    },
+    {
+      "acronym": "BTW",
+      "categories": [
+        "Data & databases",
+        "Systems & cloud"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-11-10",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-11-10",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "22nd, 2027 (biennial)",
+      "event_end": "2027-03-19",
+      "event_start": "2027-03-15",
+      "event_type": "Academic conference",
+      "id": "btw-22nd-2027-biennial",
+      "indexing": "DBLP",
+      "location": "Munich, Germany (TUM/LMU)",
+      "mode": "In person",
+      "name": "Conference on Database Systems for Business, Technology and Web (GI-Fachtagung Datenbanksysteme)",
+      "organization": "GI Lecture Notes in Informatics (LNI)",
+      "organization_group": "Other",
+      "source_basis": "Primary venue page",
+      "source_url": "https://btw2027.gi.de/calls/papers",
+      "topics": [
+        "Databases",
+        "data engineering"
       ]
     },
     {
@@ -6049,6 +4076,43 @@
       "source_url": "https://cvpr.thecvf.com/Conferences/2027/Dates",
       "topics": [
         "Computer Vision"
+      ]
+    },
+    {
+      "acronym": "GTC",
+      "categories": [
+        "AI & machine learning"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-11-10",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-11-10",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-03-18",
+      "event_start": "2027-03-15",
+      "event_type": "Industry conference",
+      "id": "gtc-2027",
+      "indexing": "",
+      "location": "San Jose, CA, USA",
+      "mode": "In person",
+      "name": "NVIDIA GTC",
+      "organization": "NVIDIA",
+      "organization_group": "Other",
+      "source_basis": "Primary venue page",
+      "source_url": "https://www.nvidia.com/gtc/call-for-submissions/",
+      "topics": [
+        "AI Infrastructure"
       ]
     },
     {
@@ -6492,12 +4556,12 @@
         "timezone": "See source"
       },
       "edition": "2027",
-      "event_end": "",
-      "event_start": "",
+      "event_end": "2027-04-07",
+      "event_start": "2027-04-07",
       "event_type": "Industry conference",
       "id": "duckcon-2027",
       "indexing": "",
-      "location": "TBA",
+      "location": "Amsterdam, Netherlands",
       "mode": "TBA",
       "name": "DuckCon (DuckDB User Group)",
       "organization": "DuckDB Labs",
@@ -6506,6 +4570,43 @@
       "source_url": "https://duckdb.org/events",
       "topics": [
         "Query Engines"
+      ]
+    },
+    {
+      "acronym": "FOSDEM",
+      "categories": [
+        "Open source & community"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-11-16",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-11-16",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-01-31",
+      "event_start": "2027-01-30",
+      "event_type": "Open-source meetup",
+      "id": "fosdem-2027",
+      "indexing": "",
+      "location": "ULB Campus Solbosch, Brussels, Belgium",
+      "mode": "In person",
+      "name": "FOSDEM",
+      "organization": "FOSDEM",
+      "organization_group": "Other",
+      "source_basis": "Primary venue page",
+      "source_url": "https://fosdem.org/2027/",
+      "topics": [
+        "Open Source"
       ]
     },
     {
@@ -7114,6 +5215,44 @@
       ]
     },
     {
+      "acronym": "ICDE DEFT",
+      "categories": [
+        "Data & databases"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-03-10",
+        "gates": [
+          {
+            "date": "2026-11-22",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-02-10",
+        "paper": "2026-11-22",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-05-21",
+      "event_start": "2027-05-17",
+      "event_type": "Academic conference",
+      "id": "icde-deft-2027-43rd",
+      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
+      "location": "Copenhagen, Denmark",
+      "mode": "In person",
+      "name": "IEEE ICDE Data Engineering Future Technologies Track",
+      "organization": "IEEE",
+      "organization_group": "IEEE",
+      "source_basis": "Primary venue page",
+      "source_url": "https://icde2027.github.io/important-dates.html",
+      "topics": [
+        "Databases",
+        "data engineering"
+      ]
+    },
+    {
       "acronym": "CPAL",
       "categories": [
         "AI & machine learning"
@@ -7436,6 +5575,88 @@
       ]
     },
     {
+      "acronym": "CoNEXT",
+      "categories": [
+        "Networking"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "2026-11-27",
+        "camera_ready": "2027-04-30",
+        "gates": [
+          {
+            "date": "2026-11-27",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2026-12-04",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-03-31",
+        "paper": "2026-12-04",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-12-09",
+      "event_start": "2027-12-06",
+      "event_type": "Academic conference",
+      "id": "conext-2027",
+      "indexing": "Scopus, DBLP, Scholar",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "ACM International Conference on emerging Networking EXperiments and Technologies",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "source_basis": "Primary venue page",
+      "source_url": "https://www.sigcomm.org/events/conext-conference",
+      "topics": [
+        "Networking"
+      ]
+    },
+    {
+      "acronym": "Middleware",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "2026-11-27",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-11-27",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2026-12-04",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-12-04",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-12-17",
+      "event_start": "2027-12-13",
+      "event_type": "Academic conference",
+      "id": "middleware-2027",
+      "indexing": "Scopus, DBLP, Scholar",
+      "location": "Kyoto, Japan",
+      "mode": "TBA",
+      "name": "ACM/IFIP International Middleware Conference",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "source_basis": "Primary venue page",
+      "source_url": "https://middleware-conf.github.io/",
+      "topics": [
+        "Middleware"
+      ]
+    },
+    {
       "acronym": "EDBT Industrial",
       "categories": [
         "Data & databases"
@@ -7561,7 +5782,7 @@
         "Data & databases",
         "Systems & cloud"
       ],
-      "confidence": "projected",
+      "confidence": "verified",
       "deadlines": {
         "abstract": "",
         "camera_ready": "",
@@ -7577,17 +5798,17 @@
         "timezone": "See source"
       },
       "edition": "2027",
-      "event_end": "",
-      "event_start": "",
+      "event_end": "2027-04-17",
+      "event_start": "2027-04-15",
       "event_type": "Industry conference",
       "id": "devoxx-greece-2027",
       "indexing": "",
-      "location": "Athens, Greece",
+      "location": "Athens Megaron International Conference Center, Athens, Greece",
       "mode": "In person",
       "name": "Devoxx Greece 2027",
       "organization": "Devoxx",
       "organization_group": "Other",
-      "source_basis": "Historical cadence projection",
+      "source_basis": "Primary venue page",
       "source_url": "https://devoxx.gr/",
       "topics": [
         "General developer",
@@ -7832,6 +6053,47 @@
       ]
     },
     {
+      "acronym": "ICS",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "2026-12-01",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-12-01",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2026-12-07",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-03-12",
+        "paper": "2026-12-07",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-06-11",
+      "event_start": "2027-06-05",
+      "event_type": "Academic conference",
+      "id": "ics-2027",
+      "indexing": "Scopus, DBLP, Scholar",
+      "location": "Atlanta, GA, USA",
+      "mode": "In person",
+      "name": "ACM International Conference on Supercomputing",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "source_basis": "Primary venue page",
+      "source_url": "https://www.ics-conference.org/",
+      "topics": [
+        "HPC"
+      ]
+    },
+    {
       "acronym": "AI Council",
       "categories": [
         "Data & databases",
@@ -7853,12 +6115,12 @@
         "timezone": "See source"
       },
       "edition": "2027",
-      "event_end": "",
-      "event_start": "",
+      "event_end": "2027-03-24",
+      "event_start": "2027-03-23",
       "event_type": "Industry conference",
       "id": "ai-council-2027",
       "indexing": "",
-      "location": "San Francisco, CA, USA",
+      "location": "Palace Hotel, San Francisco, CA, USA",
       "mode": "In person",
       "name": "AI Council (formerly Data Council)",
       "organization": "Zero Prime",
@@ -8112,125 +6374,6 @@
       ]
     },
     {
-      "acronym": "ISPASS",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "projected",
-      "deadlines": {
-        "abstract": "2026-12-04",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-12-04",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-12-11",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-12-11",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "",
-      "event_start": "",
-      "event_type": "Academic conference",
-      "id": "ispass-2027",
-      "indexing": "Scopus, IEEE Xplore, Scholar",
-      "location": "TBA",
-      "mode": "TBA",
-      "name": "IEEE International Symposium on Performance Analysis of Systems and Software",
-      "organization": "IEEE",
-      "organization_group": "IEEE",
-      "source_basis": "Historical cadence projection",
-      "source_url": "https://ispass.org/",
-      "topics": [
-        "Performance"
-      ]
-    },
-    {
-      "acronym": "CoNEXT",
-      "categories": [
-        "Networking"
-      ],
-      "confidence": "projected",
-      "deadlines": {
-        "abstract": "2026-12-05",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-12-05",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-12-12",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-12-12",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "",
-      "event_start": "",
-      "event_type": "Academic conference",
-      "id": "conext-2027",
-      "indexing": "Scopus, DBLP, Scholar",
-      "location": "TBA",
-      "mode": "TBA",
-      "name": "ACM International Conference on emerging Networking EXperiments and Technologies",
-      "organization": "ACM",
-      "organization_group": "ACM",
-      "source_basis": "Historical cadence projection",
-      "source_url": "https://www.sigcomm.org/events/conext-conference",
-      "topics": [
-        "Networking"
-      ]
-    },
-    {
-      "acronym": "FOSDEM",
-      "categories": [
-        "Open source & community"
-      ],
-      "confidence": "projected",
-      "deadlines": {
-        "abstract": "",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-12-05",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-12-05",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "2027-01-31",
-      "event_start": "2027-01-30",
-      "event_type": "Open-source meetup",
-      "id": "fosdem-2027",
-      "indexing": "",
-      "location": "Brussels, Belgium",
-      "mode": "In person",
-      "name": "FOSDEM",
-      "organization": "FOSDEM",
-      "organization_group": "Other",
-      "source_basis": "Historical cadence projection",
-      "source_url": "https://fosdem.org/2027/",
-      "topics": [
-        "Open Source"
-      ]
-    },
-    {
       "acronym": "OCX",
       "categories": [
         "Open source & community"
@@ -8344,85 +6487,41 @@
       ]
     },
     {
-      "acronym": "ICS",
+      "acronym": "AIxDKE",
       "categories": [
-        "Systems & cloud"
+        "Data & databases",
+        "AI & machine learning"
       ],
-      "confidence": "projected",
+      "confidence": "verified",
       "deadlines": {
-        "abstract": "2026-12-08",
-        "camera_ready": "",
+        "abstract": "",
+        "camera_ready": "2026-12-31",
         "gates": [
           {
-            "date": "2026-12-08",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-12-15",
+            "date": "2026-12-10",
             "kind": "Paper"
           }
         ],
         "notification": "",
-        "paper": "2026-12-15",
+        "paper": "2026-12-10",
         "precision": "date",
         "timezone": "See source"
       },
       "edition": "2027",
-      "event_end": "",
-      "event_start": "",
+      "event_end": "2027-02-03",
+      "event_start": "2027-02-01",
       "event_type": "Academic conference",
-      "id": "ics-2027",
-      "indexing": "Scopus, DBLP, Scholar",
-      "location": "Atlanta, GA, USA (FCRC)",
-      "mode": "In person",
-      "name": "ACM International Conference on Supercomputing",
-      "organization": "ACM",
-      "organization_group": "ACM",
-      "source_basis": "Historical cadence projection",
-      "source_url": "https://www.ics-conference.org/",
+      "id": "aixdke-2027",
+      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
+      "location": "Laguna Hills, CA, USA (hybrid)",
+      "mode": "Hybrid",
+      "name": "IEEE International Conference on AI x Data and Knowledge Engineering (formerly AIKE)",
+      "organization": "IEEE",
+      "organization_group": "IEEE",
+      "source_basis": "Primary venue page",
+      "source_url": "https://www.aixdke.org/dates",
       "topics": [
-        "HPC"
-      ]
-    },
-    {
-      "acronym": "Middleware",
-      "categories": [
-        "Systems & cloud"
-      ],
-      "confidence": "projected",
-      "deadlines": {
-        "abstract": "2026-12-09",
-        "camera_ready": "",
-        "gates": [
-          {
-            "date": "2026-12-09",
-            "kind": "Abstract"
-          },
-          {
-            "date": "2026-12-12",
-            "kind": "Paper"
-          }
-        ],
-        "notification": "",
-        "paper": "2026-12-12",
-        "precision": "date",
-        "timezone": "See source"
-      },
-      "edition": "2027",
-      "event_end": "",
-      "event_start": "",
-      "event_type": "Academic conference",
-      "id": "middleware-2027",
-      "indexing": "Scopus, DBLP, Scholar",
-      "location": "TBA",
-      "mode": "TBA",
-      "name": "ACM/IFIP International Middleware Conference",
-      "organization": "ACM",
-      "organization_group": "ACM",
-      "source_basis": "Historical cadence projection",
-      "source_url": "https://middleware-conf.github.io/",
-      "topics": [
-        "Middleware"
+        "Data and knowledge engineering"
       ]
     },
     {
@@ -8577,6 +6676,47 @@
       "source_url": "https://speakers.infotoday.com/ds-speakers/",
       "topics": [
         "Data Management"
+      ]
+    },
+    {
+      "acronym": "ISPASS",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "2026-12-11",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-12-11",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2026-12-18",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-03-08",
+        "paper": "2026-12-18",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-05-11",
+      "event_start": "2027-05-09",
+      "event_type": "Academic conference",
+      "id": "ispass-2027",
+      "indexing": "Scopus, IEEE Xplore, Scholar",
+      "location": "New York City, NY, USA",
+      "mode": "TBA",
+      "name": "IEEE International Symposium on Performance Analysis of Systems and Software",
+      "organization": "IEEE",
+      "organization_group": "IEEE",
+      "source_basis": "Primary venue page",
+      "source_url": "https://ispass.org/",
+      "topics": [
+        "Performance"
       ]
     },
     {
@@ -8876,13 +7016,13 @@
         "precision": "date",
         "timezone": "See source"
       },
-      "edition": "SEC 2027 (42nd)",
-      "event_end": "",
-      "event_start": "",
+      "edition": "2027",
+      "event_end": "2027-06-16",
+      "event_start": "2027-06-14",
       "event_type": "Academic conference",
       "id": "ifip-sec-sec-2027-42nd",
       "indexing": "Scopus, DBLP",
-      "location": "Linkoping, Sweden",
+      "location": "Linköping, Sweden",
       "mode": "In person",
       "name": "IFIP TC-11 International Conference on ICT Systems Security and Privacy Protection",
       "organization": "Springer IFIP AICT",
@@ -9475,6 +7615,47 @@
       ]
     },
     {
+      "acronym": "SIGMETRICS",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "2027-01-04",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-01-04",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2027-01-11",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-01-11",
+        "precision": "date",
+        "timezone": "AoE"
+      },
+      "edition": "2027",
+      "event_end": "2027-06-11",
+      "event_start": "2027-06-07",
+      "event_type": "Academic conference",
+      "id": "sigmetrics-2027",
+      "indexing": "Scopus, DBLP, Scholar",
+      "location": "Atlanta, GA, USA (FCRC)",
+      "mode": "In person",
+      "name": "ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "source_basis": "Primary venue page",
+      "source_url": "https://www.sigmetrics.org/sigmetrics2027/",
+      "topics": [
+        "Performance"
+      ]
+    },
+    {
       "acronym": "ACL",
       "categories": [
         "AI & machine learning"
@@ -9617,12 +7798,12 @@
         "timezone": "See source"
       },
       "edition": "2027",
-      "event_end": "",
-      "event_start": "",
+      "event_end": "2027-10-15",
+      "event_start": "2027-10-11",
       "event_type": "Academic conference",
       "id": "ccs-2027",
       "indexing": "Scopus, DBLP, Scholar",
-      "location": "TBA",
+      "location": "Atlanta, USA",
       "mode": "TBA",
       "name": "ACM Conference on Computer and Communications Security",
       "organization": "ACM",
@@ -9660,7 +7841,7 @@
       "event_type": "Open-source meetup",
       "id": "nordic-pgday-2027",
       "indexing": "",
-      "location": "Stockholm, Sweden",
+      "location": "Courtyard Stockholm Kungsholmen, Stockholm, Sweden",
       "mode": "In person",
       "name": "Nordic PGDay 2027",
       "organization": "PostgreSQL Europe",
@@ -10095,7 +8276,7 @@
       "event_type": "Open-source meetup",
       "id": "pycon-italia-2027",
       "indexing": "",
-      "location": "Bologna, Italy",
+      "location": "Savoia Regency Hotel, Bologna, Italy",
       "mode": "In person",
       "name": "PyCon Italia 2027",
       "organization": "Python Italia",
@@ -10287,7 +8468,7 @@
       "event_type": "Summit",
       "id": "oss-na-2027",
       "indexing": "",
-      "location": "Vancouver, Canada",
+      "location": "Vancouver, BC, Canada",
       "mode": "In person",
       "name": "Open Source Summit North America",
       "organization": "Linux Fdn",
@@ -10320,8 +8501,8 @@
         "timezone": "See source"
       },
       "edition": "2027",
-      "event_end": "",
-      "event_start": "",
+      "event_end": "2027-05-14",
+      "event_start": "2027-05-11",
       "event_type": "Open-source meetup",
       "id": "pgconf-dev-2027",
       "indexing": "",
@@ -10362,7 +8543,7 @@
       "event_type": "Summit",
       "id": "snowflake-summit-2027",
       "indexing": "",
-      "location": "San Francisco, CA, USA",
+      "location": "Moscone Center, San Francisco, CA, USA",
       "mode": "In person",
       "name": "Snowflake Summit",
       "organization": "Snowflake",
@@ -10874,6 +9055,58 @@
       "source_url": "https://cug.org/cug-2027-call-for-papers/",
       "topics": [
         "HPC operations"
+      ]
+    },
+    {
+      "acronym": "ACNS",
+      "categories": [
+        "Security & privacy",
+        "Networking"
+      ],
+      "confidence": "verified",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-01-21",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-03-25",
+        "paper": "2027-01-21",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "ACNS 2027 (25th)",
+      "event_end": "2027-07-01",
+      "event_start": "2027-06-28",
+      "event_type": "Academic conference",
+      "id": "acns-acns-2027-25th",
+      "indexing": "Scopus, DBLP",
+      "location": "Egham (Royal Holloway), UK",
+      "mode": "TBA",
+      "name": "International Conference on Applied Cryptography and Network Security",
+      "organization": "Springer LNCS",
+      "organization_group": "Springer",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-09-24",
+        "confidence": "verified",
+        "edition": "ACNS 2027 (25th)",
+        "event_end": "2027-07-01",
+        "event_start": "2027-06-28",
+        "location": "Egham (Royal Holloway), UK",
+        "notification": "2026-11-26",
+        "paper": "2026-09-24",
+        "source_url": "https://acns2027.isg.rhul.ac.uk/"
+      },
+      "source_basis": "Primary venue page",
+      "source_url": "https://acns2027.isg.rhul.ac.uk/",
+      "topics": [
+        "Security",
+        "privacy"
       ]
     },
     {
@@ -18902,6 +17135,60 @@
       ]
     },
     {
+      "acronym": "ICLR",
+      "categories": [
+        "AI & machine learning"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "2027-09-18",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-09-18",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2027-09-25",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-12-16",
+        "paper": "2027-09-25",
+        "precision": "date",
+        "timezone": "AoE"
+      },
+      "edition": "2028",
+      "event_end": "",
+      "event_start": "",
+      "event_type": "Academic conference",
+      "id": "iclr-2028",
+      "indexing": "Scopus, DBLP, Scholar",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "International Conference on Learning Representations",
+      "organization": "OpenReview",
+      "organization_group": "OpenReview",
+      "previous_cycle": {
+        "abstract": "2026-09-18",
+        "camera_ready": "",
+        "closed": "2026-09-25",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "",
+        "event_start": "",
+        "location": "TBA",
+        "notification": "2026-12-16",
+        "paper": "2026-09-25",
+        "source_url": "https://iclr.cc/Conferences/2027/CallForPapers"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://iclr.cc/Conferences/2027/CallForPapers",
+      "topics": [
+        "Machine Learning"
+      ]
+    },
+    {
       "acronym": "CfgMgmtCamp",
       "categories": [
         "Open source & community"
@@ -19260,6 +17547,60 @@
       ]
     },
     {
+      "acronym": "ECIR",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "2027-09-21",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-09-21",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2027-10-05",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-12-07",
+        "paper": "2027-10-05",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-03-25",
+      "event_start": "2028-03-21",
+      "event_type": "Academic conference",
+      "id": "ecir-2028",
+      "indexing": "Scopus, DBLP, Scholar",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "European Conference on Information Retrieval",
+      "organization": "Springer",
+      "organization_group": "Springer",
+      "previous_cycle": {
+        "abstract": "2026-09-21",
+        "camera_ready": "",
+        "closed": "2026-10-05",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-03-25",
+        "event_start": "2027-03-21",
+        "location": "Southampton, UK",
+        "notification": "2026-12-07",
+        "paper": "2026-10-05",
+        "source_url": "https://ecir2027.co.uk/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://ecir2027.co.uk/",
+      "topics": [
+        "Information Retrieval"
+      ]
+    },
+    {
       "acronym": "CCGrid Tutorials",
       "categories": [
         "Systems & cloud"
@@ -19418,6 +17759,62 @@
       ]
     },
     {
+      "acronym": "SaTML",
+      "categories": [
+        "AI & machine learning",
+        "Security & privacy"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "2027-09-22",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-09-22",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2027-09-29",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-12-16",
+        "paper": "2027-09-29",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "SaTML 2028 (6th)",
+      "event_end": "2028-05-10",
+      "event_start": "2028-05-08",
+      "event_type": "Academic conference",
+      "id": "satml-satml-2027-5th",
+      "indexing": "IEEE Xplore, DBLP",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "IEEE Conference on Secure and Trustworthy Machine Learning",
+      "organization": "IEEE",
+      "organization_group": "IEEE",
+      "previous_cycle": {
+        "abstract": "2026-09-22",
+        "camera_ready": "",
+        "closed": "2026-09-29",
+        "confidence": "verified",
+        "edition": "SaTML 2027 (5th)",
+        "event_end": "2027-05-10",
+        "event_start": "2027-05-08",
+        "location": "Reykjavik, Iceland",
+        "notification": "2026-12-16",
+        "paper": "2026-09-29",
+        "source_url": "https://satml.org/call-for-papers/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://satml.org/call-for-papers/",
+      "topics": [
+        "ML security",
+        "privacy"
+      ]
+    },
+    {
       "acronym": "Bench",
       "categories": [
         "Systems & cloud"
@@ -19469,10 +17866,122 @@
       ]
     },
     {
-      "acronym": "ACNS",
+      "acronym": "S2AI",
       "categories": [
-        "Security & privacy",
-        "Networking"
+        "Data & databases",
+        "Systems & cloud",
+        "AI & machine learning"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "2027-09-24",
+        "camera_ready": "2027-11-25",
+        "gates": [
+          {
+            "date": "2027-09-24",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2027-10-01",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-11-04",
+        "paper": "2027-10-01",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-12-17",
+      "event_start": "2027-12-14",
+      "event_type": "Academic conference",
+      "id": "s2ai-2027",
+      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Workshop on Secure and Safe AI Agents for Big Data Infrastructures (at IEEE BigData)",
+      "organization": "IEEE Computer Society (IEEE BigData 2026 proceedings)",
+      "organization_group": "IEEE",
+      "previous_cycle": {
+        "abstract": "2026-09-24",
+        "camera_ready": "2026-11-25",
+        "closed": "2026-10-01",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-17",
+        "event_start": "2026-12-14",
+        "location": "Phoenix, AZ, USA",
+        "notification": "2026-11-04",
+        "paper": "2026-10-01",
+        "source_url": "https://s2ai-bigdata.github.io"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://s2ai-bigdata.github.io",
+      "topics": [
+        "Agentic AI systems"
+      ]
+    },
+    {
+      "acronym": "EG",
+      "categories": [
+        "Graphics, vision & XR"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "2027-09-25",
+        "camera_ready": "2028-02-23",
+        "gates": [
+          {
+            "date": "2027-09-25",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2027-10-01",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-12-18",
+        "paper": "2027-10-01",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "Eurographics 2028 (49th)",
+      "event_end": "2028-05-14",
+      "event_start": "2028-05-10",
+      "event_type": "Academic conference",
+      "id": "eg-eurographics-2027-48th",
+      "indexing": "Scopus, DBLP, WoS (CGF journal)",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Eurographics - Annual Conference of the European Association for Computer Graphics (full papers)",
+      "organization": "Eurographics / Wiley (Computer Graphics Forum)",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "2026-09-25",
+        "camera_ready": "2027-02-23",
+        "closed": "2026-10-01",
+        "confidence": "verified",
+        "edition": "Eurographics 2027 (48th)",
+        "event_end": "2027-05-14",
+        "event_start": "2027-05-10",
+        "location": "Lucca, Italy",
+        "notification": "2026-12-18",
+        "paper": "2026-10-01",
+        "source_url": "https://eg2027.isti.cnr.it/call-for-papers/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://eg2027.isti.cnr.it/call-for-papers/",
+      "topics": [
+        "Computer graphics",
+        "visualization",
+        "XR"
+      ]
+    },
+    {
+      "acronym": "IAPP UK+AIGG",
+      "categories": [
+        "AI & machine learning",
+        "Security & privacy"
       ],
       "confidence": "projected",
       "deadlines": {
@@ -19480,44 +17989,44 @@
         "camera_ready": "",
         "gates": [
           {
-            "date": "2027-09-24",
+            "date": "2027-09-27",
             "kind": "Paper"
           }
         ],
-        "notification": "2027-11-26",
-        "paper": "2027-09-24",
+        "notification": "",
+        "paper": "2027-09-27",
         "precision": "date",
-        "timezone": "See source"
+        "timezone": "EDT"
       },
-      "edition": "ACNS 2028 (26th)",
-      "event_end": "2028-07-01",
-      "event_start": "2028-06-28",
-      "event_type": "Academic conference",
-      "id": "acns-acns-2027-25th",
-      "indexing": "Scopus, DBLP",
+      "edition": "2028",
+      "event_end": "2028-04-08",
+      "event_start": "2028-04-05",
+      "event_type": "Industry conference",
+      "id": "iapp-uk-aigg-2028",
+      "indexing": "",
       "location": "TBA",
       "mode": "TBA",
-      "name": "International Conference on Applied Cryptography and Network Security",
-      "organization": "Springer LNCS",
-      "organization_group": "Springer",
+      "name": "IAPP UK Intensive + AI Governance Global 2027",
+      "organization": "IAPP",
+      "organization_group": "Other",
       "previous_cycle": {
         "abstract": "",
         "camera_ready": "",
-        "closed": "2026-09-24",
+        "closed": "2026-09-27",
         "confidence": "verified",
-        "edition": "ACNS 2027 (25th)",
-        "event_end": "2027-07-01",
-        "event_start": "2027-06-28",
-        "location": "Egham (Royal Holloway), UK",
-        "notification": "2026-11-26",
-        "paper": "2026-09-24",
-        "source_url": "https://acns2027.isg.rhul.ac.uk/"
+        "edition": "2027",
+        "event_end": "2027-04-08",
+        "event_start": "2027-04-05",
+        "location": "London, UK",
+        "notification": "",
+        "paper": "2026-09-27",
+        "source_url": "https://iapp.org/conferences/speak-at-an-iapp-conference"
       },
       "source_basis": "Historical cadence projection",
-      "source_url": "https://acns2027.isg.rhul.ac.uk/",
+      "source_url": "https://iapp.org/conferences/speak-at-an-iapp-conference",
       "topics": [
-        "Security",
-        "privacy"
+        "Privacy",
+        "AI governance"
       ]
     },
     {
@@ -19556,6 +18065,2083 @@
       "topics": [
         "information architecture",
         "metadata"
+      ]
+    },
+    {
+      "acronym": "PyTorch Day Japan",
+      "categories": [
+        "Systems & cloud",
+        "AI & machine learning",
+        "Open source & community"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-09-27",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-10-13",
+        "paper": "2027-09-27",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-12-10",
+      "event_start": "2027-12-10",
+      "event_type": "Open-source meetup",
+      "id": "pytorch-day-japan-2027",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "PyTorch Day Japan 2026",
+      "organization": "PyTorch Foundation / Linux Foundation",
+      "organization_group": "Linux Foundation",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-09-27",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-10",
+        "event_start": "2026-12-10",
+        "location": "Tokyo, Japan",
+        "notification": "2026-10-13",
+        "paper": "2026-09-27",
+        "source_url": "https://events.linuxfoundation.org/pytorch-day-japan/program/cfp/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://events.linuxfoundation.org/pytorch-day-japan/program/cfp/",
+      "topics": [
+        "Open source AI",
+        "ML systems"
+      ]
+    },
+    {
+      "acronym": "Middleware Industry",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-10-16",
+        "gates": [
+          {
+            "date": "2027-09-28",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-10-04",
+        "paper": "2027-09-28",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-12-18",
+      "event_start": "2027-12-14",
+      "event_type": "Academic conference",
+      "id": "middleware-industry-2027",
+      "indexing": "ACM DL, DBLP, Scopus",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "ACM/IFIP Middleware 2026 Industry Track",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-10-16",
+        "closed": "2026-09-28",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-18",
+        "event_start": "2026-12-14",
+        "location": "Tarragona, Spain",
+        "notification": "2026-10-04",
+        "paper": "2026-09-28",
+        "source_url": "https://middleware-conf.github.io/2026/calls/call-for-industry-papers/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://middleware-conf.github.io/2026/calls/call-for-industry-papers/",
+      "topics": [
+        "Distributed systems"
+      ]
+    },
+    {
+      "acronym": "Apache Doris Summit",
+      "categories": [
+        "Data & databases"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-09-29",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-09-29",
+        "precision": "date",
+        "timezone": "PDT"
+      },
+      "edition": "2027",
+      "event_end": "2027-10-22",
+      "event_start": "2027-10-21",
+      "event_type": "Summit",
+      "id": "apache-doris-summit-2027",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Apache Doris Summit 2026",
+      "organization": "Apache Doris community / VeloDB",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-09-29",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-10-22",
+        "event_start": "2026-10-21",
+        "location": "Online",
+        "notification": "",
+        "paper": "2026-09-29",
+        "source_url": "https://sessionize.com/apache-doris-summit-2026/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://sessionize.com/apache-doris-summit-2026/",
+      "topics": [
+        "Real-time analytics database"
+      ]
+    },
+    {
+      "acronym": "AISTATS",
+      "categories": [
+        "AI & machine learning"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "2027-09-29",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-09-29",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2027-10-06",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2028-01-20",
+        "paper": "2027-10-06",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-05-06",
+      "event_start": "2028-05-03",
+      "event_type": "Academic conference",
+      "id": "aistats-2028",
+      "indexing": "Scopus, DBLP, Scholar",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "International Conference on Artificial Intelligence and Statistics",
+      "organization": "PMLR",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "2026-09-29",
+        "camera_ready": "",
+        "closed": "2026-10-06",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-05-06",
+        "event_start": "2027-05-03",
+        "location": "Montreal, Canada",
+        "notification": "2027-01-20",
+        "paper": "2026-10-06",
+        "source_url": "https://virtual.aistats.org/Conferences/2027/CallForPapers"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://virtual.aistats.org/Conferences/2027/CallForPapers",
+      "topics": [
+        "Machine Learning"
+      ]
+    },
+    {
+      "acronym": "Middleware Demos/Posters",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-10-30",
+        "gates": [
+          {
+            "date": "2027-09-30",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-10-15",
+        "paper": "2027-09-30",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-12-18",
+      "event_start": "2027-12-14",
+      "event_type": "Academic conference",
+      "id": "middleware-demos-posters-2027",
+      "indexing": "ACM DL, DBLP, Scopus",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "ACM/IFIP Middleware 2026 Demos and Posters",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-10-30",
+        "closed": "2026-09-30",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-18",
+        "event_start": "2026-12-14",
+        "location": "Tarragona, Spain",
+        "notification": "2026-10-15",
+        "paper": "2026-09-30",
+        "source_url": "https://middleware-conf.github.io/2026/calls/call-for-demos-and-posters/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://middleware-conf.github.io/2026/calls/call-for-demos-and-posters/",
+      "topics": [
+        "Distributed systems"
+      ]
+    },
+    {
+      "acronym": "ACIIDS",
+      "categories": [
+        "AI & machine learning",
+        "Data & databases"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-09-30",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-09-30",
+        "precision": "date",
+        "timezone": "AoE"
+      },
+      "edition": "2028",
+      "event_end": "2028-04-07",
+      "event_start": "2028-04-05",
+      "event_type": "Academic conference",
+      "id": "aciids-aciids-2027-19th",
+      "indexing": "Springer LNCS/DBLP/Scopus",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Asian Conference on Intelligent Information and Database Systems",
+      "organization": "Springer",
+      "organization_group": "Springer",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-09-30",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-04-07",
+        "event_start": "2027-04-05",
+        "location": "Bali, Indonesia",
+        "notification": "",
+        "paper": "2026-09-30",
+        "source_url": "https://aciids.pwr.edu.pl/2027/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://aciids.pwr.edu.pl/2027/",
+      "topics": [
+        "databases",
+        "intelligent systems"
+      ]
+    },
+    {
+      "acronym": "BTW Industry",
+      "categories": [
+        "Data & databases"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-09-30",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-09-30",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-03-19",
+      "event_start": "2028-03-15",
+      "event_type": "Academic conference",
+      "id": "btw-industry-2028",
+      "indexing": "DBLP",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "BTW 2027 Industry Track",
+      "organization": "GI Lecture Notes in Informatics (LNI)",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-09-30",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-03-19",
+        "event_start": "2027-03-15",
+        "location": "Munich, Germany",
+        "notification": "",
+        "paper": "2026-09-30",
+        "source_url": "https://btw2027.gi.de/calls/industry"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://btw2027.gi.de/calls/industry",
+      "topics": [
+        "Databases"
+      ]
+    },
+    {
+      "acronym": "DCF Trends",
+      "categories": [
+        "Data & databases",
+        "AI & machine learning"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-09-30",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-09-30",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-05-07",
+      "event_start": "2028-05-05",
+      "event_type": "Summit",
+      "id": "dcf-trends-2028",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Data Center Frontier Trends Summit 2027",
+      "organization": "Endeavor Business Media (Data Center Frontier)",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-09-30",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-05-07",
+        "event_start": "2027-05-05",
+        "location": "Glendale, AZ, USA",
+        "notification": "",
+        "paper": "2026-09-30",
+        "source_url": "https://www.dcftrends.com/2027/cfs"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://www.dcftrends.com/2027/cfs",
+      "topics": [
+        "Data centre",
+        "AI infrastructure"
+      ]
+    },
+    {
+      "acronym": "GIDS",
+      "categories": [
+        "Data & databases",
+        "Systems & cloud",
+        "Architecture & hardware"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-09-30",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-09-30",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-04-30",
+      "event_start": "2028-04-27",
+      "event_type": "Summit",
+      "id": "gids-2028",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Great International Developer Summit 2027",
+      "organization": "Saltmarch Media",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-09-30",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-04-30",
+        "event_start": "2027-04-27",
+        "location": "Bengaluru, India",
+        "notification": "",
+        "paper": "2026-09-30",
+        "source_url": "https://form.jotform.com/saltmarch/gids2027cfp"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://form.jotform.com/saltmarch/gids2027cfp",
+      "topics": [
+        "Architecture",
+        "distributed systems",
+        "data",
+        "platform"
+      ]
+    },
+    {
+      "acronym": "BDCloud",
+      "categories": [
+        "Data & databases",
+        "Systems & cloud"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-11-30",
+        "gates": [
+          {
+            "date": "2027-09-30",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-10-30",
+        "paper": "2027-09-30",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027 (17th)",
+      "event_end": "2027-12-30",
+      "event_start": "2027-12-27",
+      "event_type": "Academic conference",
+      "id": "bdcloud-2026-16th",
+      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "IEEE International Conference on Big Data and Cloud Computing",
+      "organization": "IEEE",
+      "organization_group": "IEEE",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-11-30",
+        "closed": "2026-09-30",
+        "confidence": "verified",
+        "edition": "2026 (16th)",
+        "event_end": "2026-12-30",
+        "event_start": "2026-12-27",
+        "location": "Kuala Lumpur, Malaysia",
+        "notification": "2026-10-30",
+        "paper": "2026-09-30",
+        "source_url": "https://ieee-ai-for-science.org/2026/bdcloud/index.php"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://ieee-ai-for-science.org/2026/bdcloud/index.php",
+      "topics": [
+        "Big data",
+        "cloud"
+      ]
+    },
+    {
+      "acronym": "ISPA",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-11-30",
+        "gates": [
+          {
+            "date": "2027-09-30",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-10-30",
+        "paper": "2027-09-30",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027 (25th)",
+      "event_end": "2027-12-30",
+      "event_start": "2027-12-27",
+      "event_type": "Academic conference",
+      "id": "ispa-2026-24th",
+      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "IEEE International Symposium on Parallel and Distributed Processing with Applications",
+      "organization": "IEEE",
+      "organization_group": "IEEE",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-11-30",
+        "closed": "2026-09-30",
+        "confidence": "verified",
+        "edition": "2026 (24th)",
+        "event_end": "2026-12-30",
+        "event_start": "2026-12-27",
+        "location": "Kuala Lumpur, Malaysia",
+        "notification": "2026-10-30",
+        "paper": "2026-09-30",
+        "source_url": "https://ieee-ai-for-science.org/2026/ispa/index.php"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://ieee-ai-for-science.org/2026/ispa/index.php",
+      "topics": [
+        "Parallel and distributed systems"
+      ]
+    },
+    {
+      "acronym": "Mid4CC",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-11-15",
+        "gates": [
+          {
+            "date": "2027-09-30",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-11-01",
+        "paper": "2027-09-30",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "5th (2027)",
+      "event_end": "2027-12-18",
+      "event_start": "2027-12-14",
+      "event_type": "Academic conference",
+      "id": "mid4cc-4th-2027",
+      "indexing": "ACM DL, DBLP, Scopus",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Intl Workshop on Middleware for the Computing Continuum (at Middleware 2026)",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-11-15",
+        "closed": "2026-09-30",
+        "confidence": "verified",
+        "edition": "4th (2026)",
+        "event_end": "2026-12-18",
+        "event_start": "2026-12-14",
+        "location": "Tarragona, Spain",
+        "notification": "2026-11-01",
+        "paper": "2026-09-30",
+        "source_url": "https://mid4cc.netsons.org/2026/index.html"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://mid4cc.netsons.org/2026/index.html",
+      "topics": [
+        "Cloud",
+        "edge"
+      ]
+    },
+    {
+      "acronym": "SCA",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "2027-09-30",
+        "camera_ready": "2027-12-15",
+        "gates": [
+          {
+            "date": "2027-09-30",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2027-10-07",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-11-20",
+        "paper": "2027-10-07",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-03-04",
+      "event_start": "2028-03-01",
+      "event_type": "Academic conference",
+      "id": "sca-2028",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "SupercomputingAsia 2027",
+      "organization": "ACM ICPS style (ACM Proceedings format)",
+      "organization_group": "ACM",
+      "previous_cycle": {
+        "abstract": "2026-09-30",
+        "camera_ready": "2026-12-15",
+        "closed": "2026-10-07",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-03-04",
+        "event_start": "2027-03-01",
+        "location": "Singapore",
+        "notification": "2026-11-20",
+        "paper": "2026-10-07",
+        "source_url": "https://www.sc-asia.org/sca2027-call-for-papers/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://www.sc-asia.org/sca2027-call-for-papers/",
+      "topics": [
+        "HPC"
+      ]
+    },
+    {
+      "acronym": "Fabric February",
+      "categories": [
+        "Data & databases",
+        "Open source & community"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-01",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-10-15",
+        "paper": "2027-10-01",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-02-04",
+      "event_start": "2028-02-02",
+      "event_type": "Open-source meetup",
+      "id": "fabric-february-2028",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Fabric February 2027",
+      "organization": "Fabric February (Norwegian community)",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-01",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-02-04",
+        "event_start": "2027-02-02",
+        "location": "Oslo, Norway",
+        "notification": "2026-10-15",
+        "paper": "2026-10-01",
+        "source_url": "https://sessionize.com/fabric-february-2027/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://sessionize.com/fabric-february-2027/",
+      "topics": [
+        "Microsoft Fabric",
+        "lakehouse",
+        "real-time intelligence"
+      ]
+    },
+    {
+      "acronym": "HiPC Posters",
+      "categories": [
+        "Data & databases",
+        "Systems & cloud"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-11-13",
+        "gates": [
+          {
+            "date": "2027-10-01",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-11-06",
+        "paper": "2027-10-01",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027 (34th)",
+      "event_end": "2027-12-19",
+      "event_start": "2027-12-16",
+      "event_type": "Academic conference",
+      "id": "hipc-posters-2026-33rd",
+      "indexing": "IEEE Xplore",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "IEEE HiPC 2026 Poster Track",
+      "organization": "IEEE",
+      "organization_group": "IEEE",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-11-13",
+        "closed": "2026-10-01",
+        "confidence": "verified",
+        "edition": "2026 (33rd)",
+        "event_end": "2026-12-19",
+        "event_start": "2026-12-16",
+        "location": "Bengaluru, India",
+        "notification": "2026-11-06",
+        "paper": "2026-10-01",
+        "source_url": "https://hipc.org/call-for-posters/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://hipc.org/call-for-posters/",
+      "topics": [
+        "HPC",
+        "data analytics"
+      ]
+    },
+    {
+      "acronym": "IPDPS",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "2027-10-01",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-01",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2027-10-08",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2028-02-02",
+        "paper": "2027-10-08",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-06-05",
+      "event_start": "2028-06-01",
+      "event_type": "Academic conference",
+      "id": "ipdps-2028",
+      "indexing": "Scopus, IEEE Xplore, Scholar",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "IEEE International Parallel and Distributed Processing Symposium",
+      "organization": "IEEE",
+      "organization_group": "IEEE",
+      "previous_cycle": {
+        "abstract": "2026-10-01",
+        "camera_ready": "",
+        "closed": "2026-10-08",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-06-05",
+        "event_start": "2027-06-01",
+        "location": "Seattle, WA, USA",
+        "notification": "2027-02-02",
+        "paper": "2026-10-08",
+        "source_url": "https://www.ipdps.org/ipdps2027/2027-call-for-papers.html"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://www.ipdps.org/ipdps2027/2027-call-for-papers.html",
+      "topics": [
+        "Parallel Computing"
+      ]
+    },
+    {
+      "acronym": "BPOD",
+      "categories": [
+        "Data & databases",
+        "Systems & cloud"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-11-25",
+        "gates": [
+          {
+            "date": "2027-10-01",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-11-04",
+        "paper": "2027-10-01",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-12-17",
+      "event_start": "2027-12-14",
+      "event_type": "Academic conference",
+      "id": "bpod-2027",
+      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "IEEE Workshop on Benchmarking, Performance Tuning and Optimization for Big Data Analytics and Big Models (at IEEE BigData)",
+      "organization": "IEEE Computer Society (IEEE BigData 2026 proceedings)",
+      "organization_group": "IEEE",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-11-25",
+        "closed": "2026-10-01",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-17",
+        "event_start": "2026-12-14",
+        "location": "Phoenix, AZ, USA",
+        "notification": "2026-11-04",
+        "paper": "2026-10-01",
+        "source_url": "https://bdal.umbc.edu/bpod/bpod-2026/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://bdal.umbc.edu/bpod/bpod-2026/",
+      "topics": [
+        "Performance engineering",
+        "big data"
+      ]
+    },
+    {
+      "acronym": "AAMAS",
+      "categories": [
+        "Systems & cloud",
+        "AI & machine learning"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "2027-10-01",
+        "camera_ready": "2028-01-25",
+        "gates": [
+          {
+            "date": "2027-10-01",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2027-10-08",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-12-21",
+        "paper": "2027-10-08",
+        "precision": "date",
+        "timezone": "AoE"
+      },
+      "edition": "2028",
+      "event_end": "2028-05-07",
+      "event_start": "2028-05-03",
+      "event_type": "Academic conference",
+      "id": "aamas-2028",
+      "indexing": "Scopus, DBLP, Scholar",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "International Conference on Autonomous Agents and Multiagent Systems",
+      "organization": "IFAAMAS",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "2026-10-01",
+        "camera_ready": "2027-01-25",
+        "closed": "2026-10-08",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-05-07",
+        "event_start": "2027-05-03",
+        "location": "Hanoi, Vietnam",
+        "notification": "2026-12-21",
+        "paper": "2026-10-08",
+        "source_url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/",
+      "topics": [
+        "Agents"
+      ]
+    },
+    {
+      "acronym": "Jfokus",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-01",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-10-01",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-02-10",
+      "event_start": "2028-02-08",
+      "event_type": "Industry conference",
+      "id": "jfokus-2028",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Jfokus 2027",
+      "organization": "Javaforum Stockholm",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-01",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-02-10",
+        "event_start": "2027-02-08",
+        "location": "Stockholm, Sweden",
+        "notification": "",
+        "paper": "2026-10-01",
+        "source_url": "https://sessionize.com/jfokus-2027/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://sessionize.com/jfokus-2027/",
+      "topics": [
+        "JVM",
+        "cloud",
+        "general developer"
+      ]
+    },
+    {
+      "acronym": "MIND",
+      "categories": [
+        "Systems & cloud",
+        "AI & machine learning"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-10-16",
+        "gates": [
+          {
+            "date": "2027-10-01",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-10-12",
+        "paper": "2027-10-01",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "3rd (2027)",
+      "event_end": "2027-12-18",
+      "event_start": "2027-12-14",
+      "event_type": "Academic conference",
+      "id": "mind-2nd-2027",
+      "indexing": "ACM DL, DBLP, Scopus",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Next-Gen Middleware for MLOps in Distributed Systems (at Middleware 2026)",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-10-16",
+        "closed": "2026-10-01",
+        "confidence": "verified",
+        "edition": "2nd (2026)",
+        "event_end": "2026-12-18",
+        "event_start": "2026-12-14",
+        "location": "Tarragona, Spain",
+        "notification": "2026-10-12",
+        "paper": "2026-10-01",
+        "source_url": "https://mindmlops.github.io/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://mindmlops.github.io/",
+      "topics": [
+        "ML systems",
+        "MLOps"
+      ]
+    },
+    {
+      "acronym": "WoAIS",
+      "categories": [
+        "Systems & cloud",
+        "AI & machine learning"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-10-16",
+        "gates": [
+          {
+            "date": "2027-10-01",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-10-12",
+        "paper": "2027-10-01",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "3rd (2027)",
+      "event_end": "2027-12-18",
+      "event_start": "2027-12-14",
+      "event_type": "Academic conference",
+      "id": "woais-2nd-2027",
+      "indexing": "ACM DL, DBLP, Scopus",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Workshop on AI and Serverless (at Middleware 2026)",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-10-16",
+        "closed": "2026-10-01",
+        "confidence": "verified",
+        "edition": "2nd (2026)",
+        "event_end": "2026-12-18",
+        "event_start": "2026-12-14",
+        "location": "Tarragona, Spain",
+        "notification": "2026-10-12",
+        "paper": "2026-10-01",
+        "source_url": "https://www.serverlesscomputing.org/woais2/cfp/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://www.serverlesscomputing.org/woais2/cfp/",
+      "topics": [
+        "Agentic AI",
+        "serverless"
+      ]
+    },
+    {
+      "acronym": "ExtremeDataCuration",
+      "categories": [
+        "Data & databases"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-11-25",
+        "gates": [
+          {
+            "date": "2027-10-01",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-11-04",
+        "paper": "2027-10-01",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-12-17",
+      "event_start": "2027-12-14",
+      "event_type": "Academic conference",
+      "id": "extremedatacuration-2027",
+      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Workshop on Curation and Contextualization of Extreme Datasets (CCED, at IEEE BigData)",
+      "organization": "IEEE Computer Society (IEEE BigData 2026 proceedings)",
+      "organization_group": "IEEE",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-11-25",
+        "closed": "2026-10-01",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-17",
+        "event_start": "2026-12-14",
+        "location": "Phoenix, AZ, USA",
+        "notification": "2026-11-04",
+        "paper": "2026-10-01",
+        "source_url": "https://extremedatacurationworkshop.github.io/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://extremedatacurationworkshop.github.io/",
+      "topics": [
+        "Data management at scale"
+      ]
+    },
+    {
+      "acronym": "FSE",
+      "categories": [
+        "Software engineering"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-02",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2028-01-22",
+        "paper": "2027-10-02",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-07-16",
+      "event_start": "2028-07-12",
+      "event_type": "Academic conference",
+      "id": "fse-2028",
+      "indexing": "Scopus, DBLP, Scholar",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "ACM International Conference on the Foundations of Software Engineering",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-02",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-07-16",
+        "event_start": "2027-07-12",
+        "location": "Shenzhen, China",
+        "notification": "2027-01-22",
+        "paper": "2026-10-02",
+        "source_url": "https://conf.researchr.org/dates/fse-2027"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://conf.researchr.org/dates/fse-2027",
+      "topics": [
+        "Software Engineering"
+      ]
+    },
+    {
+      "acronym": "SAC",
+      "categories": [
+        "Data & databases",
+        "Systems & cloud"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-11-28",
+        "gates": [
+          {
+            "date": "2027-10-02",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-11-13",
+        "paper": "2027-10-02",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "43rd (2028)",
+      "event_end": "2028-04-09",
+      "event_start": "2028-04-05",
+      "event_type": "Academic conference",
+      "id": "sac-42nd-2028",
+      "indexing": "ACM DL, DBLP, Scopus",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "ACM/SIGAPP Symposium on Applied Computing",
+      "organization": "ACM",
+      "organization_group": "ACM",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-11-28",
+        "closed": "2026-10-02",
+        "confidence": "verified",
+        "edition": "42nd (2027)",
+        "event_end": "2027-04-09",
+        "event_start": "2027-04-05",
+        "location": "Gwangju, South Korea",
+        "notification": "2026-11-13",
+        "paper": "2026-10-02",
+        "source_url": "https://www.sigapp.org/sac/sac2027/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://www.sigapp.org/sac/sac2027/",
+      "topics": [
+        "Multi-track (DBDM, Data Streams, Cloud Continuum, DADS, OSSP, SEAI)"
+      ]
+    },
+    {
+      "acronym": "DCC",
+      "categories": [
+        "Data & databases"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-02",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-10-02",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-03-26",
+      "event_start": "2028-03-23",
+      "event_type": "Academic conference",
+      "id": "dcc-2028",
+      "indexing": "Scopus, IEEE Xplore, Scholar",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "IEEE Data Compression Conference",
+      "organization": "IEEE",
+      "organization_group": "IEEE",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-02",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-03-26",
+        "event_start": "2027-03-23",
+        "location": "Snowbird, UT, USA",
+        "notification": "",
+        "paper": "2026-10-02",
+        "source_url": "https://datacompressionconference.org/call-for-papers/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://datacompressionconference.org/call-for-papers/",
+      "topics": [
+        "Data Compression"
+      ]
+    },
+    {
+      "acronym": "DCD Austria",
+      "categories": [
+        "Data & databases",
+        "Open source & community"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-04",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-10-04",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-01-18",
+      "event_start": "2028-01-18",
+      "event_type": "Open-source meetup",
+      "id": "dcd-austria-2028",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Data Community Day Austria 2027",
+      "organization": "Data Community Austria",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-04",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-01-18",
+        "event_start": "2027-01-18",
+        "location": "Vienna, Austria",
+        "notification": "",
+        "paper": "2026-10-04",
+        "source_url": "https://sessionize.com/data-community-day-austria-2027/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://sessionize.com/data-community-day-austria-2027/",
+      "topics": [
+        "Microsoft data platform (community day)"
+      ]
+    },
+    {
+      "acronym": "DataSat Madrid",
+      "categories": [
+        "Data & databases"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-04",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-10-04",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-11-07",
+      "event_start": "2027-11-05",
+      "event_type": "Open-source meetup",
+      "id": "datasat-madrid-2027",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "DataSaturday Madrid 2026 (SQLSatMadrid)",
+      "organization": "Data Saturdays",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-04",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-11-07",
+        "event_start": "2026-11-05",
+        "location": "Madrid, Spain",
+        "notification": "",
+        "paper": "2026-10-04",
+        "source_url": "https://sessionize.com/datasaturday-madrid-2026-sqlsatmadrid"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://sessionize.com/datasaturday-madrid-2026-sqlsatmadrid",
+      "topics": [
+        "SQL Server",
+        "Fabric",
+        "data platform"
+      ]
+    },
+    {
+      "acronym": "Day of Data & AI Houston",
+      "categories": [
+        "AI & machine learning",
+        "Data & databases"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-04",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-10-04",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-12-05",
+      "event_start": "2027-12-04",
+      "event_type": "Open-source meetup",
+      "id": "day-of-data-ai-houston-2027",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Day of Data and AI - Houston",
+      "organization": "Houston data community",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-04",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-05",
+        "event_start": "2026-12-04",
+        "location": "Houston, TX, USA",
+        "notification": "",
+        "paper": "2026-10-04",
+        "source_url": "https://sessionize.com/day-of-data-and-ai-houston"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://sessionize.com/day-of-data-and-ai-houston",
+      "topics": [
+        "data engineering",
+        "AI",
+        "analytics"
+      ]
+    },
+    {
+      "acronym": "FOSDEM devrooms",
+      "categories": [
+        "Data & databases",
+        "Systems & cloud",
+        "AI & machine learning",
+        "Software engineering",
+        "Programming languages",
+        "Open source & community"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-12-07",
+        "gates": [
+          {
+            "date": "2027-10-04",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-10-04",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-01-31",
+      "event_start": "2028-01-30",
+      "event_type": "Open-source meetup",
+      "id": "fosdem-devrooms-2028",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "FOSDEM 2027 developer rooms (Databases, HPC/Big Data/Data Science, Monitoring & Observability, Software Performance, AI Plumbers, Distributed Systems, Rust, Containers, Kernel, SDS, Energy, Python, Data Analytics, PostgreSQL)",
+      "organization": "FOSDEM VZW",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-12-07",
+        "closed": "2026-10-04",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-01-31",
+        "event_start": "2027-01-30",
+        "location": "ULB Brussels, Belgium",
+        "notification": "",
+        "paper": "2026-10-04",
+        "source_url": "https://fosdem.org/2027/news/call-for-devrooms/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://fosdem.org/2027/news/call-for-devrooms/",
+      "topics": [
+        "Open source developer rooms"
+      ]
+    },
+    {
+      "acronym": "Federated HPC",
+      "categories": [
+        "Systems & cloud",
+        "Security & privacy"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-11-09",
+        "gates": [
+          {
+            "date": "2027-10-04",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-11-01",
+        "paper": "2027-10-04",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-12-16",
+      "event_start": "2027-12-16",
+      "event_type": "Academic conference",
+      "id": "federated-hpc-2027",
+      "indexing": "IEEE Xplore",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "International Workshop on Privacy-Preserving and Collaborative High-Performance Computing (at HiPC)",
+      "organization": "IEEE (HiPCW 2026 workshop proceedings)",
+      "organization_group": "IEEE",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-11-09",
+        "closed": "2026-10-04",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-16",
+        "event_start": "2026-12-16",
+        "location": "Bengaluru, India",
+        "notification": "2026-11-01",
+        "paper": "2026-10-04",
+        "source_url": "https://hpc-tai.github.io/FederatedHPC/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://hpc-tai.github.io/FederatedHPC/",
+      "topics": [
+        "HPC",
+        "privacy"
+      ]
+    },
+    {
+      "acronym": "PlatformCon Live SF",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-04",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-10-20",
+        "paper": "2027-10-04",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-02-24",
+      "event_start": "2028-02-24",
+      "event_type": "Industry conference",
+      "id": "platformcon-live-sf-2028",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "PlatformCon Live Day San Francisco 2027",
+      "organization": "Platform Engineering (Humanitec)",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-04",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-02-24",
+        "event_start": "2027-02-24",
+        "location": "San Francisco, CA, USA",
+        "notification": "2026-10-20",
+        "paper": "2026-10-04",
+        "source_url": "https://sessionize.com/platformcon-live-day-san-francisco"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://sessionize.com/platformcon-live-day-san-francisco",
+      "topics": [
+        "Platform engineering"
+      ]
+    },
+    {
+      "acronym": "SQL Konferenz",
+      "categories": [
+        "Data & databases"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-04",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-10-04",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-02-24",
+      "event_start": "2028-02-22",
+      "event_type": "Industry conference",
+      "id": "sql-konferenz-2028",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "SQL Konferenz 2027",
+      "organization": "Datamonster / PASS Deutschland",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-04",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-02-24",
+        "event_start": "2027-02-22",
+        "location": "Hanau am Main, Germany",
+        "notification": "",
+        "paper": "2026-10-04",
+        "source_url": "https://sessionize.com/sql-konferenz-2027"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://sessionize.com/sql-konferenz-2027",
+      "topics": [
+        "Microsoft data platform"
+      ]
+    },
+    {
+      "acronym": "Conf42 PlatEng",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-05",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-10-05",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-11-05",
+      "event_start": "2027-11-05",
+      "event_type": "Industry conference",
+      "id": "conf42-plateng-2027",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Conf42 Platform Engineering 2026",
+      "organization": "Conf42",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-05",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-11-05",
+        "event_start": "2026-11-05",
+        "location": "Online",
+        "notification": "",
+        "paper": "2026-10-05",
+        "source_url": "https://www.papercall.io/conf42-platform-engineering-2026"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://www.papercall.io/conf42-platform-engineering-2026",
+      "topics": [
+        "Platform engineering (online)"
+      ]
+    },
+    {
+      "acronym": "EDBT",
+      "categories": [
+        "Data & databases"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2028-01-27",
+        "gates": [
+          {
+            "date": "2027-10-07",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-12-05",
+        "paper": "2027-10-07",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-04-09",
+      "event_start": "2028-04-06",
+      "event_type": "Academic conference",
+      "id": "edbt-2028",
+      "indexing": "Scopus, DBLP, Scholar",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "International Conference on Extending Database Technology",
+      "organization": "OpenProceedings",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2027-01-27",
+        "closed": "2026-10-07",
+        "confidence": "announced",
+        "edition": "2027",
+        "event_end": "2027-04-09",
+        "event_start": "2027-04-06",
+        "location": "Lille, France",
+        "notification": "2026-12-05",
+        "paper": "2026-10-07",
+        "source_url": "https://edbticdt2027.github.io/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://edbticdt2027.github.io/",
+      "topics": [
+        "Databases"
+      ]
+    },
+    {
+      "acronym": "ISC Workshops",
+      "categories": [
+        "Systems & cloud"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-07",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-11-30",
+        "paper": "2027-10-07",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "",
+      "event_start": "",
+      "event_type": "Academic conference",
+      "id": "isc-workshops-2028",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "ISC High Performance 2027 - workshop programme (proposals now, workshop papers in spring)",
+      "organization": "ISC Group; workshop papers in Future Generation Computer Systems (Elsevier) per ISC 2027 page",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-07",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "",
+        "event_start": "",
+        "location": "Hamburg, Germany",
+        "notification": "2026-11-30",
+        "paper": "2026-10-07",
+        "source_url": "https://isc-hpc.com/submissions/workshop/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://isc-hpc.com/submissions/workshop/",
+      "topics": [
+        "HPC"
+      ]
+    },
+    {
+      "acronym": "DCW",
+      "categories": [
+        "Data & databases",
+        "AI & machine learning"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-09",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-10-09",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2028",
+      "event_end": "2028-05-27",
+      "event_start": "2028-05-24",
+      "event_type": "Industry conference",
+      "id": "dcw-2028",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Data Center World 2027",
+      "organization": "Informa (AFCOM)",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-09",
+        "confidence": "verified",
+        "edition": "2027",
+        "event_end": "2027-05-27",
+        "event_start": "2027-05-24",
+        "location": "Nashville, TN, USA (Music City Center)",
+        "notification": "",
+        "paper": "2026-10-09",
+        "source_url": "https://www.datacenterworld.com/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://www.datacenterworld.com/",
+      "topics": [
+        "Data centre",
+        "AI infrastructure"
+      ]
+    },
+    {
+      "acronym": "HCII",
+      "categories": [
+        "Security & privacy",
+        "Graphics, vision & XR",
+        "HCI"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "2027-10-09",
+        "camera_ready": "2028-01-29",
+        "gates": [
+          {
+            "date": "2027-10-09",
+            "kind": "Abstract"
+          },
+          {
+            "date": "2027-10-09",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-11-20",
+        "paper": "2027-10-09",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "HCII 2028 (30th)",
+      "event_end": "2028-07-30",
+      "event_start": "2028-07-25",
+      "event_type": "Academic conference",
+      "id": "hcii-hcii-2027-29th",
+      "indexing": "Scopus, DBLP, EI",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "HCI International (incl. VAMR and HCI-CPT affiliated conferences)",
+      "organization": "Springer LNCS/LNAI",
+      "organization_group": "Springer",
+      "previous_cycle": {
+        "abstract": "2026-10-09",
+        "camera_ready": "2027-01-29",
+        "closed": "2026-10-09",
+        "confidence": "verified",
+        "edition": "HCII 2027 (29th)",
+        "event_end": "2027-07-30",
+        "event_start": "2027-07-25",
+        "location": "Berlin, Germany (hybrid)",
+        "notification": "2026-11-20",
+        "paper": "2026-10-09",
+        "source_url": "https://2027.hci.international/papers.html"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://2027.hci.international/papers.html",
+      "topics": [
+        "HCI",
+        "XR",
+        "usable privacy"
+      ]
+    },
+    {
+      "acronym": "AI-SPC",
+      "categories": [
+        "Systems & cloud",
+        "AI & machine learning"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-09",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-11-01",
+        "paper": "2027-10-09",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-12-16",
+      "event_start": "2027-12-16",
+      "event_type": "Academic conference",
+      "id": "ai-spc-2027",
+      "indexing": "IEEE Xplore",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "Workshop on AI for Scientific and General-Purpose Computing (at HiPC)",
+      "organization": "IEEE (HiPCW 2026 workshop proceedings)",
+      "organization_group": "IEEE",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-09",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-16",
+        "event_start": "2026-12-16",
+        "location": "Bengaluru, India",
+        "notification": "2026-11-01",
+        "paper": "2026-10-09",
+        "source_url": "https://aispc.github.io/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://aispc.github.io/",
+      "topics": [
+        "HPC + AI"
+      ]
+    },
+    {
+      "acronym": "SE4AgenticAI",
+      "categories": [
+        "Data & databases",
+        "Systems & cloud",
+        "AI & machine learning",
+        "Software engineering"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "2027-11-14",
+        "gates": [
+          {
+            "date": "2027-10-10",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "2027-10-31",
+        "paper": "2027-10-10",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027",
+      "event_end": "2027-12-17",
+      "event_start": "2027-12-14",
+      "event_type": "Academic conference",
+      "id": "se4agenticai-2027",
+      "indexing": "IEEE Xplore, Scopus, DBLP, EI",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "IEEE Big Data International Workshop on Software Engineering for Agentic AI",
+      "organization": "IEEE Computer Society (IEEE BigData 2026 proceedings)",
+      "organization_group": "IEEE",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "2026-11-14",
+        "closed": "2026-10-10",
+        "confidence": "verified",
+        "edition": "2026",
+        "event_end": "2026-12-17",
+        "event_start": "2026-12-14",
+        "location": "Phoenix, AZ, USA",
+        "notification": "2026-10-31",
+        "paper": "2026-10-10",
+        "source_url": "https://cs.uwaterloo.ca/~palencar/se4agenticai/"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://cs.uwaterloo.ca/~palencar/se4agenticai/",
+      "topics": [
+        "SE for AI",
+        "agentic systems"
+      ]
+    },
+    {
+      "acronym": "SREday NYC",
+      "categories": [
+        "Systems & cloud",
+        "Software engineering"
+      ],
+      "confidence": "projected",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2027-10-10",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2027-10-10",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "edition": "2027 Q4",
+      "event_end": "2027-11-07",
+      "event_start": "2027-11-07",
+      "event_type": "Industry conference",
+      "id": "sreday-nyc-2026-q4",
+      "indexing": "",
+      "location": "TBA",
+      "mode": "TBA",
+      "name": "SREday NYC 2026 Q4",
+      "organization": "SREday",
+      "organization_group": "Other",
+      "previous_cycle": {
+        "abstract": "",
+        "camera_ready": "",
+        "closed": "2026-10-10",
+        "confidence": "verified",
+        "edition": "2026 Q4",
+        "event_end": "2026-11-07",
+        "event_start": "2026-11-07",
+        "location": "New York, NY, USA (Datadog office)",
+        "notification": "",
+        "paper": "2026-10-10",
+        "source_url": "https://cfp.ninja/e/sreday-2026-nyc-q4"
+      },
+      "source_basis": "Historical cadence projection",
+      "source_url": "https://cfp.ninja/e/sreday-2026-nyc-q4",
+      "topics": [
+        "SRE",
+        "observability",
+        "cloud"
       ]
     },
     {
