@@ -1,19 +1,19 @@
 {
-  "last_scan_at": "2026-10-16T12:25:34Z",
+  "last_scan_at": "2026-10-21T22:49:03Z",
   "quarantine": [
     {
-      "count": 6,
-      "reason": "addition-limit"
+      "count": 1,
+      "reason": "past-only"
     }
   ],
   "schema_version": 1,
   "sources": [
     {
-      "candidates": 7,
+      "candidates": 8,
       "error": "",
       "id": "openreview-active-venues",
-      "last_attempt_at": "2026-10-16T12:25:34Z",
-      "last_success_at": "2026-10-16T12:25:34Z",
+      "last_attempt_at": "2026-10-21T22:49:03Z",
+      "last_success_at": "2026-10-21T22:49:03Z",
       "name": "OpenReview active venues",
       "requests": 12,
       "status": "ok"
@@ -22,40 +22,40 @@
       "candidates": 0,
       "error": "",
       "id": "developers-events-cfps",
-      "last_attempt_at": "2026-10-16T12:25:34Z",
-      "last_success_at": "2026-10-16T12:25:34Z",
+      "last_attempt_at": "2026-10-21T22:49:03Z",
+      "last_success_at": "2026-10-21T22:49:03Z",
       "name": "developers.events CFP feed",
       "requests": 1,
       "status": "ok"
     },
     {
-      "candidates": 64,
+      "candidates": 56,
       "error": "",
       "id": "confs-tech",
-      "last_attempt_at": "2026-10-16T12:25:34Z",
-      "last_success_at": "2026-10-16T12:25:34Z",
+      "last_attempt_at": "2026-10-21T22:49:03Z",
+      "last_success_at": "2026-10-21T22:49:03Z",
       "name": "confs.tech conference data",
       "requests": 12,
       "status": "ok"
     },
     {
-      "candidates": 15,
+      "candidates": 13,
       "error": "",
       "id": "hackclub-hackathons",
-      "last_attempt_at": "2026-10-16T12:25:34Z",
-      "last_success_at": "2026-10-16T12:25:34Z",
+      "last_attempt_at": "2026-10-21T22:49:03Z",
+      "last_success_at": "2026-10-21T22:49:03Z",
       "name": "Hack Club Hackathons",
       "requests": 1,
       "status": "ok"
     }
   ],
   "summary": {
-    "added": 8,
-    "candidates_seen": 86,
-    "duplicates": 72,
-    "quarantined": 6,
+    "added": 11,
+    "candidates_seen": 77,
+    "duplicates": 65,
+    "quarantined": 1,
     "sources_attempted": 4,
     "sources_succeeded": 4,
-    "updated": 64
+    "updated": 59
   }
 }
