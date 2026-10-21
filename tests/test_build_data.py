@@ -83,6 +83,14 @@ class BuildDataTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "duplicate"):
             build_data.validate([self.event, copy.deepcopy(self.event)])
 
+    def test_validation_accepts_two_editions_of_one_conference(self) -> None:
+        next_edition = copy.deepcopy(self.event)
+        next_edition.update({
+            "id": "test-2028", "edition": "2028",
+            "event_start": "2028-06-20", "event_end": "2028-06-22",
+        })
+        build_data.validate([self.event, next_edition])
+
     def test_validation_rejects_invalid_dates(self) -> None:
         event = copy.deepcopy(self.event)
         event["deadlines"]["paper"] = "2027-02-31"
