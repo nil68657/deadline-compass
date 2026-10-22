@@ -1,5 +1,5 @@
 {
-  "last_scan_at": "2026-10-21T22:49:03Z",
+  "last_scan_at": "2026-10-22T12:58:28Z",
   "quarantine": [
     {
       "count": 1,
@@ -9,11 +9,11 @@
   "schema_version": 1,
   "sources": [
     {
-      "candidates": 8,
+      "candidates": 5,
       "error": "",
       "id": "openreview-active-venues",
-      "last_attempt_at": "2026-10-21T22:49:03Z",
-      "last_success_at": "2026-10-21T22:49:03Z",
+      "last_attempt_at": "2026-10-22T12:58:28Z",
+      "last_success_at": "2026-10-22T12:58:28Z",
       "name": "OpenReview active venues",
       "requests": 12,
       "status": "ok"
@@ -22,8 +22,8 @@
       "candidates": 0,
       "error": "",
       "id": "developers-events-cfps",
-      "last_attempt_at": "2026-10-21T22:49:03Z",
-      "last_success_at": "2026-10-21T22:49:03Z",
+      "last_attempt_at": "2026-10-22T12:58:28Z",
+      "last_success_at": "2026-10-22T12:58:28Z",
       "name": "developers.events CFP feed",
       "requests": 1,
       "status": "ok"
@@ -32,8 +32,8 @@
       "candidates": 56,
       "error": "",
       "id": "confs-tech",
-      "last_attempt_at": "2026-10-21T22:49:03Z",
-      "last_success_at": "2026-10-21T22:49:03Z",
+      "last_attempt_at": "2026-10-22T12:58:28Z",
+      "last_success_at": "2026-10-22T12:58:28Z",
       "name": "confs.tech conference data",
       "requests": 12,
       "status": "ok"
@@ -42,20 +42,20 @@
       "candidates": 13,
       "error": "",
       "id": "hackclub-hackathons",
-      "last_attempt_at": "2026-10-21T22:49:03Z",
-      "last_success_at": "2026-10-21T22:49:03Z",
+      "last_attempt_at": "2026-10-22T12:58:28Z",
+      "last_success_at": "2026-10-22T12:58:28Z",
       "name": "Hack Club Hackathons",
       "requests": 1,
       "status": "ok"
     }
   ],
   "summary": {
-    "added": 11,
-    "candidates_seen": 77,
-    "duplicates": 65,
+    "added": 0,
+    "candidates_seen": 74,
+    "duplicates": 73,
     "quarantined": 1,
     "sources_attempted": 4,
     "sources_succeeded": 4,
-    "updated": 59
+    "updated": 67
   }
 }
