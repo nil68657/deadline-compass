@@ -1,5 +1,5 @@
 {
-  "last_scan_at": "2026-10-22T12:58:28Z",
+  "last_scan_at": "2026-10-23T12:37:52Z",
   "quarantine": [
     {
       "count": 1,
@@ -9,11 +9,11 @@
   "schema_version": 1,
   "sources": [
     {
-      "candidates": 5,
+      "candidates": 6,
       "error": "",
       "id": "openreview-active-venues",
-      "last_attempt_at": "2026-10-22T12:58:28Z",
-      "last_success_at": "2026-10-22T12:58:28Z",
+      "last_attempt_at": "2026-10-23T12:37:52Z",
+      "last_success_at": "2026-10-23T12:37:52Z",
       "name": "OpenReview active venues",
       "requests": 12,
       "status": "ok"
@@ -22,40 +22,40 @@
       "candidates": 0,
       "error": "",
       "id": "developers-events-cfps",
-      "last_attempt_at": "2026-10-22T12:58:28Z",
-      "last_success_at": "2026-10-22T12:58:28Z",
+      "last_attempt_at": "2026-10-23T12:37:52Z",
+      "last_success_at": "2026-10-23T12:37:52Z",
       "name": "developers.events CFP feed",
       "requests": 1,
       "status": "ok"
     },
     {
-      "candidates": 56,
+      "candidates": 55,
       "error": "",
       "id": "confs-tech",
-      "last_attempt_at": "2026-10-22T12:58:28Z",
-      "last_success_at": "2026-10-22T12:58:28Z",
+      "last_attempt_at": "2026-10-23T12:37:52Z",
+      "last_success_at": "2026-10-23T12:37:52Z",
       "name": "confs.tech conference data",
       "requests": 12,
       "status": "ok"
     },
     {
-      "candidates": 13,
+      "candidates": 14,
       "error": "",
       "id": "hackclub-hackathons",
-      "last_attempt_at": "2026-10-22T12:58:28Z",
-      "last_success_at": "2026-10-22T12:58:28Z",
+      "last_attempt_at": "2026-10-23T12:37:52Z",
+      "last_success_at": "2026-10-23T12:37:52Z",
       "name": "Hack Club Hackathons",
       "requests": 1,
       "status": "ok"
     }
   ],
   "summary": {
-    "added": 0,
-    "candidates_seen": 74,
-    "duplicates": 73,
+    "added": 3,
+    "candidates_seen": 75,
+    "duplicates": 71,
     "quarantined": 1,
     "sources_attempted": 4,
     "sources_succeeded": 4,
-    "updated": 67
+    "updated": 65
   }
 }
