@@ -1,6 +1,6 @@
 {
   "coverage_notice": "Curated index, not exhaustive coverage. Always confirm dates, times, eligibility, and submission rules on the linked source.",
-  "event_count": 630,
+  "event_count": 639,
   "events": [
     {
       "acronym": "AMTSO",
@@ -70,7 +70,7 @@
       "discovery": {
         "discovered_at": "2026-10-13T15:03:43Z",
         "external_id": "4195ea7f022ca44b",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -115,7 +115,7 @@
       "discovery": {
         "discovered_at": "2026-10-04T13:11:58Z",
         "external_id": "cdc2043c199eb45f",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -160,7 +160,7 @@
       "discovery": {
         "discovered_at": "2026-10-07T14:30:39Z",
         "external_id": "ae15dc5e57311c29",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -342,7 +342,7 @@
       "discovery": {
         "discovered_at": "2026-10-15T12:39:35Z",
         "external_id": "a14da0673d2463bc",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -568,7 +568,7 @@
       "discovery": {
         "discovered_at": "2026-10-05T16:00:49Z",
         "external_id": "0528aa6f44b8f685",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -704,7 +704,7 @@
       "discovery": {
         "discovered_at": "2026-10-15T12:39:35Z",
         "external_id": "662ecda552296622",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -749,7 +749,7 @@
       "discovery": {
         "discovered_at": "2026-10-14T12:52:43Z",
         "external_id": "13dac908d6bf0aa7",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -795,7 +795,7 @@
       "discovery": {
         "discovered_at": "2026-10-14T12:52:43Z",
         "external_id": "ea3fe748dc3b2e0c",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -840,7 +840,7 @@
       "discovery": {
         "discovered_at": "2026-10-13T15:03:43Z",
         "external_id": "755d7e55455435c6",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -1111,7 +1111,7 @@
       "discovery": {
         "discovered_at": "2026-10-13T15:03:43Z",
         "external_id": "45def24d312cbabd",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -1201,7 +1201,7 @@
       "discovery": {
         "discovered_at": "2026-10-05T16:00:49Z",
         "external_id": "a6054818bc732e70",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -2435,7 +2435,7 @@
       "discovery": {
         "discovered_at": "2026-10-13T15:03:43Z",
         "external_id": "26611d5c67fcbb6d",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -2481,7 +2481,7 @@
       "discovery": {
         "discovered_at": "2026-10-04T13:11:58Z",
         "external_id": "4e06947a73095c15",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -4265,7 +4265,7 @@
       "discovery": {
         "discovered_at": "2026-10-15T12:39:35Z",
         "external_id": "e4ebaa9baa974f78",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -4311,7 +4311,7 @@
       "discovery": {
         "discovered_at": "2026-10-13T15:03:43Z",
         "external_id": "0b1fad0eacf8e387",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -5248,6 +5248,51 @@
       ]
     },
     {
+      "acronym": "PyCascades",
+      "categories": [
+        "Programming languages"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-10-26",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-10-26",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-29T14:20:04Z",
+        "external_id": "64d686e1c3b0c998",
+        "last_seen_at": "2026-10-29T14:20:04Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2027",
+      "event_end": "2027-03-21",
+      "event_start": "2027-03-20",
+      "event_type": "Industry conference",
+      "id": "discovered-pycascades-2027-54a45053ea",
+      "indexing": "",
+      "location": "Seattle, WA, U.S.A.",
+      "mode": "Online",
+      "name": "PyCascades",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://pretalx.com/pycascades-2027/cfp",
+      "topics": [
+        "Python"
+      ]
+    },
+    {
       "acronym": "FAccT",
       "categories": [
         "Data & databases",
@@ -5908,7 +5953,7 @@
       "discovery": {
         "discovered_at": "2026-10-15T12:39:35Z",
         "external_id": "c79ebbd131c59993",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -7038,6 +7083,51 @@
       ]
     },
     {
+      "acronym": "VDA",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [
+          {
+            "date": "2026-11-14",
+            "kind": "Paper"
+          }
+        ],
+        "notification": "",
+        "paper": "2026-11-14",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-29T14:20:04Z",
+        "external_id": "df6e13eedaedc93e",
+        "last_seen_at": "2026-10-29T14:20:04Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2027",
+      "event_end": "2027-04-01",
+      "event_start": "2027-03-31",
+      "event_type": "Industry conference",
+      "id": "discovered-vda-2027-94bd58451d",
+      "indexing": "",
+      "location": "Amsterdam, Netherlands",
+      "mode": "In person",
+      "name": "Voxxed Days Amsterdam",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://vdams27.cfp.dev/",
+      "topics": [
+        "Kotlin"
+      ]
+    },
+    {
       "acronym": "CPDP",
       "categories": [
         "Data & databases",
@@ -7818,7 +7908,7 @@
       "discovery": {
         "discovered_at": "2026-10-14T12:52:43Z",
         "external_id": "c28ffc56caf37fdf",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -8498,7 +8588,7 @@
       "discovery": {
         "discovered_at": "2026-10-07T14:30:39Z",
         "external_id": "bf3204105b7bf849",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -9605,7 +9695,7 @@
       "discovery": {
         "discovered_at": "2026-10-16T12:25:34Z",
         "external_id": "2d2beb101f61e1e9",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -11368,7 +11458,7 @@
       "discovery": {
         "discovered_at": "2026-10-16T12:25:34Z",
         "external_id": "7c8faa8b12983ba4",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -20675,7 +20765,7 @@
       "discovery": {
         "discovered_at": "2026-10-21T22:49:03Z",
         "external_id": "CLUG-EVAS/2026/Workshop",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "openreview-active-venues",
         "source_name": "OpenReview active venues",
         "source_url": "https://docs.openreview.net/getting-started/objects-in-openreview/groups"
@@ -20802,6 +20892,46 @@
       ]
     },
     {
+      "acronym": "AA",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-29T14:20:04Z",
+        "external_id": "a6d5944f8f349c65",
+        "last_seen_at": "2026-10-29T14:20:04Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2027",
+      "event_end": "2027-05-14",
+      "event_start": "2027-05-13",
+      "event_type": "Industry conference",
+      "id": "discovered-aa-2027-495dcf270f",
+      "indexing": "",
+      "location": "Berlin, Germany",
+      "mode": "In person",
+      "name": "Agentic Ateliers",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://ateliers.design/agentic",
+      "topics": [
+        "Ux"
+      ]
+    },
+    {
       "acronym": "ABG",
       "categories": [
         "AI & machine learning",
@@ -20861,7 +20991,7 @@
       "discovery": {
         "discovered_at": "2026-10-13T15:03:43Z",
         "external_id": "2a500e82bbf77b6c",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -20902,7 +21032,7 @@
       "discovery": {
         "discovered_at": "2026-10-14T12:52:43Z",
         "external_id": "36bd70e984a28968",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -20982,7 +21112,7 @@
       "discovery": {
         "discovered_at": "2026-10-07T14:30:39Z",
         "external_id": "544f7a784b49a8b5",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -21134,7 +21264,7 @@
       "discovery": {
         "discovered_at": "2026-10-21T22:49:03Z",
         "external_id": "a05544d6ff211151",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -21174,7 +21304,7 @@
       "discovery": {
         "discovered_at": "2026-10-16T12:25:34Z",
         "external_id": "fc40dadc80b80e3f",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -21194,6 +21324,86 @@
       "source_url": "https://basta.net/frankfurt",
       "topics": [
         "Dotnet"
+      ]
+    },
+    {
+      "acronym": "BeaconHacks",
+      "categories": [
+        "Open source & community"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-29T14:20:04Z",
+        "external_id": "3J5INY",
+        "last_seen_at": "2026-10-29T14:20:04Z",
+        "source_id": "hackclub-hackathons",
+        "source_name": "Hack Club Hackathons",
+        "source_url": "https://hackathons.hackclub.com/data"
+      },
+      "edition": "2027",
+      "event_end": "2027-01-31",
+      "event_start": "2027-01-30",
+      "event_type": "Hackathon",
+      "id": "discovered-beaconhacks-2027-da3ffad527",
+      "indexing": "",
+      "location": "Belmont, California, United States",
+      "mode": "In person",
+      "name": "Beacon Hacks",
+      "organization": "Hack Club community",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://beaconhacks.com/",
+      "topics": [
+        "Student hackathons"
+      ]
+    },
+    {
+      "acronym": "betterCode",
+      "categories": [
+        "Programming languages"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-29T14:20:04Z",
+        "external_id": "15be865673fb8137",
+        "last_seen_at": "2026-10-29T14:20:04Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2026",
+      "event_end": "2026-11-26",
+      "event_start": "2026-11-26",
+      "event_type": "Industry conference",
+      "id": "discovered-bettercode-2026-41b3cbcd61",
+      "indexing": "",
+      "location": "Online",
+      "mode": "Online",
+      "name": "betterCode() Rust",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://rust.bettercode.eu/",
+      "topics": [
+        "Rust"
       ]
     },
     {
@@ -21286,7 +21496,7 @@
       "discovery": {
         "discovered_at": "2026-10-04T13:11:58Z",
         "external_id": "3dzIY9",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -21407,7 +21617,7 @@
       "discovery": {
         "discovered_at": "2026-10-14T12:52:43Z",
         "external_id": "5c72fb1f208ea252",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -21447,7 +21657,7 @@
       "discovery": {
         "discovered_at": "2026-10-04T13:11:58Z",
         "external_id": "rjZIxn",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -21576,6 +21786,86 @@
       ]
     },
     {
+      "acronym": "droidCon",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-29T14:20:04Z",
+        "external_id": "7e1a488953e0c814",
+        "last_seen_at": "2026-10-29T14:20:04Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2026",
+      "event_end": "2026-11-20",
+      "event_start": "2026-11-20",
+      "event_type": "Industry conference",
+      "id": "discovered-droidcon-2026-5c216187bc",
+      "indexing": "",
+      "location": "Bengaluru, India",
+      "mode": "In person",
+      "name": "droidCon India",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://india.droidcon.com/",
+      "topics": [
+        "Networking"
+      ]
+    },
+    {
+      "acronym": "DL",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-29T14:20:04Z",
+        "external_id": "dd1727942fc05f7d",
+        "last_seen_at": "2026-10-29T14:20:04Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2026",
+      "event_end": "2026-12-10",
+      "event_start": "2026-12-09",
+      "event_type": "Industry conference",
+      "id": "discovered-dl-2026-f06a3618fa",
+      "indexing": "",
+      "location": "London, U.K.",
+      "mode": "In person",
+      "name": "droidcon London",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://london.droidcon.com/",
+      "topics": [
+        "Networking"
+      ]
+    },
+    {
       "acronym": "DublinHacx",
       "categories": [
         "Open source & community"
@@ -21633,7 +21923,7 @@
       "discovery": {
         "discovered_at": "2026-10-06T14:12:01Z",
         "external_id": "ed13fe3623538e34",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -21705,7 +21995,7 @@
       "discovery": {
         "discovered_at": "2026-10-21T22:49:03Z",
         "external_id": "r8QIdy",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -21848,6 +22138,46 @@
       ]
     },
     {
+      "acronym": "FOSS",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-29T14:20:04Z",
+        "external_id": "544617455554e385",
+        "last_seen_at": "2026-10-29T14:20:04Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2026",
+      "event_end": "2026-11-28",
+      "event_start": "2026-11-28",
+      "event_type": "Industry conference",
+      "id": "discovered-foss-2026-aa27d9e6a7",
+      "indexing": "",
+      "location": "Seoul, South Korea",
+      "mode": "In person",
+      "name": "FOSS for All Conference",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://2026.fossforall.org/",
+      "topics": [
+        "Networking"
+      ]
+    },
+    {
       "acronym": "Founding100",
       "categories": [
         "Open source & community"
@@ -21865,7 +22195,7 @@
       "discovery": {
         "discovered_at": "2026-10-21T22:49:03Z",
         "external_id": "r9bI7N",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -21971,7 +22301,7 @@
       "discovery": {
         "discovered_at": "2026-10-10T13:42:25Z",
         "external_id": "0VqIzx",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -23008,7 +23338,7 @@
       "discovery": {
         "discovered_at": "2026-10-05T16:00:49Z",
         "external_id": "8767bc321ee79a56",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -23048,7 +23378,7 @@
       "discovery": {
         "discovered_at": "2026-10-24T12:00:32Z",
         "external_id": "0xoIzo",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -23250,7 +23580,7 @@
       "discovery": {
         "discovered_at": "2026-10-14T12:52:43Z",
         "external_id": "106895ea45787433",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -23290,7 +23620,7 @@
       "discovery": {
         "discovered_at": "2026-10-13T15:03:43Z",
         "external_id": "b212473b04b0e98f",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -23370,7 +23700,7 @@
       "discovery": {
         "discovered_at": "2026-10-10T13:42:25Z",
         "external_id": "pMkImX",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -23450,7 +23780,7 @@
       "discovery": {
         "discovered_at": "2026-10-04T13:11:58Z",
         "external_id": "3KNIgA",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -23636,7 +23966,7 @@
       "discovery": {
         "discovered_at": "2026-10-05T16:00:49Z",
         "external_id": "r2RIVj",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -23676,7 +24006,7 @@
       "discovery": {
         "discovered_at": "2026-10-04T13:11:58Z",
         "external_id": "0n1IKx",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -23848,7 +24178,7 @@
       "discovery": {
         "discovered_at": "2026-10-05T16:00:49Z",
         "external_id": "r5KIJ4",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -24008,7 +24338,7 @@
       "discovery": {
         "discovered_at": "2026-10-04T13:11:58Z",
         "external_id": "0PvIqe",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -24069,6 +24399,46 @@
       "source_url": "https://software-architecture-summit.de/berlin",
       "topics": [
         "Data"
+      ]
+    },
+    {
+      "acronym": "SA",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-10-29T14:20:04Z",
+        "external_id": "58d203bf8a7e5dcd",
+        "last_seen_at": "2026-10-29T14:20:04Z",
+        "source_id": "confs-tech",
+        "source_name": "confs.tech conference data",
+        "source_url": "https://github.com/tech-conferences/conference-data"
+      },
+      "edition": "2027",
+      "event_end": "2027-04-22",
+      "event_start": "2027-04-21",
+      "event_type": "Industry conference",
+      "id": "discovered-sa-2027-4f7b92075b",
+      "indexing": "",
+      "location": "Lisbon, Portugal",
+      "mode": "In person",
+      "name": "Strategy Ateliers",
+      "organization": "See venue source",
+      "organization_group": "Other",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://ateliers.design/strategy",
+      "topics": [
+        "Ux"
       ]
     },
     {
@@ -24281,7 +24651,7 @@
       "discovery": {
         "discovered_at": "2026-10-23T12:37:52Z",
         "external_id": "rg2I4a",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -24321,7 +24691,7 @@
       "discovery": {
         "discovered_at": "2026-10-05T16:00:49Z",
         "external_id": "3X9ILN",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -24521,7 +24891,7 @@
       "discovery": {
         "discovered_at": "2026-10-03T19:09:46Z",
         "external_id": "wsl.iiitb.ac.in/WebSciX/2026/Conference",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "openreview-active-venues",
         "source_name": "OpenReview active venues",
         "source_url": "https://docs.openreview.net/getting-started/objects-in-openreview/groups"
@@ -24761,7 +25131,7 @@
       "discovery": {
         "discovered_at": "2026-10-14T12:52:43Z",
         "external_id": "7238741e955e5f1f",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -24913,7 +25283,7 @@
       "discovery": {
         "discovered_at": "2026-10-13T15:03:43Z",
         "external_id": "87bf383099acf379",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
@@ -24953,7 +25323,7 @@
       "discovery": {
         "discovered_at": "2026-10-21T22:49:03Z",
         "external_id": "37f015965fbddcf0",
-        "last_seen_at": "2026-10-28T14:01:20Z",
+        "last_seen_at": "2026-10-29T14:20:04Z",
         "source_id": "confs-tech",
         "source_name": "confs.tech conference data",
         "source_url": "https://github.com/tech-conferences/conference-data"
