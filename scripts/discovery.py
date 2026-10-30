@@ -883,6 +883,14 @@ def merge_candidates(events: list[dict[str, Any]], batches: list[tuple[dict[str,
                 stats["quarantined"] += 1
                 reasons["addition-limit"] = reasons.get("addition-limit", 0) + 1
                 continue
+            try:
+                validate([*merged, event])
+            except ValueError:
+                # One candidate that clashes with a stored record must not abort
+                # the whole scan: skip it and count it in the run summary.
+                stats["quarantined"] += 1
+                reasons["conflict"] = reasons.get("conflict", 0) + 1
+                continue
             merged.append(event)
             add_to_indexes(event)
             per_source[source["id"]] = source_additions + 1

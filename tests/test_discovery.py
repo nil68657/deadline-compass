@@ -657,6 +657,39 @@ class CuratedDuplicateTests(unittest.TestCase):
             [curated], [(source("confs_tech"), [candidate])], scan_at=SCAN_AT, today=TODAY, max_additions=10
         )
 
+    def test_two_editions_without_deadlines_are_both_added(self) -> None:
+        # confs.tech lists a recurring conference once per year under one URL
+        # and no call dates: the 17 Oct 2026 scan crashed on exactly this.
+        batch = [
+            self.candidate(external_id="e26", title="Munich Data Days", venue_url="https://example.org/munich",
+                           deadline="", event_start="2026-10-26", event_end="2026-10-30"),
+            self.candidate(external_id="e27", title="Munich Data Days", venue_url="https://example.org/munich",
+                           deadline="", event_start="2027-11-15", event_end="2027-11-19"),
+        ]
+        merged, stats, _ = discovery.merge_candidates(
+            [], [(source("confs_tech"), batch)], scan_at=SCAN_AT, today=TODAY, max_additions=10
+        )
+        self.assertEqual((stats["added"], stats["quarantined"]), (2, 0))
+        self.assertEqual(len(merged), 2)
+
+    def test_conflicting_candidate_is_quarantined_not_fatal(self) -> None:
+        real = discovery.validate
+
+        def refuse_new(events):
+            # a clash with stored records, not a flaw in the candidate alone
+            if len(events) > 1 and any(e["id"].startswith("discovered-") for e in events):
+                raise ValueError("clash")
+            return real(events)
+
+        with patch.object(discovery, "validate", refuse_new):
+            merged, stats, reasons = self.merge(
+                self.candidate(title="Unrelated Cloud Summit", venue_url="https://example.org/unrelated"),
+                self.curated,
+            )
+        self.assertEqual((stats["added"], stats["quarantined"]), (0, 1))
+        self.assertEqual(reasons, {"conflict": 1})
+        self.assertEqual(len(merged), 1)
+
     def test_name_containing_curated_name_is_duplicate(self) -> None:
         merged, stats, _ = self.merge(self.candidate(), self.curated)
         self.assertEqual((stats["added"], stats["duplicates"]), (0, 1))

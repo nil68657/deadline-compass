@@ -277,9 +277,12 @@ def validate(events: list[Event]) -> None:
             parsed.path.rstrip("/"),
             parsed.query,
         )
+        # event_start tells editions apart: a conference that keeps one page and
+        # lists no deadline (confs.tech does this) appears once per year.
         key = (
             event["name"].casefold(),
             repr(canonical_url),
+            event["event_start"],
             event["deadlines"]["abstract"],
             event["deadlines"]["paper"],
         )
