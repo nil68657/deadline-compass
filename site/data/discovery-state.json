@@ -1,8 +1,8 @@
 {
-  "last_scan_at": "2026-11-13T15:23:58Z",
+  "last_scan_at": "2026-11-14T14:09:12Z",
   "quarantine": [
     {
-      "count": 2,
+      "count": 1,
       "reason": "past-only"
     }
   ],
@@ -12,8 +12,8 @@
       "candidates": 6,
       "error": "",
       "id": "openreview-active-venues",
-      "last_attempt_at": "2026-11-13T15:23:58Z",
-      "last_success_at": "2026-11-13T15:23:58Z",
+      "last_attempt_at": "2026-11-14T14:09:12Z",
+      "last_success_at": "2026-11-14T14:09:12Z",
       "name": "OpenReview active venues",
       "requests": 12,
       "status": "ok"
@@ -22,40 +22,40 @@
       "candidates": 0,
       "error": "",
       "id": "developers-events-cfps",
-      "last_attempt_at": "2026-11-13T15:23:58Z",
-      "last_success_at": "2026-11-13T15:23:58Z",
+      "last_attempt_at": "2026-11-14T14:09:12Z",
+      "last_success_at": "2026-11-14T14:09:12Z",
       "name": "developers.events CFP feed",
       "requests": 1,
       "status": "ok"
     },
     {
-      "candidates": 36,
+      "candidates": 35,
       "error": "",
       "id": "confs-tech",
-      "last_attempt_at": "2026-11-13T15:23:58Z",
-      "last_success_at": "2026-11-13T15:23:58Z",
+      "last_attempt_at": "2026-11-14T14:09:12Z",
+      "last_success_at": "2026-11-14T14:09:12Z",
       "name": "confs.tech conference data",
       "requests": 12,
       "status": "ok"
     },
     {
-      "candidates": 17,
+      "candidates": 18,
       "error": "",
       "id": "hackclub-hackathons",
-      "last_attempt_at": "2026-11-13T15:23:58Z",
-      "last_success_at": "2026-11-13T15:23:58Z",
+      "last_attempt_at": "2026-11-14T14:09:12Z",
+      "last_success_at": "2026-11-14T14:09:12Z",
       "name": "Hack Club Hackathons",
       "requests": 1,
       "status": "ok"
     }
   ],
   "summary": {
-    "added": 0,
+    "added": 3,
     "candidates_seen": 59,
-    "duplicates": 57,
-    "quarantined": 2,
+    "duplicates": 55,
+    "quarantined": 1,
     "sources_attempted": 4,
     "sources_succeeded": 4,
-    "updated": 55
+    "updated": 53
   }
 }
