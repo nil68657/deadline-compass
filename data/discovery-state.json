@@ -1,5 +1,5 @@
 {
-  "last_scan_at": "2026-11-19T16:33:49Z",
+  "last_scan_at": "2026-11-20T16:09:37Z",
   "quarantine": [
     {
       "count": 4,
@@ -12,8 +12,8 @@
       "candidates": 7,
       "error": "",
       "id": "openreview-active-venues",
-      "last_attempt_at": "2026-11-19T16:33:49Z",
-      "last_success_at": "2026-11-19T16:33:49Z",
+      "last_attempt_at": "2026-11-20T16:09:37Z",
+      "last_success_at": "2026-11-20T16:09:37Z",
       "name": "OpenReview active venues",
       "requests": 12,
       "status": "ok"
@@ -22,18 +22,18 @@
       "candidates": 0,
       "error": "",
       "id": "developers-events-cfps",
-      "last_attempt_at": "2026-11-19T16:33:49Z",
-      "last_success_at": "2026-11-19T16:33:49Z",
+      "last_attempt_at": "2026-11-20T16:09:37Z",
+      "last_success_at": "2026-11-20T16:09:37Z",
       "name": "developers.events CFP feed",
       "requests": 1,
       "status": "ok"
     },
     {
-      "candidates": 38,
+      "candidates": 37,
       "error": "",
       "id": "confs-tech",
-      "last_attempt_at": "2026-11-19T16:33:49Z",
-      "last_success_at": "2026-11-19T16:33:49Z",
+      "last_attempt_at": "2026-11-20T16:09:37Z",
+      "last_success_at": "2026-11-20T16:09:37Z",
       "name": "confs.tech conference data",
       "requests": 12,
       "status": "ok"
@@ -42,20 +42,20 @@
       "candidates": 17,
       "error": "",
       "id": "hackclub-hackathons",
-      "last_attempt_at": "2026-11-19T16:33:49Z",
-      "last_success_at": "2026-11-19T16:33:49Z",
+      "last_attempt_at": "2026-11-20T16:09:37Z",
+      "last_success_at": "2026-11-20T16:09:37Z",
       "name": "Hack Club Hackathons",
       "requests": 1,
       "status": "ok"
     }
   ],
   "summary": {
-    "added": 1,
-    "candidates_seen": 62,
-    "duplicates": 57,
+    "added": 2,
+    "candidates_seen": 61,
+    "duplicates": 55,
     "quarantined": 4,
     "sources_attempted": 4,
     "sources_succeeded": 4,
-    "updated": 54
+    "updated": 52
   }
 }
