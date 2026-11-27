@@ -1,6 +1,6 @@
 {
   "coverage_notice": "Curated index, not exhaustive coverage. Always confirm dates, times, eligibility, and submission rules on the linked source.",
-  "event_count": 726,
+  "event_count": 727,
   "events": [
     {
       "acronym": "AMTSO",
@@ -23590,7 +23590,7 @@
       "discovery": {
         "discovered_at": "2026-11-21T15:22:31Z",
         "external_id": "ERCOFTAC.org/2027/Workshop/ml4fluids",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "openreview-active-venues",
         "source_name": "OpenReview active venues",
         "source_url": "https://docs.openreview.net/getting-started/objects-in-openreview/groups"
@@ -24177,7 +24177,7 @@
       "discovery": {
         "discovered_at": "2026-11-04T15:26:07Z",
         "external_id": "rD1IRd",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -24449,7 +24449,7 @@
       "discovery": {
         "discovered_at": "2026-10-29T14:20:04Z",
         "external_id": "3J5INY",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -24681,7 +24681,7 @@
       "discovery": {
         "discovered_at": "2026-11-11T15:12:30Z",
         "external_id": "r2RIWj",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -24721,7 +24721,7 @@
       "discovery": {
         "discovered_at": "2026-11-12T15:58:41Z",
         "external_id": "01xIOo",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -24842,7 +24842,7 @@
       "discovery": {
         "discovered_at": "2026-10-04T13:11:58Z",
         "external_id": "rjZIxn",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -25148,7 +25148,7 @@
       "discovery": {
         "discovered_at": "2026-11-14T14:09:12Z",
         "external_id": "pmyIlv",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -25686,7 +25686,7 @@
       "discovery": {
         "discovered_at": "2026-10-10T13:42:25Z",
         "external_id": "0VqIzx",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -25726,7 +25726,7 @@
       "discovery": {
         "discovered_at": "2026-11-17T16:53:33Z",
         "external_id": "0n1I4x",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -26006,7 +26006,7 @@
       "discovery": {
         "discovered_at": "2026-11-16T17:01:29Z",
         "external_id": "NeurIPS.cc/2026/Workshop/ICBINB-BIO",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "openreview-active-venues",
         "source_name": "OpenReview active venues",
         "source_url": "https://docs.openreview.net/getting-started/objects-in-openreview/groups"
@@ -27004,7 +27004,7 @@
       "discovery": {
         "discovered_at": "2026-10-24T12:00:32Z",
         "external_id": "0xoIzo",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -27679,7 +27679,7 @@
       "discovery": {
         "discovered_at": "2026-10-30T14:08:59Z",
         "external_id": "3aDIGP",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -27792,7 +27792,7 @@
       "discovery": {
         "discovered_at": "2026-10-05T16:00:49Z",
         "external_id": "r2RIVj",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -27832,7 +27832,7 @@
       "discovery": {
         "discovered_at": "2026-10-04T13:11:58Z",
         "external_id": "0n1IKx",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -28044,7 +28044,7 @@
       "discovery": {
         "discovered_at": "2026-10-05T16:00:49Z",
         "external_id": "r5KIJ4",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -28345,6 +28345,46 @@
       "source_url": "https://software-architecture-summit.de/berlin",
       "topics": [
         "Data"
+      ]
+    },
+    {
+      "acronym": "SMILR",
+      "categories": [
+        "Other"
+      ],
+      "confidence": "announced",
+      "deadlines": {
+        "abstract": "",
+        "camera_ready": "",
+        "gates": [],
+        "notification": "",
+        "paper": "",
+        "precision": "date",
+        "timezone": "See source"
+      },
+      "discovery": {
+        "discovered_at": "2026-11-27T17:27:42Z",
+        "external_id": "SMILR/2027/Conference",
+        "last_seen_at": "2026-11-27T17:27:42Z",
+        "source_id": "openreview-active-venues",
+        "source_name": "OpenReview active venues",
+        "source_url": "https://docs.openreview.net/getting-started/objects-in-openreview/groups"
+      },
+      "edition": "2027",
+      "event_end": "2027-09-15",
+      "event_start": "2027-09-15",
+      "event_type": "Academic conference",
+      "id": "discovered-smilr-2027-398d2719d9",
+      "indexing": "",
+      "location": "Online",
+      "mode": "Online",
+      "name": "Statistical Modelling and Inference for Language Research",
+      "organization": "OpenReview venue chairs",
+      "organization_group": "OpenReview",
+      "source_basis": "Published via a secondary index",
+      "source_url": "https://s4ln.github.io/conference.html",
+      "topics": [
+        "Peer-reviewed research"
       ]
     },
     {
@@ -28677,7 +28717,7 @@
       "discovery": {
         "discovered_at": "2026-10-05T16:00:49Z",
         "external_id": "3X9ILN",
-        "last_seen_at": "2026-11-26T17:43:28Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "hackclub-hackathons",
         "source_name": "Hack Club Hackathons",
         "source_url": "https://hackathons.hackclub.com/data"
@@ -28797,7 +28837,7 @@
       "discovery": {
         "discovered_at": "2026-11-20T16:09:37Z",
         "external_id": "ACM.org/TheWebConf/2027/Workshop/TempWeb",
-        "last_seen_at": "2026-11-24T18:54:02Z",
+        "last_seen_at": "2026-11-27T17:27:42Z",
         "source_id": "openreview-active-venues",
         "source_name": "OpenReview active venues",
         "source_url": "https://docs.openreview.net/getting-started/objects-in-openreview/groups"
